@@ -3,16 +3,27 @@ import createElement from '@utils/create-element';
 class Component extends HTMLElement {
     protected contentWrap: HTMLElement;
     protected customTagName: string | unknown;
+    protected elements: { [key: string]: HTMLElement } = {};
 
-    constructor() {
+    constructor(style: { [key: string]: string }) {
         super();
-        this.className = `${this.customTagName}`;
+        this.className = style.host;
         this.contentWrap = createElement({
             tag: 'div',
-            style: `${this.customTagName}-content-wrap`,
+            style: style['content-wrap'],
         });
         this.append(this.contentWrap);
     }
+
+    childrenElements(): { [key: string]: HTMLElement } {
+        // childrenElements
+        return <{ [key: string]: HTMLElement }>{};
+    }
+
+    appendElements(): void {
+        // appendElements
+    }
+
     createComponent(): void {
         // create component
     }
@@ -38,9 +49,8 @@ class Component extends HTMLElement {
     }
 
     render(): void {
-        this.innerHTML = '';
         this.contentWrap.innerHTML = '';
-
+        this.elements = this.childrenElements();
         this.createComponent();
     }
 }

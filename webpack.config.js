@@ -62,7 +62,7 @@ module.exports = ({ develop }) => ({
         extensions: ['.ts', '.js'],
         alias: {
             '@utils': path.resolve(__dirname, './src/utils/'),
-            '@pages': path.resolve(__dirname, '/src/app/pages/'),
+            '@pages': path.resolve(__dirname, './src/app/pages/'),
             '@style': path.resolve(__dirname, './src/style/'),
             '@interfaces': path.resolve(__dirname, './src/app/interfaces/'),      
             '@assets': path.resolve(__dirname, './src/assets/'),

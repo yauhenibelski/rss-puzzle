@@ -47,7 +47,7 @@
         "webpack-dev-server": "^5.0.2"
     },
     "validate-branch-name": {
-        "pattern": "rss-puzzle",
+        "pattern": "(RSS-PZ-[0-9]+_)[a-z]+",
         "errorMsg": "invalid branch name"
     }
 }
