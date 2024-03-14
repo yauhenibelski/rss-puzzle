@@ -10,7 +10,7 @@ export interface LocalStorage {
         user: LocalStorageUser;
     };
     checkStorage(): boolean;
-    getUserName(): void;
+    getUserName(): LocalStorageUser;
     saveUserName({ firstName, surname }: LocalStorageUser): void;
     saveStorage(): void;
 }
