@@ -2,6 +2,7 @@ import Component from '@utils/ui-component-template';
 import CustomSelector from '@utils/set-selector-name';
 import createElement from '@utils/create-element';
 import style from './login-page.module.scss';
+import localStorage from '../../shared/local-storage/local-storage';
 
 @CustomSelector('Login-page')
 class LoginPage extends Component {
@@ -17,8 +18,6 @@ class LoginPage extends Component {
 
         const firstNameField = <HTMLInputElement>this.elements.firstNameField.firstChild;
         const secondNameField = <HTMLInputElement>this.elements.secondNameField.firstChild;
-        const loginBTN = <HTMLInputElement>this.elements.loginBTN;
-        const form = <HTMLFormElement>this.elements.form;
 
         firstNameField.required = true;
         firstNameField.placeholder = 'example: John';
@@ -26,20 +25,7 @@ class LoginPage extends Component {
         secondNameField.required = true;
         secondNameField.placeholder = 'example: Smith';
 
-        firstNameField.oninput = () => firstNameField.setCustomValidity('');
-        secondNameField.oninput = () => secondNameField.setCustomValidity('');
-
-        loginBTN.onclick = () => {
-            const validFirstNameField = this.matchInputValue(firstNameField, 2);
-            const validSecondNameField = this.matchInputValue(secondNameField, 3);
-            const canSubmit = validFirstNameField && validSecondNameField;
-
-            firstNameField.className = validFirstNameField ? '' : style.invalid;
-            secondNameField.className = validSecondNameField ? '' : style.invalid;
-
-            console.log(canSubmit);
-        };
-        form.onsubmit = (event: Event) => event.preventDefault();
+        this.addEvents();
     }
 
     childrenElements(): { [key: string]: HTMLElement } {
@@ -74,12 +60,39 @@ class LoginPage extends Component {
 
             // eslint-disable-next-line no-useless-escape
             if (!value.match(`^[a-zA-Z\-]{${minLength}}`)) {
-                input.setCustomValidity(`Minimum length ${minLength + 1} characters`);
+                input.setCustomValidity(`Minimum length ${minLength} characters`);
                 return false;
             }
         }
         input.setCustomValidity('');
         return validity.valid;
+    }
+
+    addEvents(): void {
+        const firstNameField = <HTMLInputElement>this.elements.firstNameField.firstChild;
+        const secondNameField = <HTMLInputElement>this.elements.secondNameField.firstChild;
+        const form = <HTMLFormElement>this.elements.form;
+        const { loginBTN } = this.elements;
+
+        firstNameField.oninput = () => firstNameField.setCustomValidity('');
+        secondNameField.oninput = () => secondNameField.setCustomValidity('');
+
+        loginBTN.onclick = () => {
+            const validFirstNameField = this.matchInputValue(firstNameField, 3);
+            const validSecondNameField = this.matchInputValue(secondNameField, 4);
+            const canSubmit = validFirstNameField && validSecondNameField;
+
+            firstNameField.className = validFirstNameField ? '' : style.invalid;
+            secondNameField.className = validSecondNameField ? '' : style.invalid;
+
+            if (canSubmit) {
+                localStorage.saveUserName({
+                    firstName: firstNameField.value,
+                    surname: secondNameField.value,
+                });
+            }
+        };
+        form.onsubmit = (event: Event) => event.preventDefault();
     }
 }
 
