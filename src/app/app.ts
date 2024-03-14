@@ -1,9 +1,12 @@
-import LoginPage from '@pages/login/login-page';
+// import LoginPage from '@pages/login/login-page';
+import StartPage from '@pages/start-screen/start-screen';
 
 class App {
     run() {
-        console.log('work');
-        document.body.append(new LoginPage().getElement());
+        document.body.append(
+            // new LoginPage().getElement(),
+            new StartPage().getElement(),
+        );
     }
 }
 
