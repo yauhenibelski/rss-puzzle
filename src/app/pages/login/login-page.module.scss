@@ -21,7 +21,7 @@ $background-color: rgba(0, 0, 0, 0.1);
         cursor: pointer;
         width: 100px;
 
-        @media (hover) {
+        @media (hover: hover) {
             &:hover {
                 background-color: rgba(0, 0, 0, 0.2);
             }
