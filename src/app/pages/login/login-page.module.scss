@@ -41,16 +41,16 @@ $background-color: rgba(0, 0, 0, 0.1);
         margin-bottom: 10px;
         padding-left: 20px;
         width: -webkit-fill-available;
-
-        &:invalid {
-            // background-color: red;
-        }
     }
+}
+
+.invalid {
+    color: rgb(193 46 46);
 }
 
 .first-name::before {
     content: 'First name';
 }
 .second-name::before {
-    content: 'Second name';
+    content: 'Surname';
 }
