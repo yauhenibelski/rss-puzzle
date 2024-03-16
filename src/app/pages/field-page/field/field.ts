@@ -25,17 +25,18 @@ class PlayField extends Component {
     }
 
     toggleViewWord({ target }: MouseEvent, elem: HTMLDivElement) {
-        const { resultBlock } = this.elements;
+        const { resultBlock, sourceDataBlock } = this.elements;
         const currentResultLine = <HTMLDivElement>(
             [...resultBlock.childNodes][this.currentWord.wordIndex]
         );
 
-        showHideElements(<HTMLDivElement>target, elem);
+        showHideElements(<HTMLDivElement>target, elem, () => {
+            shiftElementsLeftByOpacity(currentResultLine);
+            shiftElementsLeftByOpacity(sourceDataBlock);
+        });
         (<HTMLDivElement>target).onclick = null;
 
         elem.onclick = event => this.toggleViewWord(event, <HTMLDivElement>target);
-
-        shiftElementsLeftByOpacity(currentResultLine);
 
         this.checkSentence();
     }
