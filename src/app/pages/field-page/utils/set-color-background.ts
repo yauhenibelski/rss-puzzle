@@ -2,12 +2,13 @@
 enum BackgroundColor {
     warn = '#fff0f0',
     good = '#f0fff0',
+    miss = '#ffe8b8',
     none = '',
 }
 
 export const setColorBackground = (
     elements: HTMLDivElement | HTMLDivElement[],
-    color: 'warn' | 'good' | 'none',
+    color: 'warn' | 'good' | 'none' | 'miss',
 ): void => {
     if (elements instanceof Array) {
         elements.forEach(elem => {

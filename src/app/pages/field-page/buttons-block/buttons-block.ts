@@ -11,20 +11,45 @@ import { ButtonName } from './buttons-name.enum';
 @CustomSelector('Buttons-block')
 class ButtonsBlock extends Component {
     protected elements = this.childrenElements();
+
     private currentWord!: { word: Word; wordIndex: number };
     private currentRound!: Round;
+
     constructor(private resultBlock: HTMLDivElement) {
         super(style);
     }
 
     createComponent(): void {
         this.appendElements();
-        this.addEventsToCheckContinueBtn();
+
+        this.addEventToCheckContinueBtn();
+        this.addEventToAutoFillBtn();
+
         canContinue.publish(false);
         canCheck.publish(false);
     }
+    addEventToAutoFillBtn(): void {
+        const { wordIndex, word } = this.currentWord;
+        const { autofillBtn } = this.elements;
+        const wordArr = word.textExample.split(' ');
 
-    addEventsToCheckContinueBtn(): void {
+        autofillBtn.onclick = () => {
+            const currentResultLineElements = Array.from(
+                [...this.resultBlock.children][wordIndex].children,
+            ) as HTMLDivElement[];
+
+            currentResultLineElements.forEach((elem, i) => {
+                setColorBackground(elem, 'miss');
+                elem.style.opacity = '1';
+                elem.innerText = wordArr[i];
+                elem.onclick = null;
+            });
+
+            currentWord.publish(getCurrentWordByIndex(wordIndex + 1));
+        };
+    }
+
+    addEventToCheckContinueBtn(): void {
         const { wordIndex, word } = this.currentWord;
         const { checkContinueBtn } = this.elements;
 
@@ -73,6 +98,7 @@ class ButtonsBlock extends Component {
     childrenElements() {
         return {
             checkContinueBtn: createElement({ tag: 'button', text: ButtonName.check }),
+            autofillBtn: createElement({ tag: 'button', text: ButtonName.autofill }),
         };
     }
 
