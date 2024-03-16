@@ -2,7 +2,7 @@ import CustomSelector from '@utils/set-selector-name';
 import Component from '@utils/ui-component-template';
 import { wordCollection } from '@shared/wordCollection';
 import createElement from '@utils/create-element';
-import { canCheck, currentLevel, currentWord } from '@shared/observables';
+import { canCheck, canContinue, currentLevel, currentWord } from '@shared/observables';
 import { CurrentLevelRound } from '@interfaces/current-level';
 import { Round, Word } from '@interfaces/word-collection';
 import { shiftElementsLeftByOpacity } from '../utils/shift-elements-left';
@@ -103,7 +103,7 @@ class PlayField extends Component {
 
     checkSentence(): void {
         const currentResultLine = <HTMLDivElement>[...this.elements.resultBlock.childNodes][this.currentWord.wordIndex];
-        const resultLineItems = <Array<HTMLElement>>Array.from(currentResultLine.children);
+        const resultLineItems = <Array<HTMLDivElement>>Array.from(currentResultLine.children);
         const { textExample } = this.currentWord.word;
 
         const checkedItems = resultLineItems.reduce((acc: string[], elem) => {
@@ -115,12 +115,16 @@ class PlayField extends Component {
         }, []);
         const currentValue = checkedItems.join(' ');
 
-        canCheck.publish(checkedItems.length === resultLineItems.length);
+        if (checkedItems.length === resultLineItems.length) {
+            canCheck.publish(checkedItems.length === resultLineItems.length);
+        }
 
         if (currentValue === textExample) {
             resultLineItems.forEach(elem => {
                 elem.onclick = null;
+                setColorBackground(elem, 'good');
             });
+            canContinue.publish(currentValue === textExample);
         }
     }
 

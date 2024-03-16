@@ -36,10 +36,7 @@ class StartPage extends Component {
         if (localStorage.checkStorage()) {
             const { firstName, surname } = localStorage.getUserName();
             this.contentWrap.append(
-                new Notification(
-                    `Hello ${firstName} ${surname} !`,
-                    style.notification,
-                ).getElement(),
+                new Notification(`Hello ${firstName} ${surname} !`, style.notification).getElement(),
             );
         }
     }

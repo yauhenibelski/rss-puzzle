@@ -17,6 +17,7 @@ module.exports = {
         'import/prefer-default-export': 'off',
         'no-useless-constructor': 'warn',
         'lines-between-class-members': 'off',
+        'no-shadow': 'warn',
         'no-return-assign': 'off',
         'no-param-reassign': 'warn',
         'no-unused-vars': 'off',

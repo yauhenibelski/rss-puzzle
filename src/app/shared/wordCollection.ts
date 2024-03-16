@@ -16,8 +16,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/01_0001_example.mp3',
                         textExample: 'The students agree they have too much homework',
-                        textExampleTranslate:
-                            'Студенты согласны, что у них слишком много домашней работы',
+                        textExampleTranslate: 'Студенты согласны, что у них слишком много домашней работы',
                         id: 1,
                         word: 'agree',
                         wordTranslate: 'согласна',
@@ -65,8 +64,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/01_0008_example.mp3',
                         textExample: 'The capital of the United States is Washington, D.C',
-                        textExampleTranslate:
-                            'Столица Соединенных Штатов - Вашингтон, округ Колумбия',
+                        textExampleTranslate: 'Столица Соединенных Штатов - Вашингтон, округ Колумбия',
                         id: 8,
                         word: 'capital',
                         wordTranslate: 'столица',
@@ -294,8 +292,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/02_0034_example.mp3',
                         textExample: 'His afternoon work project was to paint the room green',
-                        textExampleTranslate:
-                            'Его дневной рабочий проект должен был покрасить комнату в зеленый цвет',
+                        textExampleTranslate: 'Его дневной рабочий проект должен был покрасить комнату в зеленый цвет',
                         id: 34,
                         word: 'project',
                         wordTranslate: 'проект',
@@ -319,8 +316,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/02_0039_example.mp3',
                         textExample: 'The way he treated his classmate was terrible',
-                        textExampleTranslate:
-                            'То, как он относился к своему однокласснику, было ужасно',
+                        textExampleTranslate: 'То, как он относился к своему однокласснику, было ужасно',
                         id: 39,
                         word: 'terrible',
                         wordTranslate: 'ужасный',
@@ -352,8 +348,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_0043_example.mp3',
                         textExample: 'We used a chart to see how we had improved',
-                        textExampleTranslate:
-                            'Мы использовали график, чтобы увидеть, как мы улучшили',
+                        textExampleTranslate: 'Мы использовали график, чтобы увидеть, как мы улучшили',
                         id: 43,
                         word: 'chart',
                         wordTranslate: 'диаграмма',
@@ -369,8 +364,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_0047_example.mp3',
                         textExample: 'Since he failed to get the job, he was sad',
-                        textExampleTranslate:
-                            'Так как он не смог получить работу, ему было грустно',
+                        textExampleTranslate: 'Так как он не смог получить работу, ему было грустно',
                         id: 47,
                         word: 'fail',
                         wordTranslate: 'потерпеть поражение',
@@ -446,18 +440,15 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_0056_example.mp3',
                         textExample: 'All the students could easily solve the math problem',
-                        textExampleTranslate:
-                            'Все ученики могли легко решить математическую задачу',
+                        textExampleTranslate: 'Все ученики могли легко решить математическую задачу',
                         id: 56,
                         word: 'solve',
                         wordTranslate: 'решать',
                     },
                     {
                         audioExample: 'files/03_0057_example.mp3',
-                        textExample:
-                            'I was surprised when my friends suddenly shouted, “Happy birthday!”',
-                        textExampleTranslate:
-                            "Я был удивлен, когда мои друзья вдруг закричали: 'С днем рождения!'",
+                        textExample: 'I was surprised when my friends suddenly shouted, “Happy birthday!”',
+                        textExampleTranslate: "Я был удивлен, когда мои друзья вдруг закричали: 'С днем рождения!'",
                         id: 57,
                         word: 'suddenly',
                         wordTranslate: 'вдруг, внезапно',
@@ -517,8 +508,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/04_0064_example.mp3',
                         textExample: 'A nice warm bath makes me feel so calm',
-                        textExampleTranslate:
-                            'Хорошая теплая ванна заставляет меня чувствовать себя так спокойно',
+                        textExampleTranslate: 'Хорошая теплая ванна заставляет меня чувствовать себя так спокойно',
                         id: 64,
                         word: 'calm',
                         wordTranslate: 'спокойный',
@@ -550,8 +540,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/04_0069_example.mp3',
                         textExample: 'Smoking is a bad habit that can kill you',
-                        textExampleTranslate:
-                            'Курение - это вредная привычка, которая может тебя убить',
+                        textExampleTranslate: 'Курение - это вредная привычка, которая может тебя убить',
                         id: 69,
                         word: 'habit',
                         wordTranslate: 'привычка',
@@ -696,8 +685,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_0091_example.mp3',
                         textExample: 'We had a fun time at the birthday party',
-                        textExampleTranslate:
-                            'Мы весело провели время на вечеринке по случаю дня рождения',
+                        textExampleTranslate: 'Мы весело провели время на вечеринке по случаю дня рождения',
                         id: 91,
                         word: 'fun',
                         wordTranslate: 'веселье',
@@ -837,8 +825,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/06_0113_example.mp3',
                         textExample: 'There were thousands of participants in this year’s marathon',
-                        textExampleTranslate:
-                            'В этом году в марафоне приняли участие тысячи человек',
+                        textExampleTranslate: 'В этом году в марафоне приняли участие тысячи человек',
                         id: 113,
                         word: 'participant',
                         wordTranslate: 'участник',
@@ -906,8 +893,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/07_0125_example.mp3',
                         textExample: 'He claimed to know why the country’s laws were weak',
-                        textExampleTranslate:
-                            'Он утверждал, что знает, почему законы страны были слабыми',
+                        textExampleTranslate: 'Он утверждал, что знает, почему законы страны были слабыми',
                         id: 125,
                         word: 'claim',
                         wordTranslate: 'запрос',
@@ -1075,8 +1061,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_0146_example.mp3',
                         textExample: 'My football coach will encourage us when we are losing',
-                        textExampleTranslate:
-                            'Мой футбольный тренер будет воодушевлять нас, когда мы проигрываем',
+                        textExampleTranslate: 'Мой футбольный тренер будет воодушевлять нас, когда мы проигрываем',
                         id: 146,
                         word: 'encourage',
                         wordTranslate: 'поощрять',
@@ -1108,8 +1093,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_0151_example.mp3',
                         textExample: 'A passport is necessary if you travel to other countries',
-                        textExampleTranslate:
-                            'Паспорт необходим, если вы путешествуете в другие страны',
+                        textExampleTranslate: 'Паспорт необходим, если вы путешествуете в другие страны',
                         id: 151,
                         word: 'necessary',
                         wordTranslate: 'нужно',
@@ -1145,8 +1129,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_0156_example.mp3',
                         textExample: 'We require teachers to have a university degree',
-                        textExampleTranslate:
-                            'Мы требуем, чтобы преподаватели имели высшее образование',
+                        textExampleTranslate: 'Мы требуем, чтобы преподаватели имели высшее образование',
                         id: 156,
                         word: 'require',
                         wordTranslate: 'требуют',
@@ -1178,8 +1161,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_0160_example.mp3',
                         textExample: 'We talked about Einstein’s theory of relativity in class',
-                        textExampleTranslate:
-                            'Мы говорили о теории относительности Эйнштейна в классе',
+                        textExampleTranslate: 'Мы говорили о теории относительности Эйнштейна в классе',
                         id: 160,
                         word: 'theory',
                         wordTranslate: 'теория',
@@ -1387,8 +1369,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/10_0185_example.mp3',
                         textExample: 'It is essential to have oxygen when you scuba dive',
-                        textExampleTranslate:
-                            'Крайне важно иметь кислород, когда вы погружаетесь с аквалангом',
+                        textExampleTranslate: 'Крайне важно иметь кислород, когда вы погружаетесь с аквалангом',
                         id: 185,
                         word: 'essential',
                         wordTranslate: 'существенный',
@@ -1448,8 +1429,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/10_0195_example.mp3',
                         textExample: 'My sister had to remain home since she was sick',
-                        textExampleTranslate:
-                            'Моя сестра должна была оставаться дома, так как она была больна',
+                        textExampleTranslate: 'Моя сестра должна была оставаться дома, так как она была больна',
                         id: 195,
                         word: 'remain',
                         wordTranslate: 'остаются',
@@ -1541,8 +1521,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/11_0208_example.mp3',
                         textExample: 'This practice will help you develop your math skills',
-                        textExampleTranslate:
-                            'Эта практика поможет вам развить свои математические навыки',
+                        textExampleTranslate: 'Эта практика поможет вам развить свои математические навыки',
                         id: 208,
                         word: 'develop',
                         wordTranslate: 'развивать',
@@ -1550,8 +1529,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/11_0209_example.mp3',
                         textExample: 'Some car companies make electric cars',
-                        textExampleTranslate:
-                            'Некоторые автомобильные компании производят электромобили',
+                        textExampleTranslate: 'Некоторые автомобильные компании производят электромобили',
                         id: 209,
                         word: 'electric',
                         wordTranslate: 'электрический',
@@ -1575,8 +1553,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/11_0215_example.mp3',
                         textExample: 'They never eat meat because they are vegetarians',
-                        textExampleTranslate:
-                            'Они никогда не едят мясо, потому что они вегетарианцы',
+                        textExampleTranslate: 'Они никогда не едят мясо, потому что они вегетарианцы',
                         id: 215,
                         word: 'never',
                         wordTranslate: 'никогда',
@@ -1696,8 +1673,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/12_0231_example.mp3',
                         textExample: 'Breakfast is my favorite meal because I enjoy cereal',
-                        textExampleTranslate:
-                            'Завтрак - моя любимая еда, потому что я наслаждаюсь хлопьями',
+                        textExampleTranslate: 'Завтрак - моя любимая еда, потому что я наслаждаюсь хлопьями',
                         id: 231,
                         word: 'meal',
                         wordTranslate: 'еда',
@@ -1705,8 +1681,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/12_0233_example.mp3',
                         textExample: 'I like my neighbor because he’s very friendly',
-                        textExampleTranslate:
-                            'Мне нравится мой сосед, потому что он очень дружелюбный',
+                        textExampleTranslate: 'Мне нравится мой сосед, потому что он очень дружелюбный',
                         id: 233,
                         word: 'neighbor',
                         wordTranslate: 'сосед',
@@ -1714,8 +1689,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/12_0235_example.mp3',
                         textExample: 'I made a small profit from selling my old clothes',
-                        textExampleTranslate:
-                            'Я получил небольшую прибыль от продажи моей старой одежды',
+                        textExampleTranslate: 'Я получил небольшую прибыль от продажи моей старой одежды',
                         id: 235,
                         word: 'profit',
                         wordTranslate: 'прибыль',
@@ -1763,8 +1737,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/13_0245_example.mp3',
                         textExample: 'She has many clients who enjoy coming to her salon',
-                        textExampleTranslate:
-                            'У нее много клиентов, которым нравится приходить в ее салон',
+                        textExampleTranslate: 'У нее много клиентов, которым нравится приходить в ее салон',
                         id: 245,
                         word: 'client',
                         wordTranslate: 'клиент',
@@ -1832,8 +1805,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/13_0257_example.mp3',
                         textExample: 'I got a scholarship to help me pay for university',
-                        textExampleTranslate:
-                            'Я получил стипендию, чтобы помочь мне заплатить за университет',
+                        textExampleTranslate: 'Я получил стипендию, чтобы помочь мне заплатить за университет',
                         id: 257,
                         word: 'scholarship',
                         wordTranslate: 'стипендия',
@@ -1865,8 +1837,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/14_0262_example.mp3',
                         textExample: 'To control the TV, just push the buttons',
-                        textExampleTranslate:
-                            'Чтобы управлять телевизором, просто нажимайте кнопки',
+                        textExampleTranslate: 'Чтобы управлять телевизором, просто нажимайте кнопки',
                         id: 262,
                         word: 'control',
                         wordTranslate: 'контроль',
@@ -1902,8 +1873,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/14_0269_example.mp3',
                         textExample: 'The fireworks made the night sky look so magical',
-                        textExampleTranslate:
-                            'Фейерверк заставил ночное небо выглядеть таким волшебным',
+                        textExampleTranslate: 'Фейерверк заставил ночное небо выглядеть таким волшебным',
                         id: 269,
                         word: 'magical',
                         wordTranslate: 'волшебный',
@@ -1995,8 +1965,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_0282_example.mp3',
                         textExample: 'We need strong healthy lungs to help us breathe well',
-                        textExampleTranslate:
-                            'Нам нужны крепкие здоровые легкие, чтобы мы могли хорошо дышать',
+                        textExampleTranslate: 'Нам нужны крепкие здоровые легкие, чтобы мы могли хорошо дышать',
                         id: 282,
                         word: 'breathe',
                         wordTranslate: 'дышать',
@@ -2080,8 +2049,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_0293_example.mp3',
                         textExample: 'I had an opportunity to take pictures in the jungle',
-                        textExampleTranslate:
-                            'У меня была возможность фотографироваться в джунглях',
+                        textExampleTranslate: 'У меня была возможность фотографироваться в джунглях',
                         id: 293,
                         word: 'opportunity',
                         wordTranslate: 'возможность',
@@ -2513,8 +2481,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/18_0350_example.mp3',
                         textExample: 'I loved the delicious fried chicken I ate for dinner!',
-                        textExampleTranslate:
-                            'Мне очень понравилась вкусная жареная курица, которую я ел на ужин!',
+                        textExampleTranslate: 'Мне очень понравилась вкусная жареная курица, которую я ел на ужин!',
                         id: 350,
                         word: 'delicious',
                         wordTranslate: 'очень вкусно',
@@ -2574,8 +2541,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/18_0356_example.mp3',
                         textExample: 'People who want good health should not smoke',
-                        textExampleTranslate:
-                            'Люди, которые хотят хорошего здоровья, не должны курить',
+                        textExampleTranslate: 'Люди, которые хотят хорошего здоровья, не должны курить',
                         id: 356,
                         word: 'health',
                         wordTranslate: 'здоровье',
@@ -2599,8 +2565,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/18_0359_example.mp3',
                         textExample: 'The cupcake was special because it had blue frosting',
-                        textExampleTranslate:
-                            'Кекс был особенным, потому что у него была голубая глазурь',
+                        textExampleTranslate: 'Кекс был особенным, потому что у него была голубая глазурь',
                         id: 359,
                         word: 'special',
                         wordTranslate: 'специальный',
@@ -2684,10 +2649,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/19_0373_example.mp3',
-                        textExample:
-                            'The doctors mentioned the problems that the patient was having',
-                        textExampleTranslate:
-                            'Врачи упомянули о проблемах, с которыми сталкивался пациент',
+                        textExample: 'The doctors mentioned the problems that the patient was having',
+                        textExampleTranslate: 'Врачи упомянули о проблемах, с которыми сталкивался пациент',
                         id: 373,
                         word: 'mention',
                         wordTranslate: 'отметить',
@@ -2702,10 +2665,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/19_0376_example.mp3',
-                        textExample:
-                            'People should come together and fix the world’s social problems',
-                        textExampleTranslate:
-                            'Люди должны собраться вместе и решить социальные проблемы мира',
+                        textExample: 'People should come together and fix the world’s social problems',
+                        textExampleTranslate: 'Люди должны собраться вместе и решить социальные проблемы мира',
                         id: 376,
                         word: 'social',
                         wordTranslate: 'социальное',
@@ -2765,8 +2726,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/20_0384_example.mp3',
                         textExample: 'I learned some basic English skills in school today',
-                        textExampleTranslate:
-                            'Я выучил некоторые базовые навыки английского в школе сегодня',
+                        textExampleTranslate: 'Я выучил некоторые базовые навыки английского в школе сегодня',
                         id: 384,
                         word: 'basic',
                         wordTranslate: 'базовый',
@@ -2818,8 +2778,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/20_0391_example.mp3',
                         textExample: 'Whenever Pinocchio lied to his father, his nose grew',
-                        textExampleTranslate:
-                            'Всякий раз, когда Пиноккио лгал своему отцу, его нос рос',
+                        textExampleTranslate: 'Всякий раз, когда Пиноккио лгал своему отцу, его нос рос',
                         id: 391,
                         word: 'lie',
                         wordTranslate: 'ложь',
@@ -2827,8 +2786,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/20_0392_example.mp3',
                         textExample: 'This piece of meat I’m eating tastes very good',
-                        textExampleTranslate:
-                            'Этот кусок мяса, который я ем, имеет очень хороший вкус',
+                        textExampleTranslate: 'Этот кусок мяса, который я ем, имеет очень хороший вкус',
                         id: 392,
                         word: 'meat',
                         wordTranslate: 'мясо',
@@ -2912,8 +2870,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/21_0403_example.mp3',
                         textExample: 'You must use your brain to solve the problem',
-                        textExampleTranslate:
-                            'Вы должны использовать свой мозг, чтобы решить проблему',
+                        textExampleTranslate: 'Вы должны использовать свой мозг, чтобы решить проблему',
                         id: 403,
                         word: 'brain',
                         wordTranslate: 'головной мозг',
@@ -2937,8 +2894,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/21_0407_example.mp3',
                         textExample: 'Two guards greeted me as I entered the front door',
-                        textExampleTranslate:
-                            'Два охранника встретили меня, когда я вошел в переднюю дверь',
+                        textExampleTranslate: 'Два охранника встретили меня, когда я вошел в переднюю дверь',
                         id: 407,
                         word: 'enter',
                         wordTranslate: 'войти',
@@ -3022,8 +2978,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/21_0419_example.mp3',
                         textExample: 'Though he was overweight, he liked to be active',
-                        textExampleTranslate:
-                            'Хотя он весил больше нормы, ему нравилось быть активным',
+                        textExampleTranslate: 'Хотя он весил больше нормы, ему нравилось быть активным',
                         id: 419,
                         word: 'though',
                         wordTranslate: 'хоть',
@@ -3191,10 +3146,8 @@ export const wordCollection: WordCollection[] = [
                 words: [
                     {
                         audioExample: 'files/23_0444_example.mp3',
-                        textExample:
-                            'Their behavior was good this semester. They didn’t cause trouble',
-                        textExampleTranslate:
-                            'Их поведение было хорошим в этом семестре. Они не доставляли хлопот',
+                        textExample: 'Their behavior was good this semester. They didn’t cause trouble',
+                        textExampleTranslate: 'Их поведение было хорошим в этом семестре. Они не доставляли хлопот',
                         id: 444,
                         word: 'behavior',
                         wordTranslate: 'поведение',
@@ -3334,8 +3287,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_0462_example.mp3',
                         textExample: 'My father was buried in his hometown when he died',
-                        textExampleTranslate:
-                            'Мой отец был похоронен в своем родном городе, когда он умер',
+                        textExampleTranslate: 'Мой отец был похоронен в своем родном городе, когда он умер',
                         id: 462,
                         word: 'bury',
                         wordTranslate: 'похоронить',
@@ -3351,8 +3303,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_0467_example.mp3',
                         textExample: 'Finishing high school was a major event in his life',
-                        textExampleTranslate:
-                            'Окончание средней школы было главным событием в его жизни',
+                        textExampleTranslate: 'Окончание средней школы было главным событием в его жизни',
                         id: 467,
                         word: 'event',
                         wordTranslate: 'событие',
@@ -3436,8 +3387,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_0480_example.mp3',
                         textExample: 'If we unite, we can finish our project faster',
-                        textExampleTranslate:
-                            'Если мы объединимся, мы сможем завершить наш проект быстрее',
+                        textExampleTranslate: 'Если мы объединимся, мы сможем завершить наш проект быстрее',
                         id: 480,
                         word: 'unite',
                         wordTranslate: 'объединить',
@@ -3445,8 +3395,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/25_0481_example.mp3',
                         textExample: 'Most people associate birthday parties with having fun',
-                        textExampleTranslate:
-                            'У большинства людей дни рождения ассоциируются с весельем',
+                        textExampleTranslate: 'У большинства людей дни рождения ассоциируются с весельем',
                         id: 481,
                         word: 'associate',
                         wordTranslate: 'ассоциировать',
@@ -3454,8 +3403,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/25_0482_example.mp3',
                         textExample: 'Keeping our environment clean is important to our health',
-                        textExampleTranslate:
-                            'Поддержание нашей окружающей среды в чистоте важно для нашего здоровья',
+                        textExampleTranslate: 'Поддержание нашей окружающей среды в чистоте важно для нашего здоровья',
                         id: 482,
                         word: 'environment',
                         wordTranslate: 'окружающая обстановка',
@@ -3683,8 +3631,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_0513_example.mp3',
                         textExample: 'Biking is good for your physical health',
-                        textExampleTranslate:
-                            'Езда на велосипеде полезна для вашего физического здоровья',
+                        textExampleTranslate: 'Езда на велосипеде полезна для вашего физического здоровья',
                         id: 513,
                         word: 'physical',
                         wordTranslate: 'физический',
@@ -3716,8 +3663,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_0518_example.mp3',
                         textExample: 'Society expects people to be good and honest',
-                        textExampleTranslate:
-                            'Общество ожидает, что люди будут хорошими и честными',
+                        textExampleTranslate: 'Общество ожидает, что люди будут хорошими и честными',
                         id: 518,
                         word: 'society',
                         wordTranslate: 'общество',
@@ -3846,8 +3792,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/27_0535_example.mp3',
                         textExample: 'I think typing on a keyboard is quite easy',
-                        textExampleTranslate:
-                            'Я думаю, что набирать текст на клавиатуре довольно просто',
+                        textExampleTranslate: 'Я думаю, что набирать текст на клавиатуре довольно просто',
                         id: 535,
                         word: 'quite',
                         wordTranslate: 'довольно',
@@ -4039,8 +3984,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_0562_example.mp3',
                         textExample: 'We both compromised about the game we decided to play',
-                        textExampleTranslate:
-                            'Мы оба пошли на компромисс по поводу игры, в которую решили играть',
+                        textExampleTranslate: 'Мы оба пошли на компромисс по поводу игры, в которую решили играть',
                         id: 562,
                         word: 'compromise',
                         wordTranslate: 'компромисс',
@@ -4056,8 +4000,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_0565_example.mp3',
                         textExample: 'The fragile glassware was carefully packed into boxes',
-                        textExampleTranslate:
-                            'Хрупкая стеклянная посуда была тщательно упакована в коробки',
+                        textExampleTranslate: 'Хрупкая стеклянная посуда была тщательно упакована в коробки',
                         id: 565,
                         word: 'fragile',
                         wordTranslate: 'хрупкий',
@@ -4073,8 +4016,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_0567_example.mp3',
                         textExample: 'Everyone who met her found her innocence to be charming',
-                        textExampleTranslate:
-                            'Все, кто встречал ее, находили ее невинность очаровательной',
+                        textExampleTranslate: 'Все, кто встречал ее, находили ее невинность очаровательной',
                         id: 567,
                         word: 'innocence',
                         wordTranslate: 'невинность',
@@ -4089,10 +4031,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/29_0572_example.mp3',
-                        textExample:
-                            'The amount of homework her teacher assigned has overwhelmed her',
-                        textExampleTranslate:
-                            'Количество домашних заданий, которые назначил ее учитель, ошеломило ее',
+                        textExample: 'The amount of homework her teacher assigned has overwhelmed her',
+                        textExampleTranslate: 'Количество домашних заданий, которые назначил ее учитель, ошеломило ее',
                         id: 572,
                         word: 'overwhelm',
                         wordTranslate: 'нападает',
@@ -4100,8 +4040,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_0578_example.mp3',
                         textExample: 'Speeding is the cause of most car accidents',
-                        textExampleTranslate:
-                            'Ускорение является причиной большинства автомобильных аварий',
+                        textExampleTranslate: 'Ускорение является причиной большинства автомобильных аварий',
                         id: 578,
                         word: 'speed',
                         wordTranslate: 'скорость',
@@ -4299,8 +4238,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/01_0612_example.mp3',
                         textExample: 'The man likes to ski and goes every weekend',
-                        textExampleTranslate:
-                            'Мужчина любит кататься на лыжах и ездит каждые выходные',
+                        textExampleTranslate: 'Мужчина любит кататься на лыжах и ездит каждые выходные',
                         id: 612,
                         word: 'ski',
                         wordTranslate: 'лыжи',
@@ -4328,8 +4266,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/01_0614_example.mp3',
                         textExample: '.The total cost of the items she bought was $52',
-                        textExampleTranslate:
-                            'Общая стоимость предметов, которые она купила, составила 52 доллара',
+                        textExampleTranslate: 'Общая стоимость предметов, которые она купила, составила 52 доллара',
                         id: 614,
                         word: 'total',
                         wordTranslate: 'всего',
@@ -4361,8 +4298,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/02_0621_example.mp3',
                         textExample: 'She was anxious about not making her appointment on time',
-                        textExampleTranslate:
-                            'Она беспокоилась о том, чтобы не договориться о встрече вовремя',
+                        textExampleTranslate: 'Она беспокоилась о том, чтобы не договориться о встрече вовремя',
                         id: 621,
                         word: 'anxious',
                         wordTranslate: 'озабоченный',
@@ -4438,8 +4374,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/02_0631_example.mp3',
                         textExample: 'Having strong lungs is necessary for a healthy life',
-                        textExampleTranslate:
-                            'Наличие крепких легких необходимо для здоровой жизни',
+                        textExampleTranslate: 'Наличие крепких легких необходимо для здоровой жизни',
                         id: 631,
                         word: 'lung',
                         wordTranslate: 'легкое',
@@ -4455,8 +4390,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/02_0634_example.mp3',
                         textExample: 'The boy was very polite; he behaved very thoughtfully',
-                        textExampleTranslate:
-                            'Мальчик был очень вежлив, он вел себя очень вдумчиво',
+                        textExampleTranslate: 'Мальчик был очень вежлив, он вел себя очень вдумчиво',
                         id: 634,
                         word: 'polite',
                         wordTranslate: 'вежливый',
@@ -4471,8 +4405,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/02_0637_example.mp3',
-                        textExample:
-                            'The teacher remarked on how quickly the students were learning',
+                        textExample: 'The teacher remarked on how quickly the students were learning',
                         textExampleTranslate: 'Учитель отметил, как быстро учатся студенты',
                         id: 637,
                         word: 'remark',
@@ -4481,8 +4414,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/02_0638_example.mp3',
                         textExample: 'If I have a problem, I seek my sister’s advice',
-                        textExampleTranslate:
-                            'Если у меня есть проблема, я обращаюсь к совету моей сестры',
+                        textExampleTranslate: 'Если у меня есть проблема, я обращаюсь к совету моей сестры',
                         id: 638,
                         word: 'seek',
                         wordTranslate: 'стремиться',
@@ -4541,8 +4473,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/03_0644_example.mp3',
-                        textExample:
-                            'The brave firefighter saved the girl from the burning building',
+                        textExample: 'The brave firefighter saved the girl from the burning building',
                         textExampleTranslate: 'Отважный пожарник спас девушку из горящего здания',
                         id: 644,
                         word: 'brave',
@@ -4575,8 +4506,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_0651_example.mp3',
                         textExample: 'Susan’s joke made her classmates burst into laughter',
-                        textExampleTranslate:
-                            'Шутка Сьюзен заставила ее одноклассников разразиться смехом',
+                        textExampleTranslate: 'Шутка Сьюзен заставила ее одноклассников разразиться смехом',
                         id: 651,
                         word: 'laughter',
                         wordTranslate: 'смех',
@@ -4584,8 +4514,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_0653_example.mp3',
                         textExample: 'I joined the military after I finished high school',
-                        textExampleTranslate:
-                            'Я поступил на военную службу после окончания средней школы',
+                        textExampleTranslate: 'Я поступил на военную службу после окончания средней школы',
                         id: 653,
                         word: 'military',
                         wordTranslate: 'военные',
@@ -4613,8 +4542,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_0660_example.mp3',
                         textExample: 'Swords have been used as weapons for thousands of years',
-                        textExampleTranslate:
-                            'Мечи использовались в качестве оружия на протяжении тысячелетий',
+                        textExampleTranslate: 'Мечи использовались в качестве оружия на протяжении тысячелетий',
                         id: 660,
                         word: 'weapon',
                         wordTranslate: 'оружие',
@@ -4622,8 +4550,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/04_0662_example.mp3',
                         textExample: 'I have confidence that I did well on the test',
-                        textExampleTranslate:
-                            'У меня есть уверенность, что я хорошо справился с тестом',
+                        textExampleTranslate: 'У меня есть уверенность, что я хорошо справился с тестом',
                         id: 662,
                         word: 'confidence',
                         wordTranslate: 'доверие',
@@ -4731,8 +4658,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_0682_example.mp3',
                         textExample: 'The giraffe turned its head to see from another angle',
-                        textExampleTranslate:
-                            'Жираф повернул голову, чтобы увидеть под другим углом',
+                        textExampleTranslate: 'Жираф повернул голову, чтобы увидеть под другим углом',
                         id: 682,
                         word: 'angle',
                         wordTranslate: 'угол',
@@ -4772,8 +4698,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_0690_example.mp3',
                         textExample: 'The coach praised the athletes after a good practice',
-                        textExampleTranslate:
-                            'Тренер похвалил спортсменов после хорошей тренировки',
+                        textExampleTranslate: 'Тренер похвалил спортсменов после хорошей тренировки',
                         id: 690,
                         word: 'praise',
                         wordTranslate: 'хвалить',
@@ -4793,8 +4718,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_0692_example.mp3',
                         textExample: 'The rose was pure. It had no dirt or imperfections',
-                        textExampleTranslate:
-                            'Роза была чистой. В ней не было ни грязи, ни недостатков',
+                        textExampleTranslate: 'Роза была чистой. В ней не было ни грязи, ни недостатков',
                         id: 692,
                         word: 'pure',
                         wordTranslate: 'чистый',
@@ -4802,8 +4726,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_0693_example.mp3',
                         textExample: 'My relatives came by to see the new baby',
-                        textExampleTranslate:
-                            'Мои родственники пришли, чтобы увидеть нового ребенка',
+                        textExampleTranslate: 'Мои родственники пришли, чтобы увидеть нового ребенка',
                         id: 693,
                         word: 'relative',
                         wordTranslate: 'относительный',
@@ -4819,8 +4742,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_0697_example.mp3',
                         textExample: 'I think cooking outdoors is superior to cooking indoors',
-                        textExampleTranslate:
-                            'Я думаю, что готовить на улице лучше, чем готовить в помещении',
+                        textExampleTranslate: 'Я думаю, что готовить на улице лучше, чем готовить в помещении',
                         id: 697,
                         word: 'superior',
                         wordTranslate: 'превосходный',
@@ -4851,10 +4773,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/06_0702_example.mp3',
-                        textExample:
-                            'The man automatically smiled when he thought about his friend',
-                        textExampleTranslate:
-                            'Человек автоматически улыбнулся, когда подумал о своем друге',
+                        textExample: 'The man automatically smiled when he thought about his friend',
+                        textExampleTranslate: 'Человек автоматически улыбнулся, когда подумал о своем друге',
                         id: 702,
                         word: 'automatically',
                         wordTranslate: 'автоматически',
@@ -4898,8 +4818,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/06_0707_example.mp3',
                         textExample: 'James began to discuss his report with his teacher',
-                        textExampleTranslate:
-                            'Джеймс начал обсуждать свой доклад со своим учителем',
+                        textExampleTranslate: 'Джеймс начал обсуждать свой доклад со своим учителем',
                         id: 707,
                         word: 'discuss',
                         wordTranslate: 'обсудить',
@@ -4915,8 +4834,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/06_0710_example.mp3',
                         textExample: 'Ken’s mother wanted to meet his teacher today',
-                        textExampleTranslate:
-                            'Мать Кена хотела встретиться со своим учителем сегодня',
+                        textExampleTranslate: 'Мать Кена хотела встретиться со своим учителем сегодня',
                         id: 710,
                         word: 'meet',
                         wordTranslate: 'встретиться',
@@ -4984,8 +4902,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/06_0718_example.mp3',
                         textExample: 'They went someplace to talk to each other',
-                        textExampleTranslate:
-                            'Они пошли куда-нибудь, чтобы поговорить друг с другом',
+                        textExampleTranslate: 'Они пошли куда-нибудь, чтобы поговорить друг с другом',
                         id: 718,
                         word: 'talk',
                         wordTranslate: 'разговаривать',
@@ -4993,8 +4910,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/06_0719_example.mp3',
                         textExample: 'They need to work together to finish an important project',
-                        textExampleTranslate:
-                            'Им нужно работать вместе, чтобы закончить важный проект',
+                        textExampleTranslate: 'Им нужно работать вместе, чтобы закончить важный проект',
                         id: 719,
                         word: 'work',
                         wordTranslate: 'работа',
@@ -5094,18 +5010,15 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/07_0731_example.mp3',
                         textExample: 'The woman’s mission was to help sick people',
-                        textExampleTranslate:
-                            'Миссия женщины состояла в том, чтобы помочь больным людям',
+                        textExampleTranslate: 'Миссия женщины состояла в том, чтобы помочь больным людям',
                         id: 731,
                         word: 'mission',
                         wordTranslate: 'миссия',
                     },
                     {
                         audioExample: 'files/07_0732_example.mp3',
-                        textExample:
-                            'He is usually friendly. Nevertheless, he wasn’t friendly this afternoon',
-                        textExampleTranslate:
-                            'Он обычно дружелюбен. Тем не менее, он не был дружелюбен сегодня днем',
+                        textExample: 'He is usually friendly. Nevertheless, he wasn’t friendly this afternoon',
+                        textExampleTranslate: 'Он обычно дружелюбен. Тем не менее, он не был дружелюбен сегодня днем',
                         id: 732,
                         word: 'nevertheless',
                         wordTranslate: 'тем не менее',
@@ -5189,8 +5102,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_0748_example.mp3',
                         textExample: 'They paid a considerable amount of money for that car',
-                        textExampleTranslate:
-                            'Они заплатили значительную сумму денег за эту машину',
+                        textExampleTranslate: 'Они заплатили значительную сумму денег за эту машину',
                         id: 748,
                         word: 'considerable',
                         wordTranslate: 'значительный',
@@ -5198,8 +5110,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_0750_example.mp3',
                         textExample: 'There is a definite connection between hard work and success',
-                        textExampleTranslate:
-                            'Существует определенная связь между трудолюбием и успехом',
+                        textExampleTranslate: 'Существует определенная связь между трудолюбием и успехом',
                         id: 750,
                         word: 'definite',
                         wordTranslate: 'определенный',
@@ -5207,8 +5118,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_0751_example.mp3',
                         textExample: 'He felt such delight after getting a promotion at work',
-                        textExampleTranslate:
-                            'Он почувствовал такой восторг после продвижения по службе',
+                        textExampleTranslate: 'Он почувствовал такой восторг после продвижения по службе',
                         id: 751,
                         word: 'delight',
                         wordTranslate: 'восторг',
@@ -5408,8 +5318,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/09_0777_example.mp3',
                         textExample: 'They are still waiting in line to get tickets',
-                        textExampleTranslate:
-                            'Они все еще ждут своей очереди, чтобы получить билеты',
+                        textExampleTranslate: 'Они все еще ждут своей очереди, чтобы получить билеты',
                         id: 777,
                         word: 'still',
                         wordTranslate: 'по-прежнему',
@@ -5608,10 +5517,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/11_0804_example.mp3',
-                        textExample:
-                            'In chemistry class, the professor taught us about chemical reactions',
-                        textExampleTranslate:
-                            'На уроке химии профессор учил нас химическим реакциям',
+                        textExample: 'In chemistry class, the professor taught us about chemical reactions',
+                        textExampleTranslate: 'На уроке химии профессор учил нас химическим реакциям',
                         id: 804,
                         word: 'chemistry',
                         wordTranslate: 'химия',
@@ -5619,8 +5526,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/11_0805_example.mp3',
                         textExample: 'We still played the game despite the cold weather',
-                        textExampleTranslate:
-                            'Мы все еще играли в игру, несмотря на холодную погоду',
+                        textExampleTranslate: 'Мы все еще играли в игру, несмотря на холодную погоду',
                         id: 805,
                         word: 'despite',
                         wordTranslate: 'несмотря на',
@@ -5656,8 +5562,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/11_0808_example.mp3',
                         textExample: 'He had fame and fortune, but he was not happy',
-                        textExampleTranslate:
-                            'У него была слава и богатство, но он не был счастлив',
+                        textExampleTranslate: 'У него была слава и богатство, но он не был счастлив',
                         id: 808,
                         word: 'fame',
                         wordTranslate: 'слава',
@@ -5689,8 +5594,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/11_0813_example.mp3',
                         textExample: 'My little sister always interferes when I’m trying to study',
-                        textExampleTranslate:
-                            'Моя младшая сестра всегда мешает, когда я пытаюсь учиться',
+                        textExampleTranslate: 'Моя младшая сестра всегда мешает, когда я пытаюсь учиться',
                         id: 813,
                         word: 'interfere',
                         wordTranslate: 'вмешиваться',
@@ -5714,8 +5618,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/11_0816_example.mp3',
                         textExample: 'James put all of his toy soldiers into neat rows',
-                        textExampleTranslate:
-                            'Джеймс собрал всех своих игрушечных солдат в аккуратные ряды',
+                        textExampleTranslate: 'Джеймс собрал всех своих игрушечных солдат в аккуратные ряды',
                         id: 816,
                         word: 'row',
                         wordTranslate: 'строка',
@@ -5743,8 +5646,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/12_0823_example.mp3',
                         textExample: 'My sister is a good cook. She bakes delicious cakes',
-                        textExampleTranslate:
-                            'Моя сестра - хороший повар. Она печет вкусные пирожные',
+                        textExampleTranslate: 'Моя сестра - хороший повар. Она печет вкусные пирожные',
                         id: 823,
                         word: 'bake',
                         wordTranslate: 'печь',
@@ -5768,8 +5670,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/12_0828_example.mp3',
                         textExample: 'Hiring more police officers has decreased crime in the city',
-                        textExampleTranslate:
-                            'Наем большего количества полицейских уменьшил преступность в городе',
+                        textExampleTranslate: 'Наем большего количества полицейских уменьшил преступность в городе',
                         id: 828,
                         word: 'decrease',
                         wordTranslate: 'уменьшить',
@@ -5785,8 +5686,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/12_0831_example.mp3',
                         textExample: 'The generous man donated several new computers to our school',
-                        textExampleTranslate:
-                            'Щедрый человек подарил нашей школе несколько новых компьютеров',
+                        textExampleTranslate: 'Щедрый человек подарил нашей школе несколько новых компьютеров',
                         id: 831,
                         word: 'generous',
                         wordTranslate: 'щедрый',
@@ -5794,8 +5694,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/12_0832_example.mp3',
                         textExample: 'The main ingredients in cake are eggs, sugar, and flour',
-                        textExampleTranslate:
-                            'Основными ингредиентами торта являются яйца, сахар и мука',
+                        textExampleTranslate: 'Основными ингредиентами торта являются яйца, сахар и мука',
                         id: 832,
                         word: 'ingredient',
                         wordTranslate: 'ингредиент',
@@ -5840,8 +5739,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/12_0839_example.mp3',
                         textExample: 'I have a small quantity of milk in my glass',
-                        textExampleTranslate:
-                            'У меня есть небольшое количество молока в моем стакане',
+                        textExampleTranslate: 'У меня есть небольшое количество молока в моем стакане',
                         id: 839,
                         word: 'quantity',
                         wordTranslate: 'количество',
@@ -5873,8 +5771,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/13_0845_example.mp3',
                         textExample: 'My father usually carves the turkey for Thanksgiving',
-                        textExampleTranslate:
-                            'Мой отец обычно вырезает индейку на День благодарения',
+                        textExampleTranslate: 'Мой отец обычно вырезает индейку на День благодарения',
                         id: 845,
                         word: 'carve',
                         wordTranslate: 'высекает',
@@ -5906,8 +5803,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/13_0854_example.mp3',
                         textExample: 'I’ve thought of some potential problems with your idea',
-                        textExampleTranslate:
-                            'Я подумал о некоторых потенциальных проблемах с вашей идеей',
+                        textExampleTranslate: 'Я подумал о некоторых потенциальных проблемах с вашей идеей',
                         id: 854,
                         word: 'potential',
                         wordTranslate: 'потенциал',
@@ -5967,8 +5863,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/14_0866_example.mp3',
                         textExample: 'Tony composed his report using many sources of information',
-                        textExampleTranslate:
-                            'Тони составил свой доклад, используя много источников информации',
+                        textExampleTranslate: 'Тони составил свой доклад, используя много источников информации',
                         id: 866,
                         word: 'compose',
                         wordTranslate: 'сочинить',
@@ -5984,8 +5879,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/14_0870_example.mp3',
                         textExample: 'I ignored the message he was making and kept studying',
-                        textExampleTranslate:
-                            'Я проигнорировал сообщение, которое он делал, и продолжал изучать',
+                        textExampleTranslate: 'Я проигнорировал сообщение, которое он делал, и продолжал изучать',
                         id: 870,
                         word: 'ignore',
                         wordTranslate: 'игнорировать',
@@ -6085,8 +5979,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_0886_example.mp3',
                         textExample: 'My father has a crew that helps him build houses',
-                        textExampleTranslate:
-                            'У моего отца есть команда, которая помогает ему строить дома',
+                        textExampleTranslate: 'У моего отца есть команда, которая помогает ему строить дома',
                         id: 886,
                         word: 'crew',
                         wordTranslate: 'экипаж',
@@ -6122,8 +6015,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_0890_example.mp3',
                         textExample: 'We donate money to charities every year',
-                        textExampleTranslate:
-                            'Мы жертвуем деньги благотворительным организациям каждый год',
+                        textExampleTranslate: 'Мы жертвуем деньги благотворительным организациям каждый год',
                         id: 890,
                         word: 'donate',
                         wordTranslate: 'пожертвовать',
@@ -6239,8 +6131,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/16_0909_example.mp3',
                         textExample: 'Do you really think that unicorns ever existed?',
-                        textExampleTranslate:
-                            'Вы действительно думаете, что единороги когда-либо существовали?',
+                        textExampleTranslate: 'Вы действительно думаете, что единороги когда-либо существовали?',
                         id: 909,
                         word: 'exist',
                         wordTranslate: 'существовать',
@@ -6248,8 +6139,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/16_0910_example.mp3',
                         textExample: 'My parents bought a new flat-screen TV on the weekend',
-                        textExampleTranslate:
-                            'Мои родители купили новый телевизор с плоским экраном на выходных',
+                        textExampleTranslate: 'Мои родители купили новый телевизор с плоским экраном на выходных',
                         id: 910,
                         word: 'flat',
                         wordTranslate: 'квартира',
@@ -6341,8 +6231,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/17_0922_example.mp3',
                         textExample: 'I attached the socks to the clothesline to dry',
-                        textExampleTranslate:
-                            'Я прикрепил носки к бельевой веревке, чтобы высохнуть',
+                        textExampleTranslate: 'Я прикрепил носки к бельевой веревке, чтобы высохнуть',
                         id: 922,
                         word: 'attach',
                         wordTranslate: 'прикреплять',
@@ -6365,10 +6254,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/17_0925_example.mp3',
-                        textExample:
-                            'The athlete made a classic mistake-he started running too soon',
-                        textExampleTranslate:
-                            'Спортсмен совершил классическую ошибку - он слишком рано побежал',
+                        textExample: 'The athlete made a classic mistake-he started running too soon',
+                        textExampleTranslate: 'Спортсмен совершил классическую ошибку - он слишком рано побежал',
                         id: 925,
                         word: 'classic',
                         wordTranslate: 'классический',
@@ -6396,8 +6283,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/17_0927_example.mp3',
                         textExample: 'Winning the game confirmed that James was a good player',
-                        textExampleTranslate:
-                            'Победа в игре подтвердила, что Джеймс был хорошим игроком',
+                        textExampleTranslate: 'Победа в игре подтвердила, что Джеймс был хорошим игроком',
                         id: 927,
                         word: 'confirm',
                         wordTranslate: 'подтвердить',
@@ -6405,8 +6291,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/17_0928_example.mp3',
                         textExample: 'He criticized his wife for spending too much money',
-                        textExampleTranslate:
-                            'Он критиковал свою жену за то, что она потратила слишком много денег',
+                        textExampleTranslate: 'Он критиковал свою жену за то, что она потратила слишком много денег',
                         id: 928,
                         word: 'criticize',
                         wordTranslate: 'критиковать',
@@ -6470,8 +6355,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/18_0941_example.mp3',
                         textExample: 'His swimming abilities let him cross the entire lake',
-                        textExampleTranslate:
-                            'Его способности плавать позволили ему пересечь все озеро',
+                        textExampleTranslate: 'Его способности плавать позволили ему пересечь все озеро',
                         id: 941,
                         word: 'ability',
                         wordTranslate: 'способность',
@@ -6538,10 +6422,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/18_0949_example.mp3',
-                        textExample:
-                            'Tackling an opponent is Johnny’s favorite element of American football',
-                        textExampleTranslate:
-                            'Борьба с противником - любимый элемент американского футбола Джонни',
+                        textExample: 'Tackling an opponent is Johnny’s favorite element of American football',
+                        textExampleTranslate: 'Борьба с противником - любимый элемент американского футбола Джонни',
                         id: 949,
                         word: 'element',
                         wordTranslate: 'элемент',
@@ -6693,8 +6575,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/19_0972_example.mp3',
                         textExample: 'Allan prefers to stand and work at his desk',
-                        textExampleTranslate:
-                            'Аллан предпочитает стоять и работать за своим столом',
+                        textExampleTranslate: 'Аллан предпочитает стоять и работать за своим столом',
                         id: 972,
                         word: 'stand',
                         wordTranslate: 'стоять',
@@ -6802,8 +6683,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/20_0988_example.mp3',
                         textExample: 'My cooking ended in failure because I burned the food',
-                        textExampleTranslate:
-                            'Моя готовка закончилась неудачей, потому что я сжег еду',
+                        textExampleTranslate: 'Моя готовка закончилась неудачей, потому что я сжег еду',
                         id: 988,
                         word: 'failure',
                         wordTranslate: 'провал',
@@ -6811,8 +6691,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/20_0990_example.mp3',
                         textExample: 'My parents were immigrants. They came from Poland',
-                        textExampleTranslate:
-                            'Мои родители были иммигрантами. Они приехали из Польши',
+                        textExampleTranslate: 'Мои родители были иммигрантами. Они приехали из Польши',
                         id: 990,
                         word: 'immigrant',
                         wordTranslate: 'иммигрант',
@@ -7020,8 +6899,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/22_1024_example.mp3',
                         textExample: 'I like small dog breeds, such as terriers',
-                        textExampleTranslate:
-                            'Мне нравятся маленькие породы собак, такие как терьеры',
+                        textExampleTranslate: 'Мне нравятся маленькие породы собак, такие как терьеры',
                         id: 1024,
                         word: 'breed',
                         wordTranslate: 'разводить',
@@ -7065,8 +6943,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/22_1030_example.mp3',
                         textExample: 'The journalist took notes for a story he was writing',
-                        textExampleTranslate:
-                            'Журналист делал заметки для рассказа, который он писал',
+                        textExampleTranslate: 'Журналист делал заметки для рассказа, который он писал',
                         id: 1030,
                         word: 'journalist',
                         wordTranslate: 'журналист',
@@ -7074,8 +6951,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/22_1031_example.mp3',
                         textExample: 'All the girl wanted for her birthday was a pup',
-                        textExampleTranslate:
-                            'Все, чего девушка хотела на день рождения, это щенок',
+                        textExampleTranslate: 'Все, чего девушка хотела на день рождения, это щенок',
                         id: 1031,
                         word: 'pup',
                         wordTranslate: 'щенок',
@@ -7151,8 +7027,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/23_1042_example.mp3',
                         textExample: 'Adam used his library card to borrow a book',
-                        textExampleTranslate:
-                            'Адам использовал свою библиотечную карточку, чтобы одолжить книгу',
+                        textExampleTranslate: 'Адам использовал свою библиотечную карточку, чтобы одолжить книгу',
                         id: 1042,
                         word: 'card',
                         wordTranslate: 'открытка',
@@ -7184,8 +7059,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/23_1046_example.mp3',
                         textExample: 'Karen is happy because her English homework is easy',
-                        textExampleTranslate:
-                            'Карен счастлива, потому что ее домашнее задание по английскому легко',
+                        textExampleTranslate: 'Карен счастлива, потому что ее домашнее задание по английскому легко',
                         id: 1046,
                         word: 'easy',
                         wordTranslate: 'легко',
@@ -7301,8 +7175,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_1063_example.mp3',
                         textExample: 'I always chew my food carefully before swallowing it',
-                        textExampleTranslate:
-                            'Я всегда тщательно пережевываю еду, прежде чем проглотить ее',
+                        textExampleTranslate: 'Я всегда тщательно пережевываю еду, прежде чем проглотить ее',
                         id: 1063,
                         word: 'chew',
                         wordTranslate: 'жевать',
@@ -7310,8 +7183,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_1064_example.mp3',
                         textExample: 'The disabled man used a wheelchair to move around',
-                        textExampleTranslate:
-                            'Инвалид использовал инвалидное кресло для передвижения',
+                        textExampleTranslate: 'Инвалид использовал инвалидное кресло для передвижения',
                         id: 1064,
                         word: 'disabled',
                         wordTranslate: 'отключен',
@@ -7363,8 +7235,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_1077_example.mp3',
                         textExample: 'I needed surgery to repair my leg after the accident',
-                        textExampleTranslate:
-                            'Мне нужна была операция, чтобы восстановить ногу после аварии',
+                        textExampleTranslate: 'Мне нужна была операция, чтобы восстановить ногу после аварии',
                         id: 1077,
                         word: 'surgery',
                         wordTranslate: 'операция',
@@ -7372,8 +7243,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_1080_example.mp3',
                         textExample: 'Your love for me has greater value than gold',
-                        textExampleTranslate:
-                            'Твоя любовь ко мне имеет большую ценность, чем золото',
+                        textExampleTranslate: 'Твоя любовь ко мне имеет большую ценность, чем золото',
                         id: 1080,
                         word: 'value',
                         wordTranslate: 'ценность',
@@ -7449,8 +7319,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/25_1095_example.mp3',
                         textExample: 'The only thing in the room was a solitary chair',
-                        textExampleTranslate:
-                            'Единственное, что было в комнате - это одинокий стул',
+                        textExampleTranslate: 'Единственное, что было в комнате - это одинокий стул',
                         id: 1095,
                         word: 'solitary',
                         wordTranslate: 'одинокий',
@@ -7465,10 +7334,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/25_1097_example.mp3',
-                        textExample:
-                            'The balloons were inflated into a variety of colorful spheres',
-                        textExampleTranslate:
-                            'Воздушные шары были накачаны во множество красочных сфер',
+                        textExample: 'The balloons were inflated into a variety of colorful spheres',
+                        textExampleTranslate: 'Воздушные шары были накачаны во множество красочных сфер',
                         id: 1097,
                         word: 'sphere',
                         wordTranslate: 'сфера',
@@ -7492,8 +7359,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_1101_example.mp3',
                         textExample: 'She accused her brother of breaking her computer',
-                        textExampleTranslate:
-                            'Она обвинила своего брата в том, что он сломал свой компьютер',
+                        textExampleTranslate: 'Она обвинила своего брата в том, что он сломал свой компьютер',
                         id: 1101,
                         word: 'accuse',
                         wordTranslate: 'обвиняют',
@@ -7537,8 +7403,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_1107_example.mp3',
                         textExample: 'A ship will store many supplies below its deck',
-                        textExampleTranslate:
-                            'Корабль будет хранить много припасов под своей палубой',
+                        textExampleTranslate: 'Корабль будет хранить много припасов под своей палубой',
                         id: 1107,
                         word: 'deck',
                         wordTranslate: 'палуба',
@@ -7646,8 +7511,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/27_1127_example.mp3',
                         textExample: 'I felt guilty for taking my sister’s cookies',
-                        textExampleTranslate:
-                            'Я чувствовал себя виноватым за то, что взял печенье моей сестры',
+                        textExampleTranslate: 'Я чувствовал себя виноватым за то, что взял печенье моей сестры',
                         id: 1127,
                         word: 'guilty',
                         wordTranslate: 'виновен',
@@ -7663,8 +7527,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/27_1130_example.mp3',
                         textExample: 'The reporter spoke a language Sally had never heard before',
-                        textExampleTranslate:
-                            'Репортер говорил на языке, который Салли никогда раньше не слышала',
+                        textExampleTranslate: 'Репортер говорил на языке, который Салли никогда раньше не слышала',
                         id: 1130,
                         word: 'language',
                         wordTranslate: 'язык',
@@ -7680,8 +7543,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/27_1132_example.mp3',
                         textExample: 'Today was just an ordinary day. Nothing unusual happened',
-                        textExampleTranslate:
-                            'Сегодня был обычный день. Ничего необычного не произошло',
+                        textExampleTranslate: 'Сегодня был обычный день. Ничего необычного не произошло',
                         id: 1132,
                         word: 'ordinary',
                         wordTranslate: 'обычный',
@@ -7689,8 +7551,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/27_1135_example.mp3',
                         textExample: 'Young children often have trouble pronouncing words right',
-                        textExampleTranslate:
-                            'Маленьким детям часто трудно правильно произносить слова',
+                        textExampleTranslate: 'Маленьким детям часто трудно правильно произносить слова',
                         id: 1135,
                         word: 'pronounce',
                         wordTranslate: 'произносится',
@@ -7782,8 +7643,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/28_1147_example.mp3',
                         textExample: 'He dared to jump out of the airplane and skydive',
-                        textExampleTranslate:
-                            'Он осмелился выпрыгнуть из самолета и прыгнуть с парашютом',
+                        textExampleTranslate: 'Он осмелился выпрыгнуть из самолета и прыгнуть с парашютом',
                         id: 1147,
                         word: 'dare',
                         wordTranslate: 'смели',
@@ -7803,8 +7663,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/28_1148_example.mp3',
                         textExample: 'I like having electronic devices such as an MP3 player',
-                        textExampleTranslate:
-                            'Мне нравится иметь электронные устройства, такие как MP3-плеер',
+                        textExampleTranslate: 'Мне нравится иметь электронные устройства, такие как MP3-плеер',
                         id: 1148,
                         word: 'electronic',
                         wordTranslate: 'электронный',
@@ -7936,8 +7795,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_1173_example.mp3',
                         textExample: 'Because of his high intelligence, he finished school early',
-                        textExampleTranslate:
-                            'Из-за его высокого интеллекта он закончил школу рано',
+                        textExampleTranslate: 'Из-за его высокого интеллекта он закончил школу рано',
                         id: 1173,
                         word: 'intelligence',
                         wordTranslate: 'интеллект',
@@ -7945,8 +7803,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_1174_example.mp3',
                         textExample: 'After I passed the test, I obtained my driver’s license',
-                        textExampleTranslate:
-                            'После прохождения теста я получил водительские права',
+                        textExampleTranslate: 'После прохождения теста я получил водительские права',
                         id: 1174,
                         word: 'obtain',
                         wordTranslate: 'получить',
@@ -8013,10 +7870,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/30_1181_example.mp3',
-                        textExample:
-                            'Many homes have appliances like ovens, toasters, and refrigerators',
-                        textExampleTranslate:
-                            'Во многих домах есть такие приборы, как духовки, тостеры и холодильники',
+                        textExample: 'Many homes have appliances like ovens, toasters, and refrigerators',
+                        textExampleTranslate: 'Во многих домах есть такие приборы, как духовки, тостеры и холодильники',
                         id: 1181,
                         word: 'appliance',
                         wordTranslate: 'устройство',
@@ -8031,8 +7886,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/30_1184_example.mp3',
-                        textExample:
-                            'After eating a lot of leaves, caterpillars change into butterflies',
+                        textExample: 'After eating a lot of leaves, caterpillars change into butterflies',
                         textExampleTranslate: 'Съев много листьев, гусеницы превращаются в бабочек',
                         id: 1184,
                         word: 'caterpillar',
@@ -8040,10 +7894,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/30_1186_example.mp3',
-                        textExample:
-                            'You should hold the baby carefully because she’s very delicate',
-                        textExampleTranslate:
-                            'Вы должны бережно держать ребенка, потому что она очень нежная',
+                        textExample: 'You should hold the baby carefully because she’s very delicate',
+                        textExampleTranslate: 'Вы должны бережно держать ребенка, потому что она очень нежная',
                         id: 1186,
                         word: 'delicate',
                         wordTranslate: 'тонкий',
@@ -8140,8 +7992,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/01_1209_example.mp3',
                         textExample: 'Only an elite group was allowed membership into the club',
-                        textExampleTranslate:
-                            'Только элитная группа была допущена к членству в клубе',
+                        textExampleTranslate: 'Только элитная группа была допущена к членству в клубе',
                         id: 1209,
                         word: 'elite',
                         wordTranslate: 'элита',
@@ -8233,8 +8084,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/02_1221_example.mp3',
                         textExample: 'I think you’ll get Tom’s agreement to this proposal',
-                        textExampleTranslate:
-                            'Я думаю, что вы получите согласие Тома на это предложение',
+                        textExampleTranslate: 'Я думаю, что вы получите согласие Тома на это предложение',
                         id: 1221,
                         word: 'agreement',
                         wordTranslate: 'соглашение',
@@ -8242,8 +8092,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/02_1222_example.mp3',
                         textExample: 'Difficulties arose with his computer because it was old',
-                        textExampleTranslate:
-                            'Трудности возникли с его компьютером, потому что он был старым',
+                        textExampleTranslate: 'Трудности возникли с его компьютером, потому что он был старым',
                         id: 1222,
                         word: 'arise',
                         wordTranslate: 'возникают',
@@ -8258,8 +8107,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/02_1229_example.mp3',
-                        textExample:
-                            'Stacy and Heather forged their friendship when they were teenagers',
+                        textExample: 'Stacy and Heather forged their friendship when they were teenagers',
                         textExampleTranslate: 'Стейси и Хизер подружились, когда были подростками',
                         id: 1229,
                         word: 'forge',
@@ -8328,8 +8176,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_1242_example.mp3',
                         textExample: 'After dropping his coffee cup, Robbie felt awkward',
-                        textExampleTranslate:
-                            'Уронив чашку с кофе, Робби почувствовал себя неловко',
+                        textExampleTranslate: 'Уронив чашку с кофе, Робби почувствовал себя неловко',
                         id: 1242,
                         word: 'awkward',
                         wordTranslate: 'неловко',
@@ -8337,8 +8184,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_1243_example.mp3',
                         textExample: 'My grandmother’s caretaker helps her get around the house',
-                        textExampleTranslate:
-                            'Смотритель моей бабушки помогает ей передвигаться по дому',
+                        textExampleTranslate: 'Смотритель моей бабушки помогает ей передвигаться по дому',
                         id: 1243,
                         word: 'caretaker',
                         wordTranslate: 'сторож',
@@ -8398,8 +8244,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_1250_example.mp3',
                         textExample: 'During our ski trip, we stayed at a lodge',
-                        textExampleTranslate:
-                            'Во время нашей лыжной поездки мы остановились в лодже',
+                        textExampleTranslate: 'Во время нашей лыжной поездки мы остановились в лодже',
                         id: 1250,
                         word: 'lodge',
                         wordTranslate: 'поселить',
@@ -8407,8 +8252,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_1251_example.mp3',
                         textExample: 'William neglected his room, so it is a complete mess',
-                        textExampleTranslate:
-                            'Уильям забросил свою комнату, так что это полный беспорядок',
+                        textExampleTranslate: 'Уильям забросил свою комнату, так что это полный беспорядок',
                         id: 1251,
                         word: 'neglect',
                         wordTranslate: 'халатное отношение',
@@ -8440,16 +8284,14 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_1256_example.mp3',
                         textExample: 'Steve looked ridiculous with those huge blue sunglasses',
-                        textExampleTranslate:
-                            'Стив выглядел смешно с этими огромными синими солнцезащитными очками',
+                        textExampleTranslate: 'Стив выглядел смешно с этими огромными синими солнцезащитными очками',
                         id: 1256,
                         word: 'ridiculous',
                         wordTranslate: 'смешной',
                     },
                     {
                         audioExample: 'files/03_1257_example.mp3',
-                        textExample:
-                            'Mina often received satisfactory grades since she studied so hard',
+                        textExample: 'Mina often received satisfactory grades since she studied so hard',
                         textExampleTranslate:
                             'Мина часто получала удовлетворительные оценки, так как она так усердно училась',
                         id: 1257,
@@ -8479,8 +8321,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_1259_example.mp3',
                         textExample: 'Even though it was dangerous, they ventured up the mountain',
-                        textExampleTranslate:
-                            'Хотя это было опасно, они рискнули подняться на гору',
+                        textExampleTranslate: 'Хотя это было опасно, они рискнули подняться на гору',
                         id: 1259,
                         word: 'venture',
                         wordTranslate: 'предприятие',
@@ -8544,8 +8385,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/04_1279_example.mp3',
                         textExample: 'Jake teased Charlie because he was the new student',
-                        textExampleTranslate:
-                            'Джейк дразнил Чарли, потому что он был новым учеником',
+                        textExampleTranslate: 'Джейк дразнил Чарли, потому что он был новым учеником',
                         id: 1279,
                         word: 'tease',
                         wordTranslate: 'дразнить',
@@ -8629,8 +8469,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_1288_example.mp3',
                         textExample: 'She put on her hood to keep her head warm',
-                        textExampleTranslate:
-                            'Она надела свой капюшон, чтобы держать голову в тепле',
+                        textExampleTranslate: 'Она надела свой капюшон, чтобы держать голову в тепле',
                         id: 1288,
                         word: 'hood',
                         wordTranslate: 'капот',
@@ -8714,8 +8553,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_1299_example.mp3',
                         textExample: 'The surfer enjoys the thrill of surfing a big wave',
-                        textExampleTranslate:
-                            'Серфер наслаждается ощущением от серфинга на большой волне',
+                        textExampleTranslate: 'Серфер наслаждается ощущением от серфинга на большой волне',
                         id: 1299,
                         word: 'thrill',
                         wordTranslate: 'кайф',
@@ -8731,8 +8569,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/06_1301_example.mp3',
                         textExample: 'The fire alarm alerted us that there was a problem',
-                        textExampleTranslate:
-                            'Пожарная тревога предупредила нас, что возникла проблема',
+                        textExampleTranslate: 'Пожарная тревога предупредила нас, что возникла проблема',
                         id: 1301,
                         word: 'alert',
                         wordTranslate: 'тревога',
@@ -8752,8 +8589,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/06_1302_example.mp3',
                         textExample: 'We watched the broadcast of the local news on TV',
-                        textExampleTranslate:
-                            'Мы смотрели трансляцию местных новостей по телевизору',
+                        textExampleTranslate: 'Мы смотрели трансляцию местных новостей по телевизору',
                         id: 1302,
                         word: 'broadcast',
                         wordTranslate: 'вещание',
@@ -8801,8 +8637,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/06_1310_example.mp3',
                         textExample: 'She had to endure her husband shouting all day long',
-                        textExampleTranslate:
-                            'Она должна была терпеть, что ее муж весь день кричал',
+                        textExampleTranslate: 'Она должна была терпеть, что ее муж весь день кричал',
                         id: 1310,
                         word: 'endure',
                         wordTranslate: 'терпеть',
@@ -8826,8 +8661,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/06_1313_example.mp3',
                         textExample: 'The man loaded the rear of his truck with boxes',
-                        textExampleTranslate:
-                            'Человек загрузил заднюю часть своего грузовика ящиками',
+                        textExampleTranslate: 'Человек загрузил заднюю часть своего грузовика ящиками',
                         id: 1313,
                         word: 'rear',
                         wordTranslate: 'задний',
@@ -8887,8 +8721,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/07_1322_example.mp3',
                         textExample: 'Kendra had to be ambitious to get into medical school',
-                        textExampleTranslate:
-                            'Кендре нужно было амбициозно поступить в медицинскую школу',
+                        textExampleTranslate: 'Кендре нужно было амбициозно поступить в медицинскую школу',
                         id: 1322,
                         word: 'ambitious',
                         wordTranslate: 'честолюбивый',
@@ -8940,8 +8773,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/07_1327_example.mp3',
                         textExample: 'Mom said she didn’t want to hear my brother’s complaints',
-                        textExampleTranslate:
-                            'Мама сказала, что не хочет слышать жалобы моего брата',
+                        textExampleTranslate: 'Мама сказала, что не хочет слышать жалобы моего брата',
                         id: 1327,
                         word: 'complaint',
                         wordTranslate: 'жалоба',
@@ -8949,8 +8781,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/07_1328_example.mp3',
                         textExample: 'Susan uses sign language because she is deaf',
-                        textExampleTranslate:
-                            'Сьюзен использует язык жестов, потому что она глухая',
+                        textExampleTranslate: 'Сьюзен использует язык жестов, потому что она глухая',
                         id: 1328,
                         word: 'deaf',
                         wordTranslate: 'глухой',
@@ -8966,8 +8797,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/07_1330_example.mp3',
                         textExample: 'They got into their spaceship to begin their expedition',
-                        textExampleTranslate:
-                            'Они сели в свой космический корабль, чтобы начать свою экспедицию',
+                        textExampleTranslate: 'Они сели в свой космический корабль, чтобы начать свою экспедицию',
                         id: 1330,
                         word: 'expedition',
                         wordTranslate: 'экспедиция',
@@ -8999,8 +8829,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/07_1335_example.mp3',
                         textExample: 'Lisa eats too much, so now she’s overweight',
-                        textExampleTranslate:
-                            'Лиза ест слишком много, так что теперь она весит больше нормы',
+                        textExampleTranslate: 'Лиза ест слишком много, так что теперь она весит больше нормы',
                         id: 1335,
                         word: 'overweight',
                         wordTranslate: 'избыточный вес',
@@ -9084,8 +8913,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_1346_example.mp3',
                         textExample: 'Many power stations burn coal to produce energy',
-                        textExampleTranslate:
-                            'Многие электростанции сжигают уголь для производства энергии',
+                        textExampleTranslate: 'Многие электростанции сжигают уголь для производства энергии',
                         id: 1346,
                         word: 'coal',
                         wordTranslate: 'уголь',
@@ -9109,8 +8937,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_1349_example.mp3',
                         textExample: 'In Japan, women wear elegant kimonos on special occasions',
-                        textExampleTranslate:
-                            'В Японии женщины носят элегантные кимоно в особых случаях',
+                        textExampleTranslate: 'В Японии женщины носят элегантные кимоно в особых случаях',
                         id: 1349,
                         word: 'elegant',
                         wordTranslate: 'элегантный',
@@ -9154,8 +8981,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_1355_example.mp3',
                         textExample: 'Mark spent all morning polishing his shoes for the wedding',
-                        textExampleTranslate:
-                            'Марк провел все утро, полируя свою обувь для свадьбы',
+                        textExampleTranslate: 'Марк провел все утро, полируя свою обувь для свадьбы',
                         id: 1355,
                         word: 'polish',
                         wordTranslate: 'польский',
@@ -9171,8 +8997,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_1357_example.mp3',
                         textExample: 'We have a small shed in the backyard for storage',
-                        textExampleTranslate:
-                            'У нас есть небольшой сарай на заднем дворе для хранения',
+                        textExampleTranslate: 'У нас есть небольшой сарай на заднем дворе для хранения',
                         id: 1357,
                         word: 'shed',
                         wordTranslate: 'сарай',
@@ -9272,8 +9097,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/09_1374_example.mp3',
                         textExample: 'Billy quarreled with his wife about buying a new house',
-                        textExampleTranslate:
-                            'Билли поссорился со своей женой о покупке нового дома',
+                        textExampleTranslate: 'Билли поссорился со своей женой о покупке нового дома',
                         id: 1374,
                         word: 'quarrel',
                         wordTranslate: 'ссориться',
@@ -9365,8 +9189,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/10_1387_example.mp3',
                         textExample: 'He imitated his favorite superhero by putting on a costume',
-                        textExampleTranslate:
-                            'Он подражал своему любимому супергерою, надев костюм',
+                        textExampleTranslate: 'Он подражал своему любимому супергерою, надев костюм',
                         id: 1387,
                         word: 'imitate',
                         wordTranslate: 'подражать',
@@ -9410,8 +9233,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/10_1394_example.mp3',
                         textExample: 'The children tried to reproduce their house using toy blocks',
-                        textExampleTranslate:
-                            'Дети пытались воспроизвести свой дом, используя игрушечные блоки',
+                        textExampleTranslate: 'Дети пытались воспроизвести свой дом, используя игрушечные блоки',
                         id: 1394,
                         word: 'reproduce',
                         wordTranslate: 'воспроизвести',
@@ -9443,8 +9265,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/10_1399_example.mp3',
                         textExample: 'He used his wagon to carry some of his gifts',
-                        textExampleTranslate:
-                            'Он использовал свой фургон, чтобы нести некоторые из своих подарков',
+                        textExampleTranslate: 'Он использовал свой фургон, чтобы нести некоторые из своих подарков',
                         id: 1399,
                         word: 'wagon',
                         wordTranslate: 'универсал',
@@ -9652,8 +9473,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/12_1424_example.mp3',
                         textExample: 'You can wear casual clothes, like jeans, to the party',
-                        textExampleTranslate:
-                            'Вы можете носить повседневную одежду, как джинсы, на вечеринку',
+                        textExampleTranslate: 'Вы можете носить повседневную одежду, как джинсы, на вечеринку',
                         id: 1424,
                         word: 'casual',
                         wordTranslate: 'повседневная',
@@ -9753,8 +9573,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/12_1438_example.mp3',
                         textExample: 'The swift horse easily jumped over the hurdle',
-                        textExampleTranslate:
-                            'Стремительный конь легко перепрыгнул через препятствие',
+                        textExampleTranslate: 'Стремительный конь легко перепрыгнул через препятствие',
                         id: 1438,
                         word: 'swift',
                         wordTranslate: 'быстрые',
@@ -9875,8 +9694,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/13_1453_example.mp3',
                         textExample: 'It was the sheriff’s job to make the city safe',
-                        textExampleTranslate:
-                            'Это была работа шерифа, чтобы сделать город безопасным',
+                        textExampleTranslate: 'Это была работа шерифа, чтобы сделать город безопасным',
                         id: 1453,
                         word: 'sheriff',
                         wordTranslate: 'шериф',
@@ -9892,8 +9710,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/13_1458_example.mp3',
                         textExample: 'We toured the area aboard a luxury vessel',
-                        textExampleTranslate:
-                            'Мы совершили поездку по области на борту роскошного судна',
+                        textExampleTranslate: 'Мы совершили поездку по области на борту роскошного судна',
                         id: 1458,
                         word: 'vessel',
                         wordTranslate: 'судно',
@@ -9941,8 +9758,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/14_1469_example.mp3',
                         textExample: 'Craig has always been a very diligent person at work',
-                        textExampleTranslate:
-                            'Крейг всегда был очень прилежным человеком на работе',
+                        textExampleTranslate: 'Крейг всегда был очень прилежным человеком на работе',
                         id: 1469,
                         word: 'diligent',
                         wordTranslate: 'прилежный',
@@ -9994,8 +9810,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/14_1475_example.mp3',
                         textExample: 'Our honeymoon resort was a luxury we really enjoyed',
-                        textExampleTranslate:
-                            'Наш медовый месяц был роскошью, которой мы действительно наслаждались',
+                        textExampleTranslate: 'Наш медовый месяц был роскошью, которой мы действительно наслаждались',
                         id: 1475,
                         word: 'luxury',
                         wordTranslate: 'роскошь',
@@ -10035,8 +9850,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/14_1480_example.mp3',
                         textExample: 'Jesse was scolded by the teacher for not paying attention',
-                        textExampleTranslate:
-                            'Джесси был отчитан учителем за то, что он не обратил внимания',
+                        textExampleTranslate: 'Джесси был отчитан учителем за то, что он не обратил внимания',
                         id: 1480,
                         word: 'scold',
                         wordTranslate: 'ругать',
@@ -10044,8 +9858,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_1482_example.mp3',
                         textExample: 'The students had an assembly to talk about their interests',
-                        textExampleTranslate:
-                            'У студентов было собрание, чтобы поговорить об их интересах',
+                        textExampleTranslate: 'У студентов было собрание, чтобы поговорить об их интересах',
                         id: 1482,
                         word: 'assembly',
                         wordTranslate: 'сборка',
@@ -10065,8 +9878,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_1483_example.mp3',
                         textExample: 'The angel blessed the newborn baby to keep it safe',
-                        textExampleTranslate:
-                            'Ангел благословил новорожденного, чтобы он был в безопасности',
+                        textExampleTranslate: 'Ангел благословил новорожденного, чтобы он был в безопасности',
                         id: 1483,
                         word: 'bless',
                         wordTranslate: 'благословить',
@@ -10098,8 +9910,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_1491_example.mp3',
                         textExample: 'To eat a nut, you must first crack its shell',
-                        textExampleTranslate:
-                            'Чтобы съесть орех, нужно сначала взломать его скорлупу',
+                        textExampleTranslate: 'Чтобы съесть орех, нужно сначала взломать его скорлупу',
                         id: 1491,
                         word: 'nut',
                         wordTranslate: 'орех',
@@ -10130,10 +9941,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/15_1496_example.mp3',
-                        textExample:
-                            'My father’s daily routine includes shaving right before breakfast',
-                        textExampleTranslate:
-                            'Повседневная жизнь моего отца включает бритье прямо перед завтраком',
+                        textExample: 'My father’s daily routine includes shaving right before breakfast',
+                        textExampleTranslate: 'Повседневная жизнь моего отца включает бритье прямо перед завтраком',
                         id: 1496,
                         word: 'routine',
                         wordTranslate: 'рутина',
@@ -10141,8 +9950,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_1498_example.mp3',
                         textExample: 'Look at my new cell phone. It’s very slim',
-                        textExampleTranslate:
-                            'Посмотрите на мой новый сотовый телефон. Он очень тонкий',
+                        textExampleTranslate: 'Посмотрите на мой новый сотовый телефон. Он очень тонкий',
                         id: 1498,
                         word: 'slim',
                         wordTranslate: 'стройное',
@@ -10162,8 +9970,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/16_1502_example.mp3',
                         textExample: 'He has a natural aptitude for water skiing',
-                        textExampleTranslate:
-                            'У него природная склонность к катанию на водных лыжах',
+                        textExampleTranslate: 'У него природная склонность к катанию на водных лыжах',
                         id: 1502,
                         word: 'aptitude',
                         wordTranslate: 'способность',
@@ -10179,8 +9986,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/16_1505_example.mp3',
                         textExample: 'Before becoming a teacher, she worked in journalism',
-                        textExampleTranslate:
-                            'Прежде чем стать учителем, она работала в журналистике',
+                        textExampleTranslate: 'Прежде чем стать учителем, она работала в журналистике',
                         id: 1505,
                         word: 'journalism',
                         wordTranslate: 'журналистика',
@@ -10188,8 +9994,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/16_1509_example.mp3',
                         textExample: 'He worked hard to create a successful literary career',
-                        textExampleTranslate:
-                            'Он много работал, чтобы создать успешную литературную карьеру',
+                        textExampleTranslate: 'Он много работал, чтобы создать успешную литературную карьеру',
                         id: 1509,
                         word: 'literary',
                         wordTranslate: 'литературный',
@@ -10213,8 +10018,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/16_1517_example.mp3',
                         textExample: 'The girl felt sorrow after her best friend moved away',
-                        textExampleTranslate:
-                            'Девушка скорбела после того, как ее лучшая подруга ушла',
+                        textExampleTranslate: 'Девушка скорбела после того, как ее лучшая подруга ушла',
                         id: 1517,
                         word: 'sorrow',
                         wordTranslate: 'печаль',
@@ -10230,8 +10034,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/16_1519_example.mp3',
                         textExample: 'My sister’s stomach began to swell after she got pregnant',
-                        textExampleTranslate:
-                            'Живот моей сестры начал опухать после того, как она забеременела',
+                        textExampleTranslate: 'Живот моей сестры начал опухать после того, как она забеременела',
                         id: 1519,
                         word: 'swell',
                         wordTranslate: 'зыбь',
@@ -10367,8 +10170,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/18_1542_example.mp3',
                         textExample: 'The small fire soon blazed into a large, dangerous one',
-                        textExampleTranslate:
-                            'Небольшой пожар вскоре превратился в большой, опасный',
+                        textExampleTranslate: 'Небольшой пожар вскоре превратился в большой, опасный',
                         id: 1542,
                         word: 'blaze',
                         wordTranslate: 'сверкать',
@@ -10399,10 +10201,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/18_1546_example.mp3',
-                        textExample:
-                            'After leaving home, Sophia had a great feeling of independence',
-                        textExampleTranslate:
-                            'Покинув дом, София почувствовала прекрасное чувство независимости',
+                        textExample: 'After leaving home, Sophia had a great feeling of independence',
+                        textExampleTranslate: 'Покинув дом, София почувствовала прекрасное чувство независимости',
                         id: 1546,
                         word: 'independence',
                         wordTranslate: 'независимость',
@@ -10418,8 +10218,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/18_1550_example.mp3',
                         textExample: 'The rebel was angry about the government’s unfair policies',
-                        textExampleTranslate:
-                            'Мятежник был зол на нечестную политику правительства',
+                        textExampleTranslate: 'Мятежник был зол на нечестную политику правительства',
                         id: 1550,
                         word: 'rebel',
                         wordTranslate: 'бунтарь',
@@ -10471,8 +10270,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/19_1561_example.mp3',
                         textExample: 'Most parks have benches for people to relax upon',
-                        textExampleTranslate:
-                            'В большинстве парков есть скамейки, на которых можно отдохнуть',
+                        textExampleTranslate: 'В большинстве парков есть скамейки, на которых можно отдохнуть',
                         id: 1561,
                         word: 'bench',
                         wordTranslate: 'скамейка',
@@ -10539,10 +10337,8 @@ export const wordCollection: WordCollection[] = [
                 words: [
                     {
                         audioExample: 'files/19_1570_example.mp3',
-                        textExample:
-                            'The group was plotting to ruin the company’s financial reports',
-                        textExampleTranslate:
-                            'Группа планировала испортить финансовые отчеты компании',
+                        textExample: 'The group was plotting to ruin the company’s financial reports',
+                        textExampleTranslate: 'Группа планировала испортить финансовые отчеты компании',
                         id: 1570,
                         word: 'plot',
                         wordTranslate: 'сюжет',
@@ -10558,8 +10354,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/19_1574_example.mp3',
                         textExample: 'The boy felt shame about misplacing his clothes',
-                        textExampleTranslate:
-                            'Мальчику было стыдно за то, что он не положил свою одежду',
+                        textExampleTranslate: 'Мальчику было стыдно за то, что он не положил свою одежду',
                         id: 1574,
                         word: 'shame',
                         wordTranslate: 'позор',
@@ -10675,8 +10470,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/20_1599_example.mp3',
                         textExample: 'One trait of Salvador’s personality is his cheerfulness',
-                        textExampleTranslate:
-                            'Одна черта личности Сальвадора - его жизнерадостность',
+                        textExampleTranslate: 'Одна черта личности Сальвадора - его жизнерадостность',
                         id: 1599,
                         word: 'trait',
                         wordTranslate: 'черта',
@@ -10708,8 +10502,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/21_1604_example.mp3',
                         textExample: 'The exam found cancerous cells in the patient’s blood',
-                        textExampleTranslate:
-                            'При обследовании обнаружены раковые клетки в крови пациента',
+                        textExampleTranslate: 'При обследовании обнаружены раковые клетки в крови пациента',
                         id: 1604,
                         word: 'cancerous',
                         wordTranslate: 'злокачественный',
@@ -10753,8 +10546,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/21_1608_example.mp3',
                         textExample: 'Scientists are still working on finding a cure for diabetes',
-                        textExampleTranslate:
-                            'Ученые все еще работают над поиском лекарства от диабета',
+                        textExampleTranslate: 'Ученые все еще работают над поиском лекарства от диабета',
                         id: 1608,
                         word: 'cure',
                         wordTranslate: 'лечение',
@@ -10770,8 +10562,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/21_1610_example.mp3',
                         textExample: 'The police sometimes use DNA to solve crime',
-                        textExampleTranslate:
-                            'Полиция иногда использует ДНК для раскрытия преступлений',
+                        textExampleTranslate: 'Полиция иногда использует ДНК для раскрытия преступлений',
                         id: 1610,
                         word: 'DNA',
                         wordTranslate: 'ДНК',
@@ -10795,8 +10586,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/21_1614_example.mp3',
                         textExample: 'Gene therapy is sometimes used to treat an illness',
-                        textExampleTranslate:
-                            'Генная терапия иногда используется для лечения болезни',
+                        textExampleTranslate: 'Генная терапия иногда используется для лечения болезни',
                         id: 1614,
                         word: 'gene',
                         wordTranslate: 'ген',
@@ -10924,8 +10714,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/22_1630_example.mp3',
                         textExample: 'They had an informal meeting to talk about their experiences',
-                        textExampleTranslate:
-                            'У них была неформальная встреча, чтобы рассказать о своем опыте',
+                        textExampleTranslate: 'У них была неформальная встреча, чтобы рассказать о своем опыте',
                         id: 1630,
                         word: 'informal',
                         wordTranslate: 'неофициальный',
@@ -10989,8 +10778,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/23_1642_example.mp3',
                         textExample: 'Be very cautious as you stack those boxes',
-                        textExampleTranslate:
-                            'Будьте очень осторожны, когда складываете эти коробки',
+                        textExampleTranslate: 'Будьте очень осторожны, когда складываете эти коробки',
                         id: 1642,
                         word: 'cautious',
                         wordTranslate: 'осторожный',
@@ -11042,8 +10830,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/23_1648_example.mp3',
                         textExample: 'The piece of cloth I found was old and faded',
-                        textExampleTranslate:
-                            'Кусок ткани, который я нашел, был старым и выцветшим',
+                        textExampleTranslate: 'Кусок ткани, который я нашел, был старым и выцветшим',
                         id: 1648,
                         word: 'fade',
                         wordTranslate: 'исчезают',
@@ -11059,8 +10846,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/23_1650_example.mp3',
                         textExample: 'Many people like to go to casinos to gamble',
-                        textExampleTranslate:
-                            'Многие люди любят ходить в казино, чтобы играть в азартные игры',
+                        textExampleTranslate: 'Многие люди любят ходить в казино, чтобы играть в азартные игры',
                         id: 1650,
                         word: 'gamble',
                         wordTranslate: 'играть в азартные игры',
@@ -11168,8 +10954,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_1668_example.mp3',
                         textExample: 'The airline has fifty domestic flights daily',
-                        textExampleTranslate:
-                            'Авиакомпания ежедневно совершает пятьдесят внутренних рейсов',
+                        textExampleTranslate: 'Авиакомпания ежедневно совершает пятьдесят внутренних рейсов',
                         id: 1668,
                         word: 'domestic',
                         wordTranslate: 'внутренний',
@@ -11229,8 +11014,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_1674_example.mp3',
                         textExample: 'The maximum driving speed here is 80 km/h',
-                        textExampleTranslate:
-                            'Максимальная скорость движения здесь составляет 80 км / ч ',
+                        textExampleTranslate: 'Максимальная скорость движения здесь составляет 80 км / ч ',
                         id: 1674,
                         word: 'maximum',
                         wordTranslate: 'максимум',
@@ -11246,8 +11030,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_1676_example.mp3',
                         textExample: 'His doctor will recommend the best medicine for her cough',
-                        textExampleTranslate:
-                            'Его доктор порекомендует лучшее лекарство от ее кашля',
+                        textExampleTranslate: 'Его доктор порекомендует лучшее лекарство от ее кашля',
                         id: 1676,
                         word: 'recommend',
                         wordTranslate: 'рекомендую',
@@ -11263,16 +11046,14 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/25_1681_example.mp3',
                         textExample: 'The fan helped to circulate cool air through the room',
-                        textExampleTranslate:
-                            'Вентилятор помог распространить прохладный воздух через комнату',
+                        textExampleTranslate: 'Вентилятор помог распространить прохладный воздух через комнату',
                         id: 1681,
                         word: 'circulate',
                         wordTranslate: 'циркулировать',
                     },
                     {
                         audioExample: 'files/25_1682_example.mp3',
-                        textExample:
-                            'Her consequent rash came after she touched the poisonous plant',
+                        textExample: 'Her consequent rash came after she touched the poisonous plant',
                         textExampleTranslate:
                             'Ее последующая сыпь появилась после того, как она коснулась ядовитого растения',
                         id: 1682,
@@ -11350,8 +11131,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/25_1699_example.mp3',
                         textExample: 'Her underlying fear of flying reduced her traveling options',
-                        textExampleTranslate:
-                            'Ее страх перед полетом уменьшил ее возможности путешествовать',
+                        textExampleTranslate: 'Ее страх перед полетом уменьшил ее возможности путешествовать',
                         id: 1699,
                         word: 'underlying',
                         wordTranslate: 'лежащие',
@@ -11395,8 +11175,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_1708_example.mp3',
                         textExample: 'After running all day, Greg’s feet had a disgusting odor',
-                        textExampleTranslate:
-                            'После бега весь день у ног Грега был отвратительный запах',
+                        textExampleTranslate: 'После бега весь день у ног Грега был отвратительный запах',
                         id: 1708,
                         word: 'disgusting',
                         wordTranslate: 'отвратительный',
@@ -11404,8 +11183,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_1710_example.mp3',
                         textExample: 'When they saw each other again, the happy couple embraced',
-                        textExampleTranslate:
-                            'Когда они снова увидели друг друга, счастливая пара обнялась',
+                        textExampleTranslate: 'Когда они снова увидели друг друга, счастливая пара обнялась',
                         id: 1710,
                         word: 'embrace',
                         wordTranslate: 'принять',
@@ -11437,8 +11215,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_1715_example.mp3',
                         textExample: 'Ginger is a common ingredient in many dishes from India',
-                        textExampleTranslate:
-                            'Имбирь является распространенным ингредиентом во многих блюдах из Индии',
+                        textExampleTranslate: 'Имбирь является распространенным ингредиентом во многих блюдах из Индии',
                         id: 1715,
                         word: 'ginger',
                         wordTranslate: 'имбирь',
@@ -11513,8 +11290,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/27_1726_example.mp3',
-                        textExample:
-                            'Jimmy wasn’t exaggerating about the seriousness of his injury',
+                        textExample: 'Jimmy wasn’t exaggerating about the seriousness of his injury',
                         textExampleTranslate: 'Джимми не преувеличивал серьезность своей травмы',
                         id: 1726,
                         word: 'exaggerate',
@@ -11530,10 +11306,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/27_1730_example.mp3',
-                        textExample:
-                            'Joyce received a lovely pearl necklace for her wedding anniversary',
-                        textExampleTranslate:
-                            'Джойс получила прекрасное жемчужное ожерелье на годовщину свадьбы',
+                        textExample: 'Joyce received a lovely pearl necklace for her wedding anniversary',
+                        textExampleTranslate: 'Джойс получила прекрасное жемчужное ожерелье на годовщину свадьбы',
                         id: 1730,
                         word: 'necklace',
                         wordTranslate: 'ожерелье',
@@ -11548,10 +11322,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/27_1733_example.mp3',
-                        textExample:
-                            'The company’s rules against gender prejudice must be enforced',
-                        textExampleTranslate:
-                            'Должны соблюдаться правила компании против гендерных предрассудков',
+                        textExample: 'The company’s rules against gender prejudice must be enforced',
+                        textExampleTranslate: 'Должны соблюдаться правила компании против гендерных предрассудков',
                         id: 1733,
                         word: 'prejudice',
                         wordTranslate: 'предубеждение',
@@ -11611,8 +11383,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/28_1741_example.mp3',
                         textExample: 'Mindy’s head ached because she bumped it against the wall',
-                        textExampleTranslate:
-                            'Голова Минди болела, потому что она ударилась об стену',
+                        textExampleTranslate: 'Голова Минди болела, потому что она ударилась об стену',
                         id: 1741,
                         word: 'ache',
                         wordTranslate: 'боль',
@@ -11644,8 +11415,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/28_1746_example.mp3',
                         textExample: 'Congress makes laws for people to follow',
-                        textExampleTranslate:
-                            'Конгресс издает законы, которым люди должны следовать',
+                        textExampleTranslate: 'Конгресс издает законы, которым люди должны следовать',
                         id: 1746,
                         word: 'congress',
                         wordTranslate: 'конгресс',
@@ -11653,8 +11423,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/28_1747_example.mp3',
                         textExample: 'Things like milk and cheese are dairy foods',
-                        textExampleTranslate:
-                            'Такие вещи, как молоко и сыр, являются молочными продуктами',
+                        textExampleTranslate: 'Такие вещи, как молоко и сыр, являются молочными продуктами',
                         id: 1747,
                         word: 'dairy',
                         wordTranslate: 'молочный',
@@ -11738,18 +11507,15 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_1762_example.mp3',
                         textExample: 'I was given a certificate for completing the computer course',
-                        textExampleTranslate:
-                            'Мне дали сертификат на прохождение компьютерного курса',
+                        textExampleTranslate: 'Мне дали сертификат на прохождение компьютерного курса',
                         id: 1762,
                         word: 'certificate',
                         wordTranslate: 'сертификат',
                     },
                     {
                         audioExample: 'files/29_1763_example.mp3',
-                        textExample:
-                            'There were many circumstances behind their success, like hard work',
-                        textExampleTranslate:
-                            'За их успехом стояли многие обстоятельства, такие как тяжелая работа',
+                        textExample: 'There were many circumstances behind their success, like hard work',
+                        textExampleTranslate: 'За их успехом стояли многие обстоятельства, такие как тяжелая работа',
                         id: 1763,
                         word: 'circumstance',
                         wordTranslate: 'обстоятельство',
@@ -11793,8 +11559,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_1775_example.mp3',
                         textExample: 'Nuclear power plants provide inexpensive energy to cities',
-                        textExampleTranslate:
-                            'Атомные электростанции обеспечивают города недорогой энергией',
+                        textExampleTranslate: 'Атомные электростанции обеспечивают города недорогой энергией',
                         id: 1775,
                         word: 'nuclear',
                         wordTranslate: 'ядерный',
@@ -11802,8 +11567,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_1777_example.mp3',
                         textExample: 'An airplane’s propellers rotate quickly to help it fly',
-                        textExampleTranslate:
-                            'Винты самолета быстро вращаются, чтобы помочь ему летать',
+                        textExampleTranslate: 'Винты самолета быстро вращаются, чтобы помочь ему летать',
                         id: 1777,
                         word: 'rotate',
                         wordTranslate: 'поворот',
@@ -11819,8 +11583,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/30_1782_example.mp3',
                         textExample: 'Icy roads deter people from driving their cars',
-                        textExampleTranslate:
-                            'Ледяные дороги удерживают людей от вождения их автомобилей',
+                        textExampleTranslate: 'Ледяные дороги удерживают людей от вождения их автомобилей',
                         id: 1782,
                         word: 'deter',
                         wordTranslate: 'сдерживания',
@@ -11836,8 +11599,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/30_1784_example.mp3',
                         textExample: 'The distance between America and Russia is about 8,000 km',
-                        textExampleTranslate:
-                            'Расстояние между Америкой и Россией составляет около 8000 км ',
+                        textExampleTranslate: 'Расстояние между Америкой и Россией составляет около 8000 км ',
                         id: 1784,
                         word: 'distance',
                         wordTranslate: 'расстояние',
@@ -11869,10 +11631,8 @@ export const wordCollection: WordCollection[] = [
                 words: [
                     {
                         audioExample: 'files/01_1801_example.mp3',
-                        textExample:
-                            'Political leaders are accountable to the people they represent',
-                        textExampleTranslate:
-                            'Политические лидеры ответственны перед людьми, которых они представляют',
+                        textExample: 'Political leaders are accountable to the people they represent',
+                        textExampleTranslate: 'Политические лидеры ответственны перед людьми, которых они представляют',
                         id: 1801,
                         word: 'accountable',
                         wordTranslate: 'подотчетны',
@@ -11888,18 +11648,15 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/01_1803_example.mp3',
                         textExample: 'The man is pushing his questionable agenda on his colleagues',
-                        textExampleTranslate:
-                            'Человек выдвигает свою сомнительную повестку дня на своих коллег',
+                        textExampleTranslate: 'Человек выдвигает свою сомнительную повестку дня на своих коллег',
                         id: 1803,
                         word: 'agenda',
                         wordTranslate: 'повестка дня',
                     },
                     {
                         audioExample: 'files/01_1805_example.mp3',
-                        textExample:
-                            'Scientists believe that brain size might correlate with intelligence',
-                        textExampleTranslate:
-                            'Ученые считают, что размер мозга может коррелировать с интеллектом',
+                        textExample: 'Scientists believe that brain size might correlate with intelligence',
+                        textExampleTranslate: 'Ученые считают, что размер мозга может коррелировать с интеллектом',
                         id: 1805,
                         word: 'correlate',
                         wordTranslate: 'коррелят',
@@ -11923,8 +11680,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/01_1810_example.mp3',
                         textExample: 'Many people join social clubs to escape loneliness',
-                        textExampleTranslate:
-                            'Многие люди вступают в социальные клубы, чтобы избежать одиночества',
+                        textExampleTranslate: 'Многие люди вступают в социальные клубы, чтобы избежать одиночества',
                         id: 1810,
                         word: 'loneliness',
                         wordTranslate: 'одиночество',
@@ -11940,8 +11696,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/01_1818_example.mp3',
                         textExample: 'Scientists are looking for new drugs to target cancer cells',
-                        textExampleTranslate:
-                            'Ученые ищут новые лекарства для нацеливания на раковые клетки',
+                        textExampleTranslate: 'Ученые ищут новые лекарства для нацеливания на раковые клетки',
                         id: 1818,
                         word: 'target',
                         wordTranslate: 'мишень',
@@ -11949,8 +11704,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/01_1819_example.mp3',
                         textExample: 'Lucy likes to think she started this fashion trend',
-                        textExampleTranslate:
-                            'Люси нравится думать, что она начала эту модную тенденцию',
+                        textExampleTranslate: 'Люси нравится думать, что она начала эту модную тенденцию',
                         id: 1819,
                         word: 'trend',
                         wordTranslate: 'тренд',
@@ -11970,8 +11724,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/01_1820_example.mp3',
                         textExample: 'Winning first prize will validate all of Tony’s hard work',
-                        textExampleTranslate:
-                            'Получение первого приза подтвердит всю тяжелую работу Тони',
+                        textExampleTranslate: 'Получение первого приза подтвердит всю тяжелую работу Тони',
                         id: 1820,
                         word: 'validate',
                         wordTranslate: 'проверка',
@@ -12028,8 +11781,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/02_1831_example.mp3',
                         textExample: 'The students object to raising the tuition',
-                        textExampleTranslate:
-                            'Студенты возражают против повышения платы за обучение',
+                        textExampleTranslate: 'Студенты возражают против повышения платы за обучение',
                         id: 1831,
                         word: 'object',
                         wordTranslate: 'объект',
@@ -12097,8 +11849,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/02_1840_example.mp3',
                         textExample: 'Cargo ships are used for the transport of manufactured goods',
-                        textExampleTranslate:
-                            'Грузовые суда используются для перевозки промышленных товаров',
+                        textExampleTranslate: 'Грузовые суда используются для перевозки промышленных товаров',
                         id: 1840,
                         word: 'transport',
                         wordTranslate: 'транспорт',
@@ -12114,8 +11865,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_1843_example.mp3',
                         textExample: 'My grandparents keep hay in their red barn',
-                        textExampleTranslate:
-                            'Мои бабушка и дедушка держат сено в своем красном сарае',
+                        textExampleTranslate: 'Мои бабушка и дедушка держат сено в своем красном сарае',
                         id: 1843,
                         word: 'barn',
                         wordTranslate: 'сарай',
@@ -12123,8 +11873,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_1844_example.mp3',
                         textExample: 'The four friends would never betray each other’s trust',
-                        textExampleTranslate:
-                            'Четыре друга никогда бы не предали доверие друг друга',
+                        textExampleTranslate: 'Четыре друга никогда бы не предали доверие друг друга',
                         id: 1844,
                         word: 'betray',
                         wordTranslate: 'предавать',
@@ -12132,8 +11881,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_1846_example.mp3',
                         textExample: 'Rosanne is Catholic, so she goes to church every Sunday',
-                        textExampleTranslate:
-                            'Розанна католичка, поэтому она ходит в церковь каждое воскресенье',
+                        textExampleTranslate: 'Розанна католичка, поэтому она ходит в церковь каждое воскресенье',
                         id: 1846,
                         word: 'Catholic',
                         wordTranslate: 'католический',
@@ -12185,8 +11933,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_1853_example.mp3',
                         textExample: 'He was outraged when his proposal was turned down',
-                        textExampleTranslate:
-                            'Он был возмущен, когда его предложение было отклонено',
+                        textExampleTranslate: 'Он был возмущен, когда его предложение было отклонено',
                         id: 1853,
                         word: 'outrage',
                         wordTranslate: 'безобразие',
@@ -12218,8 +11965,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_1857_example.mp3',
                         textExample: 'The military patrol is responsible for keeping the area safe',
-                        textExampleTranslate:
-                            'Военный патруль несет ответственность за безопасность района',
+                        textExampleTranslate: 'Военный патруль несет ответственность за безопасность района',
                         id: 1857,
                         word: 'patrol',
                         wordTranslate: 'патруль',
@@ -12254,8 +12000,7 @@ export const wordCollection: WordCollection[] = [
                 words: [
                     {
                         audioExample: 'files/04_1862_example.mp3',
-                        textExample:
-                            'These students are receiving their education at a private school',
+                        textExample: 'These students are receiving their education at a private school',
                         textExampleTranslate: 'Эти студенты получают образование в частной школе',
                         id: 1862,
                         word: 'education',
@@ -12271,10 +12016,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/04_1864_example.mp3',
-                        textExample:
-                            'The committee will endorse their leader for the upcoming election',
-                        textExampleTranslate:
-                            'Комитет утвердит своего лидера на предстоящих выборах',
+                        textExample: 'The committee will endorse their leader for the upcoming election',
+                        textExampleTranslate: 'Комитет утвердит своего лидера на предстоящих выборах',
                         id: 1864,
                         word: 'endorse',
                         wordTranslate: 'одобрить',
@@ -12314,8 +12057,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/04_1870_example.mp3',
                         textExample: 'Damian will soon hold a degree in business administration',
-                        textExampleTranslate:
-                            'Дамиан скоро получит степень в области делового администрирования',
+                        textExampleTranslate: 'Дамиан скоро получит степень в области делового администрирования',
                         id: 1870,
                         word: 'hold',
                         wordTranslate: 'держать',
@@ -12331,8 +12073,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/04_1874_example.mp3',
                         textExample: 'Kyle is interviewing for a marketing position',
-                        textExampleTranslate:
-                            'Кайл проводит собеседование на маркетинговую позицию',
+                        textExampleTranslate: 'Кайл проводит собеседование на маркетинговую позицию',
                         id: 1874,
                         word: 'position',
                         wordTranslate: 'должность',
@@ -12351,8 +12092,7 @@ export const wordCollection: WordCollection[] = [
                 words: [
                     {
                         audioExample: 'files/04_1876_example.mp3',
-                        textExample:
-                            'Parents have the responsibility to raise their children with love',
+                        textExample: 'Parents have the responsibility to raise their children with love',
                         textExampleTranslate: 'Родители обязаны воспитывать своих детей с любовью',
                         id: 1876,
                         word: 'responsibility',
@@ -12369,8 +12109,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/04_1879_example.mp3',
                         textExample: 'Shawn gets vocal when someone disagrees with his opinions',
-                        textExampleTranslate:
-                            'Шон получает вокал, когда кто-то не согласен с его мнением',
+                        textExampleTranslate: 'Шон получает вокал, когда кто-то не согласен с его мнением',
                         id: 1879,
                         word: 'vocal',
                         wordTranslate: 'вокал',
@@ -12386,8 +12125,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_1881_example.mp3',
                         textExample: 'Alex received an award for his academic achievements',
-                        textExampleTranslate:
-                            'Алекс получил награду за свои академические достижения',
+                        textExampleTranslate: 'Алекс получил награду за свои академические достижения',
                         id: 1881,
                         word: 'academic',
                         wordTranslate: 'академический',
@@ -12395,8 +12133,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_1882_example.mp3',
                         textExample: 'Mr. Song celebrated his acceptance into the political party',
-                        textExampleTranslate:
-                            'Мистер Сонг отметил свое принятие в политическую партию',
+                        textExampleTranslate: 'Мистер Сонг отметил свое принятие в политическую партию',
                         id: 1882,
                         word: 'acceptance',
                         wordTranslate: 'принятие',
@@ -12411,8 +12148,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/05_1884_example.mp3',
-                        textExample:
-                            'The photographer can blur the bright lights into the background',
+                        textExample: 'The photographer can blur the bright lights into the background',
                         textExampleTranslate: 'Фотограф может размыть яркие огни на заднем плане',
                         id: 1884,
                         word: 'blur',
@@ -12457,8 +12193,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_1888_example.mp3',
                         textExample: 'This upper-class family travels on a private jet',
-                        textExampleTranslate:
-                            'Эта семья высшего класса путешествует на частном самолете',
+                        textExampleTranslate: 'Эта семья высшего класса путешествует на частном самолете',
                         id: 1888,
                         word: 'class',
                         wordTranslate: 'учебный класс',
@@ -12549,8 +12284,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/06_1901_example.mp3',
-                        textExample:
-                            'Everyone sings the national anthem before the baseball game starts',
+                        textExample: 'Everyone sings the national anthem before the baseball game starts',
                         textExampleTranslate: 'Все поют гимн перед началом игры в бейсбол',
                         id: 1901,
                         word: 'anthem',
@@ -12699,8 +12433,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/07_1926_example.mp3',
                         textExample: 'The tsunami had devastating effects on the seaside village',
-                        textExampleTranslate:
-                            'Цунами оказало разрушительное воздействие на приморскую деревню',
+                        textExampleTranslate: 'Цунами оказало разрушительное воздействие на приморскую деревню',
                         id: 1926,
                         word: 'devastating',
                         wordTranslate: 'разрушительный',
@@ -12760,8 +12493,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/07_1935_example.mp3',
                         textExample: 'The family never thought they’d lose everything to fire',
-                        textExampleTranslate:
-                            'Семья никогда не думала, что потеряет все из-за огня',
+                        textExampleTranslate: 'Семья никогда не думала, что потеряет все из-за огня',
                         id: 1935,
                         word: 'lose',
                         wordTranslate: 'потерять',
@@ -12777,8 +12509,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/07_1939_example.mp3',
                         textExample: 'My supervisor made a reference to the data I’d collected',
-                        textExampleTranslate:
-                            'Мой руководитель сделал ссылку на данные, которые я собрал',
+                        textExampleTranslate: 'Мой руководитель сделал ссылку на данные, которые я собрал',
                         id: 1939,
                         word: 'reference',
                         wordTranslate: 'ссылка',
@@ -12786,8 +12517,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/07_1940_example.mp3',
                         textExample: 'It is common to see tall buildings in urban areas',
-                        textExampleTranslate:
-                            'В городских районах часто можно увидеть высокие здания',
+                        textExampleTranslate: 'В городских районах часто можно увидеть высокие здания',
                         id: 1940,
                         word: 'urban',
                         wordTranslate: 'городской',
@@ -12823,8 +12553,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_1945_example.mp3',
                         textExample: 'The fat contained in salmon, avocados, and nuts is healthy',
-                        textExampleTranslate:
-                            'Жир, содержащийся в лососе, авокадо и орехах, полезен для здоровья',
+                        textExampleTranslate: 'Жир, содержащийся в лососе, авокадо и орехах, полезен для здоровья',
                         id: 1945,
                         word: 'fat',
                         wordTranslate: 'жир',
@@ -12832,8 +12561,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_1946_example.mp3',
                         textExample: 'Winning the award will help Steven gain confidence',
-                        textExampleTranslate:
-                            'Получение награды поможет Стивену обрести уверенность',
+                        textExampleTranslate: 'Получение награды поможет Стивену обрести уверенность',
                         id: 1946,
                         word: 'gain',
                         wordTranslate: 'усиление',
@@ -12841,8 +12569,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_1947_example.mp3',
                         textExample: 'People with diabetes need to check their glucose levels',
-                        textExampleTranslate:
-                            'Люди с диабетом должны проверять уровень глюкозы в крови',
+                        textExampleTranslate: 'Люди с диабетом должны проверять уровень глюкозы в крови',
                         id: 1947,
                         word: 'glucose',
                         wordTranslate: 'глюкоза',
@@ -12866,8 +12593,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_1951_example.mp3',
                         textExample: 'The professor showed us what the human liver looks like',
-                        textExampleTranslate:
-                            'Профессор показал нам, как выглядит человеческая печень',
+                        textExampleTranslate: 'Профессор показал нам, как выглядит человеческая печень',
                         id: 1951,
                         word: 'liver',
                         wordTranslate: 'печень',
@@ -12943,8 +12669,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_1960_example.mp3',
                         textExample: 'Cindy concluded the meeting with a summary of the project',
-                        textExampleTranslate:
-                            'Синди завершила встречу с кратким изложением проекта',
+                        textExampleTranslate: 'Синди завершила встречу с кратким изложением проекта',
                         id: 1960,
                         word: 'summary',
                         wordTranslate: 'резюме',
@@ -12959,8 +12684,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/09_1964_example.mp3',
-                        textExample:
-                            'After her physical examination, her cognitive skills were tested',
+                        textExample: 'After her physical examination, her cognitive skills were tested',
                         textExampleTranslate:
                             'После ее физического обследования ее когнитивные способности были проверены',
                         id: 1964,
@@ -12977,10 +12701,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/09_1966_example.mp3',
-                        textExample:
-                            'Competent employees are much better than unknowledgeable ones',
-                        textExampleTranslate:
-                            'Компетентные сотрудники намного лучше, чем непознаваемые',
+                        textExample: 'Competent employees are much better than unknowledgeable ones',
+                        textExampleTranslate: 'Компетентные сотрудники намного лучше, чем непознаваемые',
                         id: 1966,
                         word: 'competent',
                         wordTranslate: 'компетентный',
@@ -12988,8 +12710,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/09_1967_example.mp3',
                         textExample: 'After four years of college, Mary finally had a diploma',
-                        textExampleTranslate:
-                            'После четырех лет колледжа Мэри наконец получила диплом',
+                        textExampleTranslate: 'После четырех лет колледжа Мэри наконец получила диплом',
                         id: 1967,
                         word: 'diploma',
                         wordTranslate: 'диплом',
@@ -13033,8 +12754,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/09_1973_example.mp3',
                         textExample: 'Only a keen student could have solved that math problem',
-                        textExampleTranslate:
-                            'Только увлеченный ученик мог решить эту математическую задачу',
+                        textExampleTranslate: 'Только увлеченный ученик мог решить эту математическую задачу',
                         id: 1973,
                         word: 'keen',
                         wordTranslate: 'острый',
@@ -13075,8 +12795,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/10_1984_example.mp3',
                         textExample: 'When the bank automated, it started installing ATM machines',
-                        textExampleTranslate:
-                            'Когда банк автоматизировался, он начал устанавливать банкоматы',
+                        textExampleTranslate: 'Когда банк автоматизировался, он начал устанавливать банкоматы',
                         id: 1984,
                         word: 'automate',
                         wordTranslate: 'автоматизировать',
@@ -13084,18 +12803,15 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/10_1990_example.mp3',
                         textExample: 'Power lines are important parts of a city’s infrastructure',
-                        textExampleTranslate:
-                            'Линии электропередачи являются важной частью городской инфраструктуры',
+                        textExampleTranslate: 'Линии электропередачи являются важной частью городской инфраструктуры',
                         id: 1990,
                         word: 'infrastructure',
                         wordTranslate: 'инфраструктура',
                     },
                     {
                         audioExample: 'files/10_1994_example.mp3',
-                        textExample:
-                            'The store added more merchandise because there were more shoppers',
-                        textExampleTranslate:
-                            'Магазин добавил больше товаров, потому что было больше покупателей',
+                        textExample: 'The store added more merchandise because there were more shoppers',
+                        textExampleTranslate: 'Магазин добавил больше товаров, потому что было больше покупателей',
                         id: 1994,
                         word: 'merchandise',
                         wordTranslate: 'товар',
@@ -13114,10 +12830,8 @@ export const wordCollection: WordCollection[] = [
                 words: [
                     {
                         audioExample: 'files/10_1996_example.mp3',
-                        textExample:
-                            'The new products really increased the business’s monthly revenue',
-                        textExampleTranslate:
-                            'Новые продукты действительно увеличили ежемесячный доход бизнеса',
+                        textExample: 'The new products really increased the business’s monthly revenue',
+                        textExampleTranslate: 'Новые продукты действительно увеличили ежемесячный доход бизнеса',
                         id: 1996,
                         word: 'revenue',
                         wordTranslate: 'доходы',
@@ -13125,8 +12839,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/11_2006_example.mp3',
                         textExample: 'This strawberry is the best I’ve ever had. It’s fabulous',
-                        textExampleTranslate:
-                            'Эта клубника - лучшее, что я когда-либо пробовал. Это невероятно',
+                        textExampleTranslate: 'Эта клубника - лучшее, что я когда-либо пробовал. Это невероятно',
                         id: 2006,
                         word: 'fabulous',
                         wordTranslate: 'сказочные',
@@ -13150,8 +12863,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/12_2024_example.mp3',
                         textExample: 'Lowering prices boosts customers’ interest in shopping',
-                        textExampleTranslate:
-                            'Снижение цен повышает интерес покупателей к покупкам',
+                        textExampleTranslate: 'Снижение цен повышает интерес покупателей к покупкам',
                         id: 2024,
                         word: 'boost',
                         wordTranslate: 'увеличение',
@@ -13167,8 +12879,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/12_2027_example.mp3',
                         textExample: 'Traffic signs compel drivers to drive safely',
-                        textExampleTranslate:
-                            'Дорожные знаки заставляют водителей безопасно ездить',
+                        textExampleTranslate: 'Дорожные знаки заставляют водителей безопасно ездить',
                         id: 2027,
                         word: 'compel',
                         wordTranslate: 'принуждать',
@@ -13183,10 +12894,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/12_2034_example.mp3',
-                        textExample:
-                            'When the stunt went wrong, the man suffered multiple injuries',
-                        textExampleTranslate:
-                            'Когда трюк пошел не так, человек получил множественные травмы',
+                        textExample: 'When the stunt went wrong, the man suffered multiple injuries',
+                        textExampleTranslate: 'Когда трюк пошел не так, человек получил множественные травмы',
                         id: 2034,
                         word: 'multiple',
                         wordTranslate: 'несколько',
@@ -13194,8 +12903,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/12_2036_example.mp3',
                         textExample: 'This area of town is notorious for gang activity',
-                        textExampleTranslate:
-                            'Этот район города известен своей бандитской активностью',
+                        textExampleTranslate: 'Этот район города известен своей бандитской активностью',
                         id: 2036,
                         word: 'notorious',
                         wordTranslate: 'печально известный',
@@ -13247,18 +12955,15 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/13_2045_example.mp3',
                         textExample: 'Two weeks after planting the seed, a small bud appeared',
-                        textExampleTranslate:
-                            'Через две недели после посадки семян появился маленький бутон',
+                        textExampleTranslate: 'Через две недели после посадки семян появился маленький бутон',
                         id: 2045,
                         word: 'bud',
                         wordTranslate: 'бутон',
                     },
                     {
                         audioExample: 'files/13_2049_example.mp3',
-                        textExample:
-                            'After the flood, several humanitarian organizations offered help',
-                        textExampleTranslate:
-                            'После потопа несколько гуманитарных организаций предложили помощь',
+                        textExample: 'After the flood, several humanitarian organizations offered help',
+                        textExampleTranslate: 'После потопа несколько гуманитарных организаций предложили помощь',
                         id: 2049,
                         word: 'humanitarian',
                         wordTranslate: 'гуманитарный',
@@ -13274,8 +12979,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/13_2055_example.mp3',
                         textExample: 'Leonardo da Vinci was a popular artist of the Renaissance',
-                        textExampleTranslate:
-                            'Леонардо да Винчи был популярным художником эпохи Возрождения',
+                        textExampleTranslate: 'Леонардо да Винчи был популярным художником эпохи Возрождения',
                         id: 2055,
                         word: 'Renaissance',
                         wordTranslate: 'эпоха Возрождения',
@@ -13318,20 +13022,16 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/14_2062_example.mp3',
-                        textExample:
-                            'They found archeological evidence of an ancient species of man',
-                        textExampleTranslate:
-                            'Они нашли археологические свидетельства древнего вида человека',
+                        textExample: 'They found archeological evidence of an ancient species of man',
+                        textExampleTranslate: 'Они нашли археологические свидетельства древнего вида человека',
                         id: 2062,
                         word: 'archeological',
                         wordTranslate: 'археологический',
                     },
                     {
                         audioExample: 'files/14_2063_example.mp3',
-                        textExample:
-                            'He studied archeology to learn more about ancient Egyptian culture',
-                        textExampleTranslate:
-                            'Он изучал археологию, чтобы узнать больше о древнеегипетской культуре',
+                        textExample: 'He studied archeology to learn more about ancient Egyptian culture',
+                        textExampleTranslate: 'Он изучал археологию, чтобы узнать больше о древнеегипетской культуре',
                         id: 2063,
                         word: 'archeology',
                         wordTranslate: 'археология',
@@ -13347,8 +13047,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/14_2068_example.mp3',
                         textExample: 'The boy’s story didn’t correspond with his mother’s version',
-                        textExampleTranslate:
-                            'История мальчика не соответствовала версии его матери',
+                        textExampleTranslate: 'История мальчика не соответствовала версии его матери',
                         id: 2068,
                         word: 'correspond',
                         wordTranslate: 'соответствовать',
@@ -13363,8 +13062,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/14_2071_example.mp3',
-                        textExample:
-                            'Experts say that credit card fraud increases around the holidays',
+                        textExample: 'Experts say that credit card fraud increases around the holidays',
                         textExampleTranslate:
                             'Эксперты говорят, что мошенничество с кредитными картами увеличивается в праздничные дни',
                         id: 2071,
@@ -13381,10 +13079,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/14_2077_example.mp3',
-                        textExample:
-                            'He was a proponent of using environmentally-friendly products',
-                        textExampleTranslate:
-                            'Он был сторонником использования экологически чистых продуктов',
+                        textExample: 'He was a proponent of using environmentally-friendly products',
+                        textExampleTranslate: 'Он был сторонником использования экологически чистых продуктов',
                         id: 2077,
                         word: 'proponent',
                         wordTranslate: 'инициатор',
@@ -13436,8 +13132,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_2085_example.mp3',
                         textExample: 'I compressed my clothes to fit into a single suitcase',
-                        textExampleTranslate:
-                            'Я сжал свою одежду, чтобы поместиться в один чемодан',
+                        textExampleTranslate: 'Я сжал свою одежду, чтобы поместиться в один чемодан',
                         id: 2085,
                         word: 'compress',
                         wordTranslate: 'компресс',
@@ -13445,8 +13140,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_2087_example.mp3',
                         textExample: 'I worked the equivalent of sixty hours this week',
-                        textExampleTranslate:
-                            'Я работал эквивалент шестьдесят часов на этой неделе',
+                        textExampleTranslate: 'Я работал эквивалент шестьдесят часов на этой неделе',
                         id: 2087,
                         word: 'equivalent',
                         wordTranslate: 'эквивалент',
@@ -13462,8 +13156,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_2090_example.mp3',
                         textExample: 'I only tell my secrets to my most intimate friends',
-                        textExampleTranslate:
-                            'Я делюсь своими секретами только с самыми близкими друзьями',
+                        textExampleTranslate: 'Я делюсь своими секретами только с самыми близкими друзьями',
                         id: 2090,
                         word: 'intimate',
                         wordTranslate: 'намекнуть',
@@ -13471,8 +13164,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_2092_example.mp3',
                         textExample: 'If you exercise every day, your metabolism speeds up',
-                        textExampleTranslate:
-                            'Если вы тренируетесь каждый день, ваш метаболизм ускоряется',
+                        textExampleTranslate: 'Если вы тренируетесь каждый день, ваш метаболизм ускоряется',
                         id: 2092,
                         word: 'metabolism',
                         wordTranslate: 'метаболизм',
@@ -13488,8 +13180,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_2098_example.mp3',
                         textExample: 'The boy-to-girl ratio is one to three',
-                        textExampleTranslate:
-                            'Соотношение мальчиков и девочек составляет один к трем',
+                        textExampleTranslate: 'Соотношение мальчиков и девочек составляет один к трем',
                         id: 2098,
                         word: 'ratio',
                         wordTranslate: 'отношение',
@@ -13516,8 +13207,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/16_2104_example.mp3',
-                        textExample:
-                            'Researchers at the biotechnology company use bacteria to make medicine',
+                        textExample: 'Researchers at the biotechnology company use bacteria to make medicine',
                         textExampleTranslate:
                             'Исследователи в биотехнологической компании используют бактерии для производства лекарств',
                         id: 2104,
@@ -13526,18 +13216,15 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/16_2106_example.mp3',
-                        textExample:
-                            'The companies formed a coalition to make trade less expensive',
-                        textExampleTranslate:
-                            'Компании создали коалицию, чтобы сделать торговлю менее дорогой',
+                        textExample: 'The companies formed a coalition to make trade less expensive',
+                        textExampleTranslate: 'Компании создали коалицию, чтобы сделать торговлю менее дорогой',
                         id: 2106,
                         word: 'coalition',
                         wordTranslate: 'коалиция',
                     },
                     {
                         audioExample: 'files/16_2110_example.mp3',
-                        textExample:
-                            'Canyons are formed because rivers of fast-moving water caused erosion',
+                        textExample: 'Canyons are formed because rivers of fast-moving water caused erosion',
                         textExampleTranslate:
                             'Каньоны образовались из-за того, что реки быстро движущейся воды вызвали эрозию',
                         id: 2110,
@@ -13547,8 +13234,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/16_2114_example.mp3',
                         textExample: 'My father’s company manufactures steel building materials',
-                        textExampleTranslate:
-                            'Компания моего отца производит стальные строительные материалы',
+                        textExampleTranslate: 'Компания моего отца производит стальные строительные материалы',
                         id: 2114,
                         word: 'manufacture',
                         wordTranslate: 'производство',
@@ -13556,8 +13242,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/16_2117_example.mp3',
                         textExample: 'Bees use nectar to make their honey',
-                        textExampleTranslate:
-                            'Пчелы используют нектар для приготовления своего меда',
+                        textExampleTranslate: 'Пчелы используют нектар для приготовления своего меда',
                         id: 2117,
                         word: 'nectar',
                         wordTranslate: 'нектар',
@@ -13573,8 +13258,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/17_2121_example.mp3',
                         textExample: 'The store had few customers and soon went bankrupt',
-                        textExampleTranslate:
-                            'У магазина было мало покупателей, и вскоре он обанкротился',
+                        textExampleTranslate: 'У магазина было мало покупателей, и вскоре он обанкротился',
                         id: 2121,
                         word: 'bankrupt',
                         wordTranslate: 'банкрот',
@@ -13590,8 +13274,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/17_2127_example.mp3',
                         textExample: 'Most homes are furnished with tables, chairs, and beds',
-                        textExampleTranslate:
-                            'Большинство домов обставлены столами, стульями и кроватями',
+                        textExampleTranslate: 'Большинство домов обставлены столами, стульями и кроватями',
                         id: 2127,
                         word: 'furnish',
                         wordTranslate: 'отделка',
@@ -13611,8 +13294,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/17_2135_example.mp3',
                         textExample: 'When business increased, we had to hire more personnel',
-                        textExampleTranslate:
-                            'Когда бизнес увеличился, нам пришлось нанять больше персонала',
+                        textExampleTranslate: 'Когда бизнес увеличился, нам пришлось нанять больше персонала',
                         id: 2135,
                         word: 'personnel',
                         wordTranslate: 'персонал',
@@ -13636,8 +13318,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/18_2145_example.mp3',
                         textExample: 'Becoming an astronaut is a fantasy shared by many children',
-                        textExampleTranslate:
-                            'Стать космонавтом - это фантазия, которую разделяют многие дети',
+                        textExampleTranslate: 'Стать космонавтом - это фантазия, которую разделяют многие дети',
                         id: 2145,
                         word: 'fantasy',
                         wordTranslate: 'фантазия',
@@ -13677,8 +13358,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/18_2160_example.mp3',
                         textExample: 'The sick child needed a heart transplant to live',
-                        textExampleTranslate:
-                            'Больному ребенку нужна была пересадка сердца, чтобы жить',
+                        textExampleTranslate: 'Больному ребенку нужна была пересадка сердца, чтобы жить',
                         id: 2160,
                         word: 'transplant',
                         wordTranslate: 'трансплантат',
@@ -13730,8 +13410,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/19_2166_example.mp3',
                         textExample: 'I used the Pythagorean theorem to solve the equation',
-                        textExampleTranslate:
-                            'Я использовал теорему Пифагора для решения уравнения',
+                        textExampleTranslate: 'Я использовал теорему Пифагора для решения уравнения',
                         id: 2166,
                         word: 'equation',
                         wordTranslate: 'уравнение',
@@ -13739,8 +13418,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/19_2173_example.mp3',
                         textExample: 'The old mariner used his telescope to find the shore',
-                        textExampleTranslate:
-                            'Старый моряк использовал свой телескоп, чтобы найти берег',
+                        textExampleTranslate: 'Старый моряк использовал свой телескоп, чтобы найти берег',
                         id: 2173,
                         word: 'mariner',
                         wordTranslate: 'моряк',
@@ -13756,8 +13434,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/19_2176_example.mp3',
                         textExample: 'Poor results threaten the permanence of the new system',
-                        textExampleTranslate:
-                            'Плохие результаты угрожают постоянству новой системы',
+                        textExampleTranslate: 'Плохие результаты угрожают постоянству новой системы',
                         id: 2176,
                         word: 'permanence',
                         wordTranslate: 'неизменность',
@@ -13772,10 +13449,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/20_2181_example.mp3',
-                        textExample:
-                            'That group of people making animal noises sounds completely absurd',
-                        textExampleTranslate:
-                            'Эта группа людей, издающих звуки животных, звучит совершенно абсурдно',
+                        textExample: 'That group of people making animal noises sounds completely absurd',
+                        textExampleTranslate: 'Эта группа людей, издающих звуки животных, звучит совершенно абсурдно',
                         id: 2181,
                         word: 'absurd',
                         wordTranslate: 'абсурдным',
@@ -13783,8 +13458,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/20_2182_example.mp3',
                         textExample: 'Most members of the aristocracy were very well fed',
-                        textExampleTranslate:
-                            'Большинство членов аристократии были очень хорошо накормлены',
+                        textExampleTranslate: 'Большинство членов аристократии были очень хорошо накормлены',
                         id: 2182,
                         word: 'aristocracy',
                         wordTranslate: 'аристократия',
@@ -13803,10 +13477,8 @@ export const wordCollection: WordCollection[] = [
                 words: [
                     {
                         audioExample: 'files/20_2184_example.mp3',
-                        textExample:
-                            'Everyone wore their best attire to the president’s daughter’s wedding',
-                        textExampleTranslate:
-                            'Все носили свои лучшие наряды на свадьбу дочери президента',
+                        textExample: 'Everyone wore their best attire to the president’s daughter’s wedding',
+                        textExampleTranslate: 'Все носили свои лучшие наряды на свадьбу дочери президента',
                         id: 2184,
                         word: 'attire',
                         wordTranslate: 'наряд',
@@ -13830,8 +13502,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/20_2191_example.mp3',
                         textExample: 'Football players wear shoulder pads to keep them safe',
-                        textExampleTranslate:
-                            'Футболисты носят наплечники, чтобы держать их в безопасности',
+                        textExampleTranslate: 'Футболисты носят наплечники, чтобы держать их в безопасности',
                         id: 2191,
                         word: 'pad',
                         wordTranslate: 'подушка',
@@ -13839,8 +13510,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/20_2192_example.mp3',
                         textExample: 'Ladies and gentlemen, take your partners for the next dance',
-                        textExampleTranslate:
-                            'Дамы и господа, возьмите ваших партнеров для следующего танца',
+                        textExampleTranslate: 'Дамы и господа, возьмите ваших партнеров для следующего танца',
                         id: 2192,
                         word: 'partner',
                         wordTranslate: 'партнер',
@@ -13848,16 +13518,14 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/20_2194_example.mp3',
                         textExample: 'The introduction of the guests followed the normal protocol',
-                        textExampleTranslate:
-                            'Представление гостей следовало нормальному протоколу',
+                        textExampleTranslate: 'Представление гостей следовало нормальному протоколу',
                         id: 2194,
                         word: 'protocol',
                         wordTranslate: 'протокол',
                     },
                     {
                         audioExample: 'files/20_2195_example.mp3',
-                        textExample:
-                            'The service from the less-than-reputable company made her angry',
+                        textExample: 'The service from the less-than-reputable company made her angry',
                         textExampleTranslate: 'Сервис от менее уважаемой компании разозлил ее',
                         id: 2195,
                         word: 'reputable',
@@ -13873,8 +13541,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/21_2203_example.mp3',
-                        textExample:
-                            'Our manager will meet our rival company’s counterpart later today',
+                        textExample: 'Our manager will meet our rival company’s counterpart later today',
                         textExampleTranslate:
                             'Наш менеджер встретится с коллегой нашей конкурирующей компании позже сегодня',
                         id: 2203,
@@ -13904,8 +13571,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/21_2208_example.mp3',
                         textExample: 'Alice wants to write for a gazette when she’s older',
-                        textExampleTranslate:
-                            'Алиса хочет написать для газеты, когда она станет старше',
+                        textExampleTranslate: 'Алиса хочет написать для газеты, когда она станет старше',
                         id: 2208,
                         word: 'gazette',
                         wordTranslate: 'вестник',
@@ -13921,8 +13587,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/21_2211_example.mp3',
                         textExample: 'There had been a major shift in government policy',
-                        textExampleTranslate:
-                            'Произошло серьезное изменение в правительственной политике',
+                        textExampleTranslate: 'Произошло серьезное изменение в правительственной политике',
                         id: 2211,
                         word: 'major',
                         wordTranslate: 'крупный',
@@ -13954,8 +13619,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/21_2218_example.mp3',
                         textExample: 'They enjoyed theorizing about how things worked',
-                        textExampleTranslate:
-                            'Они наслаждались рассуждениями о том, как все работает',
+                        textExampleTranslate: 'Они наслаждались рассуждениями о том, как все работает',
                         id: 2218,
                         word: 'theorize',
                         wordTranslate: 'теоретизировать',
@@ -13963,8 +13627,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/21_2220_example.mp3',
                         textExample: 'Henry uses vigorous exercise to keep himself in shape',
-                        textExampleTranslate:
-                            'Генри использует энергичные упражнения, чтобы держать себя в форме',
+                        textExampleTranslate: 'Генри использует энергичные упражнения, чтобы держать себя в форме',
                         id: 2220,
                         word: 'vigorous',
                         wordTranslate: 'энергичный',
@@ -13979,10 +13642,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/22_2222_example.mp3',
-                        textExample:
-                            'Agatha couldn’t play the piano anymore because of her arthritis',
-                        textExampleTranslate:
-                            'Агата больше не могла играть на пианино из-за своего артрита',
+                        textExample: 'Agatha couldn’t play the piano anymore because of her arthritis',
+                        textExampleTranslate: 'Агата больше не могла играть на пианино из-за своего артрита',
                         id: 2222,
                         word: 'arthritis',
                         wordTranslate: 'артрит',
@@ -14018,8 +13679,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/22_2226_example.mp3',
                         textExample: 'The magic looked very real, but it was only deception',
-                        textExampleTranslate:
-                            'Магия выглядела очень реальной, но это был только обман',
+                        textExampleTranslate: 'Магия выглядела очень реальной, но это был только обман',
                         id: 2226,
                         word: 'deception',
                         wordTranslate: 'обман',
@@ -14051,10 +13711,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/22_2230_example.mp3',
-                        textExample:
-                            'Bonnie was gratified after receiving her gift from her parents',
-                        textExampleTranslate:
-                            'Бонни была удовлетворена после получения подарка от родителей',
+                        textExample: 'Bonnie was gratified after receiving her gift from her parents',
+                        textExampleTranslate: 'Бонни была удовлетворена после получения подарка от родителей',
                         id: 2230,
                         word: 'gratify',
                         wordTranslate: 'ублажать',
@@ -14069,10 +13727,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/22_2236_example.mp3',
-                        textExample:
-                            'The psychotic patient believed he saw things that weren’t real',
-                        textExampleTranslate:
-                            'Психотический пациент верил, что видел вещи, которые не были реальны',
+                        textExample: 'The psychotic patient believed he saw things that weren’t real',
+                        textExampleTranslate: 'Психотический пациент верил, что видел вещи, которые не были реальны',
                         id: 2236,
                         word: 'psychotic',
                         wordTranslate: 'психотическое',
@@ -14124,8 +13780,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/23_2246_example.mp3',
                         textExample: 'Denise and Diana have been inseparable since they first met',
-                        textExampleTranslate:
-                            'Дениз и Диана были неразлучны с тех пор, как они впервые встретились',
+                        textExampleTranslate: 'Дениз и Диана были неразлучны с тех пор, как они впервые встретились',
                         id: 2246,
                         word: 'inseparable',
                         wordTranslate: 'неотделимы друг от друга',
@@ -14133,8 +13788,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/23_2247_example.mp3',
                         textExample: 'The way to winning debates is to avoid invalid arguments',
-                        textExampleTranslate:
-                            'Путь к победе в дебатах - избежать недопустимых аргументов',
+                        textExampleTranslate: 'Путь к победе в дебатах - избежать недопустимых аргументов',
                         id: 2247,
                         word: 'invalid',
                         wordTranslate: 'недействительным',
@@ -14142,8 +13796,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/23_2248_example.mp3',
                         textExample: 'Astronomers use telescopes to magnify faraway stars',
-                        textExampleTranslate:
-                            'Астрономы используют телескопы для увеличения дальних звезд',
+                        textExampleTranslate: 'Астрономы используют телескопы для увеличения дальних звезд',
                         id: 2248,
                         word: 'magnify',
                         wordTranslate: 'увеличить',
@@ -14158,8 +13811,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/23_2255_example.mp3',
-                        textExample:
-                            'Unfortunately, injustice still prevails in the country’s court system',
+                        textExample: 'Unfortunately, injustice still prevails in the country’s court system',
                         textExampleTranslate:
                             'К сожалению, в судебной системе страны по-прежнему царит несправедливость',
                         id: 2255,
@@ -14169,8 +13821,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/23_2256_example.mp3',
                         textExample: 'The pursuit of happiness is a basic human right',
-                        textExampleTranslate:
-                            'Стремление к счастью является основным правом человека',
+                        textExampleTranslate: 'Стремление к счастью является основным правом человека',
                         id: 2256,
                         word: 'pursuit',
                         wordTranslate: 'погоня',
@@ -14178,8 +13829,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/23_2258_example.mp3',
                         textExample: 'Wild animals are very savage when defending their babies',
-                        textExampleTranslate:
-                            'Дикие животные очень дикие, когда защищают своих детей',
+                        textExampleTranslate: 'Дикие животные очень дикие, когда защищают своих детей',
                         id: 2258,
                         word: 'savage',
                         wordTranslate: 'дикарь',
@@ -14198,10 +13848,8 @@ export const wordCollection: WordCollection[] = [
                 words: [
                     {
                         audioExample: 'files/24_2261_example.mp3',
-                        textExample:
-                            'The group advocated increased spending on education and schools',
-                        textExampleTranslate:
-                            'Группа выступает за увеличение расходов на образование и школы',
+                        textExample: 'The group advocated increased spending on education and schools',
+                        textExampleTranslate: 'Группа выступает за увеличение расходов на образование и школы',
                         id: 2261,
                         word: 'advocate',
                         wordTranslate: 'адвокат',
@@ -14217,8 +13865,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_2265_example.mp3',
                         textExample: 'Fran’s uncle made most of his money trading commodities',
-                        textExampleTranslate:
-                            'Дядя Фрэн сделал большую часть своих денег, торгуя товарами',
+                        textExampleTranslate: 'Дядя Фрэн сделал большую часть своих денег, торгуя товарами',
                         id: 2265,
                         word: 'commodity',
                         wordTranslate: 'товар',
@@ -14242,8 +13889,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_2273_example.mp3',
                         textExample: 'They indicated that things would be likely to improve soon',
-                        textExampleTranslate:
-                            'Они указали, что ситуация, скорее всего, скоро улучшится',
+                        textExampleTranslate: 'Они указали, что ситуация, скорее всего, скоро улучшится',
                         id: 2273,
                         word: 'indicate',
                         wordTranslate: 'показывают',
@@ -14259,8 +13905,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_2277_example.mp3',
                         textExample: 'My boss is in a really bad mood today',
-                        textExampleTranslate:
-                            'У моего босса сегодня действительно плохое настроение',
+                        textExampleTranslate: 'У моего босса сегодня действительно плохое настроение',
                         id: 2277,
                         word: 'mood',
                         wordTranslate: 'настроение',
@@ -14268,8 +13913,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_2278_example.mp3',
                         textExample: 'Some people believe that prophecies are actually true',
-                        textExampleTranslate:
-                            'Некоторые люди верят, что пророчества действительно верны',
+                        textExampleTranslate: 'Некоторые люди верят, что пророчества действительно верны',
                         id: 2278,
                         word: 'prophecy',
                         wordTranslate: 'пророчество',
@@ -14277,8 +13921,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/25_2282_example.mp3',
                         textExample: 'This was a coherent program for solving the flooding problem',
-                        textExampleTranslate:
-                            'Это была последовательная программа для решения проблемы затопления',
+                        textExampleTranslate: 'Это была последовательная программа для решения проблемы затопления',
                         id: 2282,
                         word: 'coherent',
                         wordTranslate: 'последовательный',
@@ -14297,10 +13940,8 @@ export const wordCollection: WordCollection[] = [
                 words: [
                     {
                         audioExample: 'files/25_2283_example.mp3',
-                        textExample:
-                            'When they collaborated, they managed to finish their chores early',
-                        textExampleTranslate:
-                            'Когда они сотрудничали, им удалось закончить свои дела рано',
+                        textExample: 'When they collaborated, they managed to finish their chores early',
+                        textExampleTranslate: 'Когда они сотрудничали, им удалось закончить свои дела рано',
                         id: 2283,
                         word: 'collaborate',
                         wordTranslate: 'сотрудничать',
@@ -14308,8 +13949,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/25_2285_example.mp3',
                         textExample: 'She curbed her anger by listening to a relaxing song',
-                        textExampleTranslate:
-                            'Она сдерживала свой гнев, слушая расслабляющую песню',
+                        textExampleTranslate: 'Она сдерживала свой гнев, слушая расслабляющую песню',
                         id: 2285,
                         word: 'curb',
                         wordTranslate: 'снаряженная',
@@ -14325,8 +13965,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/25_2290_example.mp3',
                         textExample: 'Helping build homes for poor people is very humane',
-                        textExampleTranslate:
-                            'Помогать строить дома для бедных людей очень гуманно',
+                        textExampleTranslate: 'Помогать строить дома для бедных людей очень гуманно',
                         id: 2290,
                         word: 'humane',
                         wordTranslate: 'гуманный',
@@ -14334,8 +13973,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/25_2291_example.mp3',
                         textExample: 'After he lost his job, he became very needy',
-                        textExampleTranslate:
-                            'После того, как он потерял работу, он стал очень нуждающимся',
+                        textExampleTranslate: 'После того, как он потерял работу, он стал очень нуждающимся',
                         id: 2291,
                         word: 'needy',
                         wordTranslate: 'нуждающимся',
@@ -14359,8 +13997,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_2304_example.mp3',
                         textExample: 'The lake was contaminated when pollutants entered the water',
-                        textExampleTranslate:
-                            'Озеро было загрязнено при попадании загрязняющих веществ в воду',
+                        textExampleTranslate: 'Озеро было загрязнено при попадании загрязняющих веществ в воду',
                         id: 2304,
                         word: 'contaminate',
                         wordTranslate: 'загрязнить',
@@ -14368,18 +14005,15 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_2305_example.mp3',
                         textExample: 'Your snack has a deficiency of any real nutrients',
-                        textExampleTranslate:
-                            'Ваша закуска имеет дефицит каких-либо реальных питательных веществ',
+                        textExampleTranslate: 'Ваша закуска имеет дефицит каких-либо реальных питательных веществ',
                         id: 2305,
                         word: 'deficiency',
                         wordTranslate: 'дефицит',
                     },
                     {
                         audioExample: 'files/26_2306_example.mp3',
-                        textExample:
-                            'The government placed a strong emphasis on educational reform',
-                        textExampleTranslate:
-                            'Правительство уделяло большое внимание реформе образования',
+                        textExample: 'The government placed a strong emphasis on educational reform',
+                        textExampleTranslate: 'Правительство уделяло большое внимание реформе образования',
                         id: 2306,
                         word: 'emphasis',
                         wordTranslate: 'акцент',
@@ -14407,8 +14041,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_2308_example.mp3',
                         textExample: 'Smoking cigarettes poses many health hazards',
-                        textExampleTranslate:
-                            'Курение сигарет создает много опасностей для здоровья',
+                        textExampleTranslate: 'Курение сигарет создает много опасностей для здоровья',
                         id: 2308,
                         word: 'hazard',
                         wordTranslate: 'опасность',
@@ -14439,8 +14072,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/26_2314_example.mp3',
-                        textExample:
-                            'That department is responsible for the provision of emergency supplies',
+                        textExample: 'That department is responsible for the provision of emergency supplies',
                         textExampleTranslate:
                             'Этот департамент отвечает за предоставление предметов первой необходимости',
                         id: 2314,
@@ -14466,8 +14098,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_2319_example.mp3',
                         textExample: 'Her method of solving the math problem seemed viable',
-                        textExampleTranslate:
-                            'Ее метод решения математической задачи казался жизнеспособным',
+                        textExampleTranslate: 'Ее метод решения математической задачи казался жизнеспособным',
                         id: 2319,
                         word: 'viable',
                         wordTranslate: 'жизнеспособный',
@@ -14475,8 +14106,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_2320_example.mp3',
                         textExample: 'Many people attended the voluntary boat safety class',
-                        textExampleTranslate:
-                            'Многие люди посещали добровольный класс безопасности лодки',
+                        textExampleTranslate: 'Многие люди посещали добровольный класс безопасности лодки',
                         id: 2320,
                         word: 'voluntary',
                         wordTranslate: 'добровольное',
@@ -14503,10 +14133,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/27_2331_example.mp3',
-                        textExample:
-                            'During a lunar eclipse, Earth’s shadow darkens the moon’s surface',
-                        textExampleTranslate:
-                            'Во время лунного затмения тень Земли затемняет поверхность луны',
+                        textExample: 'During a lunar eclipse, Earth’s shadow darkens the moon’s surface',
+                        textExampleTranslate: 'Во время лунного затмения тень Земли затемняет поверхность луны',
                         id: 2331,
                         word: 'lunar',
                         wordTranslate: 'лунный',
@@ -14522,8 +14150,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/27_2335_example.mp3',
                         textExample: 'The doctor said the patient might have a psychiatric problem',
-                        textExampleTranslate:
-                            'Врач сказал, что у пациента может быть психиатрическая проблема',
+                        textExampleTranslate: 'Врач сказал, что у пациента может быть психиатрическая проблема',
                         id: 2335,
                         word: 'psychiatric',
                         wordTranslate: 'психиатрические',
@@ -14548,8 +14175,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/28_2345_example.mp3',
                         textExample: 'Turn the screw clockwise to tighten it',
-                        textExampleTranslate:
-                            'Поверните винт по часовой стрелке, чтобы затянуть его',
+                        textExampleTranslate: 'Поверните винт по часовой стрелке, чтобы затянуть его',
                         id: 2345,
                         word: 'clockwise',
                         wordTranslate: 'по часовой стрелке',
@@ -14608,10 +14234,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/28_2358_example.mp3',
-                        textExample:
-                            'There are big differences in family structure in different cultures',
-                        textExampleTranslate:
-                            'Существуют большие различия в структуре семьи в разных культурах',
+                        textExample: 'There are big differences in family structure in different cultures',
+                        textExampleTranslate: 'Существуют большие различия в структуре семьи в разных культурах',
                         id: 2358,
                         word: 'structure',
                         wordTranslate: 'структура',
@@ -14627,8 +14251,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_2364_example.mp3',
                         textExample: 'The United States exports many cereals and grains',
-                        textExampleTranslate:
-                            'Соединенные Штаты экспортируют много зерновых и зерновых',
+                        textExampleTranslate: 'Соединенные Штаты экспортируют много зерновых и зерновых',
                         id: 2364,
                         word: 'export',
                         wordTranslate: 'экспорт',
@@ -14636,16 +14259,14 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_2365_example.mp3',
                         textExample: 'The engine put unpleasant, black fumes into the air',
-                        textExampleTranslate:
-                            'Двигатель выбрасывает неприятные, черные пары в воздух',
+                        textExampleTranslate: 'Двигатель выбрасывает неприятные, черные пары в воздух',
                         id: 2365,
                         word: 'fume',
                         wordTranslate: 'дымить',
                     },
                     {
                         audioExample: 'files/29_2370_example.mp3',
-                        textExample:
-                            'The organization is concerned with the overpopulation of the world',
+                        textExample: 'The organization is concerned with the overpopulation of the world',
                         textExampleTranslate: 'Организация обеспокоена перенаселением мира',
                         id: 2370,
                         word: 'overpopulation',
@@ -14654,8 +14275,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_2371_example.mp3',
                         textExample: 'He quickly established a patent for his brilliant invention',
-                        textExampleTranslate:
-                            'Он быстро установил патент на свое блестящее изобретение',
+                        textExampleTranslate: 'Он быстро установил патент на свое блестящее изобретение',
                         id: 2371,
                         word: 'patent',
                         wordTranslate: 'патент',
@@ -14663,8 +14283,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_2372_example.mp3',
                         textExample: 'The team was penalized when they broke the rules',
-                        textExampleTranslate:
-                            'Команда была оштрафована, когда они нарушили правила',
+                        textExampleTranslate: 'Команда была оштрафована, когда они нарушили правила',
                         id: 2372,
                         word: 'penalize',
                         wordTranslate: 'оштрафовать',
@@ -14672,8 +14291,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_2373_example.mp3',
                         textExample: 'The petroleum at that factory is used to make gasoline',
-                        textExampleTranslate:
-                            'Нефть на этом заводе используется для производства бензина',
+                        textExampleTranslate: 'Нефть на этом заводе используется для производства бензина',
                         id: 2373,
                         word: 'petroleum',
                         wordTranslate: 'нефть',
@@ -14714,8 +14332,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/01_2404_example.mp3',
                         textExample: 'Mina combined peanut butter and jelly to make a sandwich',
-                        textExampleTranslate:
-                            'Мина объединила арахисовое масло и желе, чтобы сделать бутерброд',
+                        textExampleTranslate: 'Мина объединила арахисовое масло и желе, чтобы сделать бутерброд',
                         id: 2404,
                         word: 'combine',
                         wordTranslate: 'объединить',
@@ -14807,8 +14424,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/02_2424_example.mp3',
                         textExample: 'I recycle everything I can, so my conscience is clear!',
-                        textExampleTranslate:
-                            'Я перерабатываю все, что могу, поэтому моя совесть чиста!',
+                        textExampleTranslate: 'Я перерабатываю все, что могу, поэтому моя совесть чиста!',
                         id: 2424,
                         word: 'conscience',
                         wordTranslate: 'совесть',
@@ -14848,8 +14464,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/02_2431_example.mp3',
                         textExample: 'Many people in poor countries cook on kerosene stoves',
-                        textExampleTranslate:
-                            'Многие люди в бедных странах готовят на керосиновых печах',
+                        textExampleTranslate: 'Многие люди в бедных странах готовят на керосиновых печах',
                         id: 2431,
                         word: 'kerosene',
                         wordTranslate: 'керосин',
@@ -14865,8 +14480,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/02_2436_example.mp3',
                         textExample: 'We marked our property by placing stakes into the ground',
-                        textExampleTranslate:
-                            'Мы пометили нашу собственность, поставив колья в землю',
+                        textExampleTranslate: 'Мы пометили нашу собственность, поставив колья в землю',
                         id: 2436,
                         word: 'stake',
                         wordTranslate: 'доля',
@@ -14926,8 +14540,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_2444_example.mp3',
                         textExample: 'You should beware of driving fast on wet roads',
-                        textExampleTranslate:
-                            'Вам следует остерегаться быстрой езды по мокрым дорогам',
+                        textExampleTranslate: 'Вам следует остерегаться быстрой езды по мокрым дорогам',
                         id: 2444,
                         word: 'beware',
                         wordTranslate: 'берегись',
@@ -14935,8 +14548,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_2455_example.mp3',
                         textExample: 'In the US, baseball is considered a national pastime',
-                        textExampleTranslate:
-                            'В США бейсбол считается национальным времяпрепровождением',
+                        textExampleTranslate: 'В США бейсбол считается национальным времяпрепровождением',
                         id: 2455,
                         word: 'pastime',
                         wordTranslate: 'времяпрепровождение',
@@ -14944,8 +14556,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_2460_example.mp3',
                         textExample: 'She tormented her little brother by taking his favorite toy',
-                        textExampleTranslate:
-                            'Она мучила своего младшего брата, забирая его любимую игрушку',
+                        textExampleTranslate: 'Она мучила своего младшего брата, забирая его любимую игрушку',
                         id: 2460,
                         word: 'torment',
                         wordTranslate: 'мучение',
@@ -14997,8 +14608,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/04_2472_example.mp3',
                         textExample: 'The man became cynical after being lied to many times',
-                        textExampleTranslate:
-                            'Человек стал циничным после того, как его много раз обманули',
+                        textExampleTranslate: 'Человек стал циничным после того, как его много раз обманули',
                         id: 2472,
                         word: 'cynical',
                         wordTranslate: 'циничным',
@@ -15006,8 +14616,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/04_2473_example.mp3',
                         textExample: 'I looked up at the dome to admire its beauty',
-                        textExampleTranslate:
-                            'Я посмотрел на купол, чтобы полюбоваться его красотой',
+                        textExampleTranslate: 'Я посмотрел на купол, чтобы полюбоваться его красотой',
                         id: 2473,
                         word: 'dome',
                         wordTranslate: 'купол',
@@ -15015,8 +14624,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/04_2477_example.mp3',
                         textExample: 'The young girl would often harass her baby brother',
-                        textExampleTranslate:
-                            'Молодая девушка часто изводила своего младшего брата',
+                        textExampleTranslate: 'Молодая девушка часто изводила своего младшего брата',
                         id: 2477,
                         word: 'harass',
                         wordTranslate: 'харассы',
@@ -15024,8 +14632,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_2481_example.mp3',
                         textExample: 'Wait here awhile, and I’ll bring some tea',
-                        textExampleTranslate:
-                            'Подождите здесь некоторое время, и я принесу немного чая',
+                        textExampleTranslate: 'Подождите здесь некоторое время, и я принесу немного чая',
                         id: 2481,
                         word: 'awhile',
                         wordTranslate: 'какое-то время',
@@ -15033,8 +14640,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_2486_example.mp3',
                         textExample: 'Carol fainted because she hadn’t eaten in over a day',
-                        textExampleTranslate:
-                            'Кэрол упала в обморок, потому что она не ела в течение дня',
+                        textExampleTranslate: 'Кэрол упала в обморок, потому что она не ела в течение дня',
                         id: 2486,
                         word: 'faint',
                         wordTranslate: 'слабый',
@@ -15086,8 +14692,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_2496_example.mp3',
                         textExample: 'I did not know what had caused his recent behavior',
-                        textExampleTranslate:
-                            'Я не знал, что послужило причиной его недавнего поведения',
+                        textExampleTranslate: 'Я не знал, что послужило причиной его недавнего поведения',
                         id: 2496,
                         word: 'recent',
                         wordTranslate: 'недавнее',
@@ -15103,8 +14708,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_2499_example.mp3',
                         textExample: 'This is an important, formal project and must be typewritten',
-                        textExampleTranslate:
-                            'Это важный, формальный проект и должен быть напечатан',
+                        textExampleTranslate: 'Это важный, формальный проект и должен быть напечатан',
                         id: 2499,
                         word: 'typewritten',
                         wordTranslate: 'машинописный',
@@ -15127,10 +14731,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/06_2503_example.mp3',
-                        textExample:
-                            'The politician’s words were meant to arouse the protestors’ anger',
-                        textExampleTranslate:
-                            'Слова политика должны были вызвать гнев протестующих',
+                        textExample: 'The politician’s words were meant to arouse the protestors’ anger',
+                        textExampleTranslate: 'Слова политика должны были вызвать гнев протестующих',
                         id: 2503,
                         word: 'arouse',
                         wordTranslate: 'будить',
@@ -15145,10 +14747,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/06_2509_example.mp3',
-                        textExample:
-                            'The bratty child never shows compliance with her mother’s rules',
-                        textExampleTranslate:
-                            'Слабый ребенок никогда не демонстрирует соблюдения правил своей матери',
+                        textExample: 'The bratty child never shows compliance with her mother’s rules',
+                        textExampleTranslate: 'Слабый ребенок никогда не демонстрирует соблюдения правил своей матери',
                         id: 2509,
                         word: 'compliance',
                         wordTranslate: 'соблюдение',
@@ -15184,8 +14784,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/06_2514_example.mp3',
                         textExample: 'Mother Teresa was said to embody goodness and kindness',
-                        textExampleTranslate:
-                            'Говорят, что мать Тереза олицетворяет добро и доброту',
+                        textExampleTranslate: 'Говорят, что мать Тереза олицетворяет добро и доброту',
                         id: 2514,
                         word: 'embody',
                         wordTranslate: 'воплощают',
@@ -15210,8 +14809,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/07_2526_example.mp3',
                         textExample: 'The kids showed Aunt Tess much gratitude for visiting them',
-                        textExampleTranslate:
-                            'Дети выразили тетю Тесс большую благодарность за то, что посетили их',
+                        textExampleTranslate: 'Дети выразили тетю Тесс большую благодарность за то, что посетили их',
                         id: 2526,
                         word: 'gratitude',
                         wordTranslate: 'благодарность',
@@ -15235,8 +14833,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/07_2537_example.mp3',
                         textExample: 'The poor man didn’t have the resources to feed himself',
-                        textExampleTranslate:
-                            'У бедного человека не было ресурсов, чтобы прокормить себя',
+                        textExampleTranslate: 'У бедного человека не было ресурсов, чтобы прокормить себя',
                         id: 2537,
                         word: 'resource',
                         wordTranslate: 'ресурс',
@@ -15252,8 +14849,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/07_2540_example.mp3',
                         textExample: 'The woman was the only witness of the horrible crime',
-                        textExampleTranslate:
-                            'Женщина была единственным свидетелем ужасного преступления',
+                        textExampleTranslate: 'Женщина была единственным свидетелем ужасного преступления',
                         id: 2540,
                         word: 'witness',
                         wordTranslate: 'свидетель',
@@ -15297,8 +14893,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_2545_example.mp3',
                         textExample: 'A thermometer is a device that tells temperature',
-                        textExampleTranslate:
-                            'Термометр - это устройство, которое сообщает температуру',
+                        textExampleTranslate: 'Термометр - это устройство, которое сообщает температуру',
                         id: 2545,
                         word: 'device',
                         wordTranslate: 'устройство',
@@ -15314,8 +14909,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_2547_example.mp3',
                         textExample: 'I was scared, so I gripped my older sister’s hand',
-                        textExampleTranslate:
-                            'Я был напуган, поэтому я схватил руку моей старшей сестры',
+                        textExampleTranslate: 'Я был напуган, поэтому я схватил руку моей старшей сестры',
                         id: 2547,
                         word: 'grip',
                         wordTranslate: 'рукоятка',
@@ -15323,8 +14917,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_2548_example.mp3',
                         textExample: 'The criminal halted when he saw the police coming',
-                        textExampleTranslate:
-                            'Преступник остановился, когда увидел, как идет полиция',
+                        textExampleTranslate: 'Преступник остановился, когда увидел, как идет полиция',
                         id: 2548,
                         word: 'halt',
                         wordTranslate: 'хромать',
@@ -15339,20 +14932,16 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/08_2550_example.mp3',
-                        textExample:
-                            'My friend influenced my decision to attend Terrance University',
-                        textExampleTranslate:
-                            'Мой друг повлиял на мое решение учиться в университете Терранс',
+                        textExample: 'My friend influenced my decision to attend Terrance University',
+                        textExampleTranslate: 'Мой друг повлиял на мое решение учиться в университете Терранс',
                         id: 2550,
                         word: 'influence',
                         wordTranslate: 'оказывать влияние',
                     },
                     {
                         audioExample: 'files/08_2551_example.mp3',
-                        textExample:
-                            'The students learned about different laws during social studies class',
-                        textExampleTranslate:
-                            'Студенты узнали о различных законах на уроках обществознания',
+                        textExample: 'The students learned about different laws during social studies class',
+                        textExampleTranslate: 'Студенты узнали о различных законах на уроках обществознания',
                         id: 2551,
                         word: 'law',
                         wordTranslate: 'закон',
@@ -15419,10 +15008,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/09_2565_example.mp3',
-                        textExample:
-                            'The students got into trouble for defying their teacher’s rules',
-                        textExampleTranslate:
-                            'Студенты попали в беду из-за несоблюдения правил своего учителя',
+                        textExample: 'The students got into trouble for defying their teacher’s rules',
+                        textExampleTranslate: 'Студенты попали в беду из-за несоблюдения правил своего учителя',
                         id: 2565,
                         word: 'defy',
                         wordTranslate: 'бросить вызов',
@@ -15438,8 +15025,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/09_2569_example.mp3',
                         textExample: 'Sandra forgave Peter after he said he was sorry',
-                        textExampleTranslate:
-                            'Сандра простила Петра после того, как он сказал, что сожалел',
+                        textExampleTranslate: 'Сандра простила Петра после того, как он сказал, что сожалел',
                         id: 2569,
                         word: 'forgive',
                         wordTranslate: 'прости',
@@ -15474,10 +15060,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/09_2574_example.mp3',
-                        textExample:
-                            'John is pessimistic. He always thinks something bad will happen',
-                        textExampleTranslate:
-                            'Джон пессимистичен. Он всегда думает, что случится что-то плохое',
+                        textExample: 'John is pessimistic. He always thinks something bad will happen',
+                        textExampleTranslate: 'Джон пессимистичен. Он всегда думает, что случится что-то плохое',
                         id: 2574,
                         word: 'pessimistic',
                         wordTranslate: 'пессимистический',
@@ -15518,8 +15102,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/09_2580_example.mp3',
                         textExample: 'My sister loves horror movies, whereas I prefer comedies',
-                        textExampleTranslate:
-                            'Моя сестра любит фильмы ужасов, а я предпочитаю комедии',
+                        textExampleTranslate: 'Моя сестра любит фильмы ужасов, а я предпочитаю комедии',
                         id: 2580,
                         word: 'whereas',
                         wordTranslate: 'в то время как',
@@ -15534,10 +15117,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/10_2582_example.mp3',
-                        textExample:
-                            'The biologist classified the plant as a completely new species',
-                        textExampleTranslate:
-                            'Биолог классифицировал растение как совершенно новый вид',
+                        textExample: 'The biologist classified the plant as a completely new species',
+                        textExampleTranslate: 'Биолог классифицировал растение как совершенно новый вид',
                         id: 2582,
                         word: 'classify',
                         wordTranslate: 'классифицировать',
@@ -15565,8 +15146,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/10_2585_example.mp3',
                         textExample: 'The men used wood and metal to construct a house',
-                        textExampleTranslate:
-                            'Мужчины использовали дерево и металл, чтобы построить дом',
+                        textExampleTranslate: 'Мужчины использовали дерево и металл, чтобы построить дом',
                         id: 2585,
                         word: 'construct',
                         wordTranslate: 'конструкт',
@@ -15597,8 +15177,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/10_2596_example.mp3',
-                        textExample:
-                            'The government ordered a careful review of the economic situation',
+                        textExample: 'The government ordered a careful review of the economic situation',
                         textExampleTranslate:
                             'Правительство распорядилось провести тщательный анализ экономической ситуации',
                         id: 2596,
@@ -15608,8 +15187,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/10_2599_example.mp3',
                         textExample: 'Meerkats can’t walk like humans, but they can stand upright',
-                        textExampleTranslate:
-                            'Сурикаты не могут ходить как люди, но они могут стоять прямо',
+                        textExampleTranslate: 'Сурикаты не могут ходить как люди, но они могут стоять прямо',
                         id: 2599,
                         word: 'upright',
                         wordTranslate: 'вертикально',
@@ -15661,8 +15239,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/11_2607_example.mp3',
                         textExample: 'Ancient Mexican culture is renowned for its architecture',
-                        textExampleTranslate:
-                            'Древняя мексиканская культура славится своей архитектурой',
+                        textExampleTranslate: 'Древняя мексиканская культура славится своей архитектурой',
                         id: 2607,
                         word: 'culture',
                         wordTranslate: 'культура',
@@ -15670,8 +15247,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/11_2608_example.mp3',
                         textExample: 'The air force works in defense of its country',
-                        textExampleTranslate:
-                            'Военно-воздушные силы работают в защиту своей страны',
+                        textExampleTranslate: 'Военно-воздушные силы работают в защиту своей страны',
                         id: 2608,
                         word: 'defense',
                         wordTranslate: 'оборона',
@@ -15711,8 +15287,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/12_2624_example.mp3',
                         textExample: 'He made a bid to become the university’s next president',
-                        textExampleTranslate:
-                            'Он сделал ставку, чтобы стать следующим президентом университета',
+                        textExampleTranslate: 'Он сделал ставку, чтобы стать следующим президентом университета',
                         id: 2624,
                         word: 'bid',
                         wordTranslate: 'ставки',
@@ -15812,8 +15387,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/13_2645_example.mp3',
                         textExample: 'Gail charmed everyone with her humorous stories',
-                        textExampleTranslate:
-                            'Гейл очаровала всех своими юмористическими историями',
+                        textExampleTranslate: 'Гейл очаровала всех своими юмористическими историями',
                         id: 2645,
                         word: 'charm',
                         wordTranslate: 'очарование',
@@ -15829,8 +15403,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/13_2647_example.mp3',
                         textExample: 'The factory produces a wide range of high-tech equipment',
-                        textExampleTranslate:
-                            'Завод производит широкий спектр высокотехнологичного оборудования',
+                        textExampleTranslate: 'Завод производит широкий спектр высокотехнологичного оборудования',
                         id: 2647,
                         word: 'equipment',
                         wordTranslate: 'оборудование',
@@ -15882,8 +15455,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/13_2657_example.mp3',
                         textExample: 'The delivery company uses large vans to deliver packages',
-                        textExampleTranslate:
-                            'Компания доставки использует большие фургоны для доставки посылок',
+                        textExampleTranslate: 'Компания доставки использует большие фургоны для доставки посылок',
                         id: 2657,
                         word: 'van',
                         wordTranslate: 'ван',
@@ -15958,8 +15530,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/14_2671_example.mp3',
-                        textExample:
-                            'After arguing, the two friends were reconciled with each other',
+                        textExample: 'After arguing, the two friends were reconciled with each other',
                         textExampleTranslate: 'После ссоры двое друзей помирились друг с другом',
                         id: 2671,
                         word: 'reconcile',
@@ -16000,8 +15571,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_2682_example.mp3',
                         textExample: 'She always applies makeup to her face before going outside',
-                        textExampleTranslate:
-                            'Она всегда наносит макияж на лицо перед выходом на улицу',
+                        textExampleTranslate: 'Она всегда наносит макияж на лицо перед выходом на улицу',
                         id: 2682,
                         word: 'apply',
                         wordTranslate: 'применять',
@@ -16045,8 +15615,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_2686_example.mp3',
                         textExample: 'The workers complained that they were being treated unfairly',
-                        textExampleTranslate:
-                            'Рабочие жаловались на несправедливое обращение с ними',
+                        textExampleTranslate: 'Рабочие жаловались на несправедливое обращение с ними',
                         id: 2686,
                         word: 'complain',
                         wordTranslate: 'пожаловаться',
@@ -16070,8 +15639,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_2692_example.mp3',
                         textExample: 'When they matured, they became as tall as their parents',
-                        textExampleTranslate:
-                            'Когда они повзрослели, они стали такими же высокими, как их родители',
+                        textExampleTranslate: 'Когда они повзрослели, они стали такими же высокими, как их родители',
                         id: 2692,
                         word: 'mature',
                         wordTranslate: 'зрелый',
@@ -16087,8 +15655,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_2699_example.mp3',
                         textExample: 'Many people want to travel into space by spaceship',
-                        textExampleTranslate:
-                            'Многие люди хотят путешествовать в космос на космическом корабле',
+                        textExampleTranslate: 'Многие люди хотят путешествовать в космос на космическом корабле',
                         id: 2699,
                         word: 'spaceship',
                         wordTranslate: 'космический корабль',
@@ -16132,8 +15699,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/16_2706_example.mp3',
                         textExample: 'The teacher didn’t foresee any problems with his large class',
-                        textExampleTranslate:
-                            'Учитель не предвидел никаких проблем со своим большим классом',
+                        textExampleTranslate: 'Учитель не предвидел никаких проблем со своим большим классом',
                         id: 2706,
                         word: 'foresee',
                         wordTranslate: 'предвидеть',
@@ -16141,8 +15707,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/16_2709_example.mp3',
                         textExample: 'His family helped him when he encountered misfortune',
-                        textExampleTranslate:
-                            'Его семья помогла ему, когда он столкнулся с несчастьем',
+                        textExampleTranslate: 'Его семья помогла ему, когда он столкнулся с несчастьем',
                         id: 2709,
                         word: 'misfortune',
                         wordTranslate: 'несчастье',
@@ -16174,8 +15739,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/17_2721_example.mp3',
                         textExample: 'Antonio’s ailing health caused his head to hurt',
-                        textExampleTranslate:
-                            'Больное здоровье Антонио заставило его голову болеть',
+                        textExampleTranslate: 'Больное здоровье Антонио заставило его голову болеть',
                         id: 2721,
                         word: 'ailing',
                         wordTranslate: 'больной',
@@ -16243,8 +15807,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/18_2744_example.mp3',
                         textExample: 'She got a blank piece of paper to draw on',
-                        textExampleTranslate:
-                            'У нее есть чистый лист бумаги, на котором можно рисовать',
+                        textExampleTranslate: 'У нее есть чистый лист бумаги, на котором можно рисовать',
                         id: 2744,
                         word: 'blank',
                         wordTranslate: 'пустой',
@@ -16252,8 +15815,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/18_2746_example.mp3',
                         textExample: 'He had choir practice every day after school',
-                        textExampleTranslate:
-                            'У него была хоровая практика каждый день после школы',
+                        textExampleTranslate: 'У него была хоровая практика каждый день после школы',
                         id: 2746,
                         word: 'choir',
                         wordTranslate: 'хор',
@@ -16345,8 +15907,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/18_2759_example.mp3',
                         textExample: 'She slammed the book shut after she finished reading it',
-                        textExampleTranslate:
-                            'Она захлопнула книгу после того, как закончила читать',
+                        textExampleTranslate: 'Она захлопнула книгу после того, как закончила читать',
                         id: 2759,
                         word: 'slam',
                         wordTranslate: 'хлопать',
@@ -16369,10 +15930,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/19_2763_example.mp3',
-                        textExample:
-                            'Scientists worry that harmful substances are hurting the atmosphere',
-                        textExampleTranslate:
-                            'Ученые опасаются, что вредные вещества наносят вред атмосфере',
+                        textExample: 'Scientists worry that harmful substances are hurting the atmosphere',
+                        textExampleTranslate: 'Ученые опасаются, что вредные вещества наносят вред атмосфере',
                         id: 2763,
                         word: 'atmosphere',
                         wordTranslate: 'атмосфера',
@@ -16396,8 +15955,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/19_2770_example.mp3',
                         textExample: 'To turn on the lights, just flip this switch',
-                        textExampleTranslate:
-                            'Чтобы включить свет, просто включите этот переключатель',
+                        textExampleTranslate: 'Чтобы включить свет, просто включите этот переключатель',
                         id: 2770,
                         word: 'flip',
                         wordTranslate: 'кувырок',
@@ -16448,10 +16006,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/19_2776_example.mp3',
-                        textExample:
-                            'The president stated his opinion about the world’s health concerns',
-                        textExampleTranslate:
-                            'Президент высказал свое мнение о проблемах здравоохранения в мире',
+                        textExample: 'The president stated his opinion about the world’s health concerns',
+                        textExampleTranslate: 'Президент высказал свое мнение о проблемах здравоохранения в мире',
                         id: 2776,
                         word: 'state',
                         wordTranslate: 'штат',
@@ -16544,8 +16100,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/21_2803_example.mp3',
                         textExample: 'The daily newspaper chronicles local and world events',
-                        textExampleTranslate:
-                            'Ежедневная газета ведет хронику местных и мировых событий',
+                        textExampleTranslate: 'Ежедневная газета ведет хронику местных и мировых событий',
                         id: 2803,
                         word: 'chronicle',
                         wordTranslate: 'летопись',
@@ -16553,8 +16108,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/21_2804_example.mp3',
                         textExample: 'Ancient hunters melted copper to make knives and spears',
-                        textExampleTranslate:
-                            'Древние охотники плавили медь для изготовления ножей и копий',
+                        textExampleTranslate: 'Древние охотники плавили медь для изготовления ножей и копий',
                         id: 2804,
                         word: 'copper',
                         wordTranslate: 'медь',
@@ -16569,10 +16123,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/21_2814_example.mp3',
-                        textExample:
-                            'Their religion taught that people should forgive their enemies',
-                        textExampleTranslate:
-                            'Их религия учит, что люди должны прощать своих врагов',
+                        textExample: 'Their religion taught that people should forgive their enemies',
+                        textExampleTranslate: 'Их религия учит, что люди должны прощать своих врагов',
                         id: 2814,
                         word: 'religion',
                         wordTranslate: 'религия',
@@ -16616,18 +16168,15 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/22_2831_example.mp3',
                         textExample: 'The girls mocked Nancy because she was a new student',
-                        textExampleTranslate:
-                            'Девочки издевались над Нэнси, потому что она была новой ученицей',
+                        textExampleTranslate: 'Девочки издевались над Нэнси, потому что она была новой ученицей',
                         id: 2831,
                         word: 'mock',
                         wordTranslate: 'издеваться',
                     },
                     {
                         audioExample: 'files/22_2832_example.mp3',
-                        textExample:
-                            'The girl’s friend remained neutral while the couple was arguing',
-                        textExampleTranslate:
-                            'Подруга девушки оставалась нейтральной, пока пара спорила',
+                        textExample: 'The girl’s friend remained neutral while the couple was arguing',
+                        textExampleTranslate: 'Подруга девушки оставалась нейтральной, пока пара спорила',
                         id: 2832,
                         word: 'neutral',
                         wordTranslate: 'нейтральный',
@@ -16675,8 +16224,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/23_2846_example.mp3',
                         textExample: 'Smoking is the main factor that causes lung cancer',
-                        textExampleTranslate:
-                            'Курение является основным фактором, вызывающим рак легких',
+                        textExampleTranslate: 'Курение является основным фактором, вызывающим рак легких',
                         id: 2846,
                         word: 'factor',
                         wordTranslate: 'фактор',
@@ -16704,8 +16252,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/23_2848_example.mp3',
                         textExample: 'Understanding the human genome may help cure many diseases',
-                        textExampleTranslate:
-                            'Понимание генома человека может помочь в лечении многих заболеваний',
+                        textExampleTranslate: 'Понимание генома человека может помочь в лечении многих заболеваний',
                         id: 2848,
                         word: 'genome',
                         wordTranslate: 'геном',
@@ -16762,8 +16309,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_2862_example.mp3',
                         textExample: 'I really enjoy cooking, especially Italian food',
-                        textExampleTranslate:
-                            'Мне очень нравится готовить, особенно итальянская еда',
+                        textExampleTranslate: 'Мне очень нравится готовить, особенно итальянская еда',
                         id: 2862,
                         word: 'cooking',
                         wordTranslate: 'приготовление еды',
@@ -16962,10 +16508,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/26_2905_example.mp3',
-                        textExample:
-                            'The famous lighthouse was designated&nbsp;as a historical monument',
-                        textExampleTranslate:
-                            'Знаменитый маяк был обозначен как исторический памятник',
+                        textExample: 'The famous lighthouse was designated&nbsp;as a historical monument',
+                        textExampleTranslate: 'Знаменитый маяк был обозначен как исторический памятник',
                         id: 2905,
                         word: 'designate',
                         wordTranslate: 'назначить',
@@ -16985,8 +16529,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_2908_example.mp3',
                         textExample: 'If you lack energy, try eating better food',
-                        textExampleTranslate:
-                            'Если вам не хватает энергии, попробуйте есть лучшую пищу',
+                        textExampleTranslate: 'Если вам не хватает энергии, попробуйте есть лучшую пищу',
                         id: 2908,
                         word: 'energy',
                         wordTranslate: 'энергия',
@@ -17002,8 +16545,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_2913_example.mp3',
                         textExample: 'He has trouble putting his knowledge into practice',
-                        textExampleTranslate:
-                            'У него проблемы с применением своих знаний на практике',
+                        textExampleTranslate: 'У него проблемы с применением своих знаний на практике',
                         id: 2913,
                         word: 'knowledge',
                         wordTranslate: 'знания',
@@ -17019,8 +16561,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_2915_example.mp3',
                         textExample: 'Increased wages are offset by higher prices for goods',
-                        textExampleTranslate:
-                            'Повышение заработной платы компенсируется повышением цен на товары',
+                        textExampleTranslate: 'Повышение заработной платы компенсируется повышением цен на товары',
                         id: 2915,
                         word: 'offset',
                         wordTranslate: 'смещение',
@@ -17028,8 +16569,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_2917_example.mp3',
                         textExample: 'Her secondhand jeans were a bit faded in the front',
-                        textExampleTranslate:
-                            'Ее подержанные джинсы были немного выцветшими спереди',
+                        textExampleTranslate: 'Ее подержанные джинсы были немного выцветшими спереди',
                         id: 2917,
                         word: 'secondhand',
                         wordTranslate: 'подержанный',
@@ -17045,8 +16585,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_2919_example.mp3',
                         textExample: 'To operate the machine, put your coins into the slot',
-                        textExampleTranslate:
-                            'Чтобы управлять машиной, положите свои монеты в слот',
+                        textExampleTranslate: 'Чтобы управлять машиной, положите свои монеты в слот',
                         id: 2919,
                         word: 'slot',
                         wordTranslate: 'слот',
@@ -17054,8 +16593,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/26_2920_example.mp3',
                         textExample: 'Sam thought of a good tactic to attract more business',
-                        textExampleTranslate:
-                            'Сэм подумал о хорошей тактике, чтобы привлечь больше бизнеса',
+                        textExampleTranslate: 'Сэм подумал о хорошей тактике, чтобы привлечь больше бизнеса',
                         id: 2920,
                         word: 'tactic',
                         wordTranslate: 'тактика',
@@ -17115,8 +16653,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/27_2930_example.mp3',
                         textExample: 'The teacher distributed crayons and markers to her students',
-                        textExampleTranslate:
-                            'Учительница раздавала мелки и маркеры своим ученикам',
+                        textExampleTranslate: 'Учительница раздавала мелки и маркеры своим ученикам',
                         id: 2930,
                         word: 'distribute',
                         wordTranslate: 'распространение',
@@ -17141,8 +16678,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/27_2933_example.mp3',
                         textExample: 'Sometimes federal laws are different from state laws',
-                        textExampleTranslate:
-                            'Иногда федеральные законы отличаются от законов штата',
+                        textExampleTranslate: 'Иногда федеральные законы отличаются от законов штата',
                         id: 2933,
                         word: 'federal',
                         wordTranslate: 'федеральный',
@@ -17186,8 +16722,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/28_2944_example.mp3',
                         textExample: 'A balloon will expand as you blow air into it',
-                        textExampleTranslate:
-                            'Воздушный шар будет расширяться, когда вы будете дуть в него воздухом',
+                        textExampleTranslate: 'Воздушный шар будет расширяться, когда вы будете дуть в него воздухом',
                         id: 2944,
                         word: 'expand',
                         wordTranslate: 'расширить',
@@ -17211,8 +16746,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/28_2947_example.mp3',
                         textExample: 'She was incredulous that monkeys could ever drive a car',
-                        textExampleTranslate:
-                            'Она была недоверчива, что обезьяны могли водить машину',
+                        textExampleTranslate: 'Она была недоверчива, что обезьяны могли водить машину',
                         id: 2947,
                         word: 'incredulous',
                         wordTranslate: 'недоверчивый',
@@ -17252,8 +16786,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/28_2954_example.mp3',
                         textExample: 'A riot broke out after the candidate lost the election',
-                        textExampleTranslate:
-                            'Бунт начался после того, как кандидат проиграл выборы',
+                        textExampleTranslate: 'Бунт начался после того, как кандидат проиграл выборы',
                         id: 2954,
                         word: 'riot',
                         wordTranslate: 'бунт',
@@ -17289,8 +16822,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/28_2960_example.mp3',
                         textExample: 'The weather suddenly worsened, and we had to stay inside',
-                        textExampleTranslate:
-                            'Погода внезапно ухудшилась, и нам пришлось остаться внутри',
+                        textExampleTranslate: 'Погода внезапно ухудшилась, и нам пришлось остаться внутри',
                         id: 2960,
                         word: 'worsen',
                         wordTranslate: 'ухудшить',
@@ -17322,8 +16854,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_2965_example.mp3',
                         textExample: 'Amy’s blue shirt really enhances the color of her eyes',
-                        textExampleTranslate:
-                            'Синяя рубашка Эми действительно улучшает цвет ее глаз',
+                        textExampleTranslate: 'Синяя рубашка Эми действительно улучшает цвет ее глаз',
                         id: 2965,
                         word: 'enhance',
                         wordTranslate: 'усилить',
@@ -17331,16 +16862,14 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_2966_example.mp3',
                         textExample: 'During the medieval era, knights wore protective armor',
-                        textExampleTranslate:
-                            'В эпоху средневековья рыцари носили защитные доспехи',
+                        textExampleTranslate: 'В эпоху средневековья рыцари носили защитные доспехи',
                         id: 2966,
                         word: 'era',
                         wordTranslate: 'эра',
                     },
                     {
                         audioExample: 'files/29_2971_example.mp3',
-                        textExample:
-                            'Mobile phones are convenient because you can use them anywhere',
+                        textExample: 'Mobile phones are convenient because you can use them anywhere',
                         textExampleTranslate:
                             'Мобильные телефоны удобны, потому что вы можете использовать их где угодно',
                         id: 2971,
@@ -17386,8 +16915,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_2977_example.mp3',
                         textExample: 'Using solar energy is good for the environment',
-                        textExampleTranslate:
-                            'Использование солнечной энергии полезно для окружающей среды',
+                        textExampleTranslate: 'Использование солнечной энергии полезно для окружающей среды',
                         id: 2977,
                         word: 'solar',
                         wordTranslate: 'солнечный',
@@ -17411,8 +16939,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/30_2982_example.mp3',
                         textExample: 'This fence shows the boundary between our yard and yours',
-                        textExampleTranslate:
-                            'Этот забор показывает границу между нашим двором и вашим',
+                        textExampleTranslate: 'Этот забор показывает границу между нашим двором и вашим',
                         id: 2982,
                         word: 'boundary',
                         wordTranslate: 'граница',
@@ -17428,8 +16955,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/30_2990_example.mp3',
                         textExample: 'He raises poultry and sells their meat for extra money',
-                        textExampleTranslate:
-                            'Он выращивает птицу и продает их мясо за дополнительные деньги',
+                        textExampleTranslate: 'Он выращивает птицу и продает их мясо за дополнительные деньги',
                         id: 2990,
                         word: 'poultry',
                         wordTranslate: 'птицы',
@@ -17470,8 +16996,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/01_3003_example.mp3',
                         textExample: 'I use biodegradable compost to feed my garden',
-                        textExampleTranslate:
-                            'Я использую биоразлагаемый компост, чтобы кормить свой сад',
+                        textExampleTranslate: 'Я использую биоразлагаемый компост, чтобы кормить свой сад',
                         id: 3003,
                         word: 'biodegradable',
                         wordTranslate: 'биоразлагаемый',
@@ -17479,8 +17004,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/01_3004_example.mp3',
                         textExample: 'Justine brought a boxed gift to the birthday party',
-                        textExampleTranslate:
-                            'Джастин принесла коробочный подарок на день рождения',
+                        textExampleTranslate: 'Джастин принесла коробочный подарок на день рождения',
                         id: 3004,
                         word: 'boxed',
                         wordTranslate: 'боксовый',
@@ -17488,8 +17012,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/01_3005_example.mp3',
                         textExample: 'The gum Malinda swallowed made her choke',
-                        textExampleTranslate:
-                            'Жвачка, которую Малинда проглотила, заставила ее задохнуться',
+                        textExampleTranslate: 'Жвачка, которую Малинда проглотила, заставила ее задохнуться',
                         id: 3005,
                         word: 'choke',
                         wordTranslate: 'удушение',
@@ -17512,10 +17035,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/01_3009_example.mp3',
-                        textExample:
-                            'We planted our garden according to ecologically correct practices',
-                        textExampleTranslate:
-                            'Мы посадили наш сад в соответствии с экологически правильными методами',
+                        textExample: 'We planted our garden according to ecologically correct practices',
+                        textExampleTranslate: 'Мы посадили наш сад в соответствии с экологически правильными методами',
                         id: 3009,
                         word: 'ecologically',
                         wordTranslate: 'экологически',
@@ -17523,8 +17044,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/01_3010_example.mp3',
                         textExample: 'Being shot by the attacker proved fatal to the victim',
-                        textExampleTranslate:
-                            'Застрелен нападавшим оказался смертельным для жертвы',
+                        textExampleTranslate: 'Застрелен нападавшим оказался смертельным для жертвы',
                         id: 3010,
                         word: 'fatal',
                         wordTranslate: 'фатальным',
@@ -17540,8 +17060,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/01_3012_example.mp3',
                         textExample: 'The municipal parking lot downtown can fit one hundred cars',
-                        textExampleTranslate:
-                            'Муниципальная парковка в центре города может вместить сто автомобилей',
+                        textExampleTranslate: 'Муниципальная парковка в центре города может вместить сто автомобилей',
                         id: 3012,
                         word: 'municipal',
                         wordTranslate: 'муниципальный',
@@ -17585,8 +17104,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/02_3031_example.mp3',
                         textExample: 'The Roman Empire flourished in Europe two thousand years ago',
-                        textExampleTranslate:
-                            'Римская империя процветала в Европе две тысячи лет назад',
+                        textExampleTranslate: 'Римская империя процветала в Европе две тысячи лет назад',
                         id: 3031,
                         word: 'flourish',
                         wordTranslate: 'процветать',
@@ -17602,8 +17120,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/02_3039_example.mp3',
                         textExample: 'The Venus de Milo is a famous ancient Greek statue',
-                        textExampleTranslate:
-                            'Венера Милосская - это знаменитая древнегреческая статуя',
+                        textExampleTranslate: 'Венера Милосская - это знаменитая древнегреческая статуя',
                         id: 3039,
                         word: 'statue',
                         wordTranslate: 'статуя',
@@ -17619,8 +17136,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_3041_example.mp3',
                         textExample: 'I felt abnormal this morning, like I was sick',
-                        textExampleTranslate:
-                            'Я чувствовал себя ненормальным сегодня утром, как будто я был болен',
+                        textExampleTranslate: 'Я чувствовал себя ненормальным сегодня утром, как будто я был болен',
                         id: 3041,
                         word: 'abnormal',
                         wordTranslate: 'аномальный',
@@ -17628,8 +17144,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_3043_example.mp3',
                         textExample: 'My apartment is adjacent to a lovely park and playground',
-                        textExampleTranslate:
-                            'Моя квартира находится рядом с прекрасным парком и детской площадкой',
+                        textExampleTranslate: 'Моя квартира находится рядом с прекрасным парком и детской площадкой',
                         id: 3043,
                         word: 'adjacent',
                         wordTranslate: 'смежный',
@@ -17637,8 +17152,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_3044_example.mp3',
                         textExample: 'I used the aluminum foil to wrap the food',
-                        textExampleTranslate:
-                            'Я использовал алюминиевую фольгу, чтобы обернуть еду',
+                        textExampleTranslate: 'Я использовал алюминиевую фольгу, чтобы обернуть еду',
                         id: 3044,
                         word: 'aluminum',
                         wordTranslate: 'алюминий',
@@ -17690,8 +17204,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_3053_example.mp3',
                         textExample: 'I had to deduct my expenses from my checkbook',
-                        textExampleTranslate:
-                            'Я должен был вычесть мои расходы из моей чековой книжки',
+                        textExampleTranslate: 'Я должен был вычесть мои расходы из моей чековой книжки',
                         id: 3053,
                         word: 'deduct',
                         wordTranslate: 'вычитать',
@@ -17707,8 +17220,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_3055_example.mp3',
                         textExample: 'The entrepreneur made a success out of his new business',
-                        textExampleTranslate:
-                            'Предприниматель добился успеха из своего нового бизнеса',
+                        textExampleTranslate: 'Предприниматель добился успеха из своего нового бизнеса',
                         id: 3055,
                         word: 'entrepreneur',
                         wordTranslate: 'предприниматель',
@@ -17732,16 +17244,14 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/03_3058_example.mp3',
                         textExample: 'The fast food restaurant has a franchise near my home',
-                        textExampleTranslate:
-                            'У ресторана быстрого питания есть франшиза возле моего дома',
+                        textExampleTranslate: 'У ресторана быстрого питания есть франшиза возле моего дома',
                         id: 3058,
                         word: 'franchise',
                         wordTranslate: 'франшиза',
                     },
                     {
                         audioExample: 'files/03_3059_example.mp3',
-                        textExample:
-                            'The citizens of England had ideological differenes about its government',
+                        textExample: 'The citizens of England had ideological differenes about its government',
                         textExampleTranslate:
                             'У граждан Англии были идеологические разногласия относительно ее правительства',
                         id: 3059,
@@ -17787,8 +17297,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/04_3072_example.mp3',
                         textExample: 'He grumbled about having to work late on Friday',
-                        textExampleTranslate:
-                            'Он ворчал по поводу того, что должен был работать допоздна в пятницу',
+                        textExampleTranslate: 'Он ворчал по поводу того, что должен был работать допоздна в пятницу',
                         id: 3072,
                         word: 'grumble',
                         wordTranslate: 'ворчать',
@@ -17804,8 +17313,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/04_3078_example.mp3',
                         textExample: 'Their car couldn’t make it far along the rugged roads',
-                        textExampleTranslate:
-                            'Их машина не могла проехать далеко по бурным дорогам',
+                        textExampleTranslate: 'Их машина не могла проехать далеко по бурным дорогам',
                         id: 3078,
                         word: 'rugged',
                         wordTranslate: 'прочный',
@@ -17865,8 +17373,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_3088_example.mp3',
                         textExample: 'The girls watched television for the duration of the evening',
-                        textExampleTranslate:
-                            'Девушки смотрели телевизор на протяжении всего вечера',
+                        textExampleTranslate: 'Девушки смотрели телевизор на протяжении всего вечера',
                         id: 3088,
                         word: 'duration',
                         wordTranslate: 'продолжительность',
@@ -17906,8 +17413,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/05_3094_example.mp3',
                         textExample: 'Queen Victoria was a prominent person in history',
-                        textExampleTranslate:
-                            'Королева Виктория была выдающимся человеком в истории',
+                        textExampleTranslate: 'Королева Виктория была выдающимся человеком в истории',
                         id: 3094,
                         word: 'prominent',
                         wordTranslate: 'видный',
@@ -17969,8 +17475,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/06_3103_example.mp3',
                         textExample: 'Most economies in the world today are based on capitalism',
-                        textExampleTranslate:
-                            'Большинство экономик в мире сегодня основаны на капитализме',
+                        textExampleTranslate: 'Большинство экономик в мире сегодня основаны на капитализме',
                         id: 3103,
                         word: 'capitalism',
                         wordTranslate: 'капитализм',
@@ -17986,8 +17491,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/06_3106_example.mp3',
                         textExample: 'As the economy got worse, my savings diminished',
-                        textExampleTranslate:
-                            'По мере ухудшения экономики мои сбережения уменьшались',
+                        textExampleTranslate: 'По мере ухудшения экономики мои сбережения уменьшались',
                         id: 3106,
                         word: 'diminish',
                         wordTranslate: 'уменьшить',
@@ -18011,18 +17515,15 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/06_3111_example.mp3',
                         textExample: 'We visited a castle that was built during medieval times',
-                        textExampleTranslate:
-                            'Мы посетили замок, который был построен во времена средневековья',
+                        textExampleTranslate: 'Мы посетили замок, который был построен во времена средневековья',
                         id: 3111,
                         word: 'medieval',
                         wordTranslate: 'средневековый',
                     },
                     {
                         audioExample: 'files/06_3112_example.mp3',
-                        textExample:
-                            'Since computers became inexpensive, typewriters have become obsolete',
-                        textExampleTranslate:
-                            'Поскольку компьютеры стали недорогими, пишущие машинки устарели',
+                        textExample: 'Since computers became inexpensive, typewriters have become obsolete',
+                        textExampleTranslate: 'Поскольку компьютеры стали недорогими, пишущие машинки устарели',
                         id: 3112,
                         word: 'obsolete',
                         wordTranslate: 'устаревшие',
@@ -18097,18 +17598,15 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/07_3128_example.mp3',
-                        textExample:
-                            'The government financed the scientist’s experiments with new weapons',
-                        textExampleTranslate:
-                            'Правительство финансировало эксперименты ученого с новым оружием',
+                        textExample: 'The government financed the scientist’s experiments with new weapons',
+                        textExampleTranslate: 'Правительство финансировало эксперименты ученого с новым оружием',
                         id: 3128,
                         word: 'finance',
                         wordTranslate: 'финансирование',
                     },
                     {
                         audioExample: 'files/07_3131_example.mp3',
-                        textExample:
-                            'You should exercise regularly to maximize a healthy lifestyle',
+                        textExample: 'You should exercise regularly to maximize a healthy lifestyle',
                         textExampleTranslate:
                             'Вы должны регулярно заниматься спортом, чтобы максимизировать здоровый образ жизни',
                         id: 3131,
@@ -18178,8 +17676,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_3152_example.mp3',
                         textExample: 'American football is usually considered a masculine sport',
-                        textExampleTranslate:
-                            'Американский футбол обычно считается мужским видом спорта',
+                        textExampleTranslate: 'Американский футбол обычно считается мужским видом спорта',
                         id: 3152,
                         word: 'masculine',
                         wordTranslate: 'мужской',
@@ -18187,18 +17684,15 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_3153_example.mp3',
                         textExample: 'A large monument was built to honor the brave soldiers',
-                        textExampleTranslate:
-                            'Большой памятник был построен в честь храбрых солдат',
+                        textExampleTranslate: 'Большой памятник был построен в честь храбрых солдат',
                         id: 3153,
                         word: 'monument',
                         wordTranslate: 'памятник',
                     },
                     {
                         audioExample: 'files/08_3154_example.mp3',
-                        textExample:
-                            'He exercised regularly so that his body could become muscular',
-                        textExampleTranslate:
-                            'Он регулярно тренируется, чтобы его тело стало мускулистым',
+                        textExample: 'He exercised regularly so that his body could become muscular',
+                        textExampleTranslate: 'Он регулярно тренируется, чтобы его тело стало мускулистым',
                         id: 3154,
                         word: 'muscular',
                         wordTranslate: 'мускулистый',
@@ -18206,8 +17700,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/08_3155_example.mp3',
                         textExample: 'Your back will feel better if you improve your posture',
-                        textExampleTranslate:
-                            'Ваша спина будет чувствовать себя лучше, если вы улучшите осанку',
+                        textExampleTranslate: 'Ваша спина будет чувствовать себя лучше, если вы улучшите осанку',
                         id: 3155,
                         word: 'posture',
                         wordTranslate: 'поза',
@@ -18222,10 +17715,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/08_3157_example.mp3',
-                        textExample:
-                            'Allen supervised the construction workers to ensure everyone’s safety',
-                        textExampleTranslate:
-                            'Аллен контролировал строителей, чтобы обеспечить безопасность каждого',
+                        textExample: 'Allen supervised the construction workers to ensure everyone’s safety',
+                        textExampleTranslate: 'Аллен контролировал строителей, чтобы обеспечить безопасность каждого',
                         id: 3157,
                         word: 'supervise',
                         wordTranslate: 'контролировать',
@@ -18285,8 +17776,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/09_3170_example.mp3',
                         textExample: 'The boy’s mental faculties impressed all of his teachers',
-                        textExampleTranslate:
-                            'Умственные способности мальчика поразили всех его учителей',
+                        textExampleTranslate: 'Умственные способности мальчика поразили всех его учителей',
                         id: 3170,
                         word: 'faculty',
                         wordTranslate: 'факультет',
@@ -18302,18 +17792,15 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/09_3176_example.mp3',
                         textExample: 'The woman kept some colorful ornaments on the shelves',
-                        textExampleTranslate:
-                            'Женщина держала на полках несколько разноцветных украшений',
+                        textExampleTranslate: 'Женщина держала на полках несколько разноцветных украшений',
                         id: 3176,
                         word: 'ornament',
                         wordTranslate: 'орнамент',
                     },
                     {
                         audioExample: 'files/09_3177_example.mp3',
-                        textExample:
-                            'Drivers should be careful when pedestrians are walking around',
-                        textExampleTranslate:
-                            'Водители должны быть осторожны, когда вокруг гуляют пешеходы',
+                        textExample: 'Drivers should be careful when pedestrians are walking around',
+                        textExampleTranslate: 'Водители должны быть осторожны, когда вокруг гуляют пешеходы',
                         id: 3177,
                         word: 'pedestrian',
                         wordTranslate: 'пешеход',
@@ -18348,8 +17835,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/10_3181_example.mp3',
-                        textExample:
-                            'The store sold colorful accessories like bags, sunglasses, and makeup',
+                        textExample: 'The store sold colorful accessories like bags, sunglasses, and makeup',
                         textExampleTranslate:
                             'В магазине продавались красочные аксессуары, такие как сумки, солнцезащитные очки и косметика',
                         id: 3181,
@@ -18359,16 +17845,14 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/10_3185_example.mp3',
                         textExample: 'She gave the teacher an elaborate explanation of her project',
-                        textExampleTranslate:
-                            'Она дала учителю подробное объяснение своего проекта',
+                        textExampleTranslate: 'Она дала учителю подробное объяснение своего проекта',
                         id: 3185,
                         word: 'elaborate',
                         wordTranslate: 'разрабатывать',
                     },
                     {
                         audioExample: 'files/10_3187_example.mp3',
-                        textExample:
-                            'To facilitate the meeting, Melissa used a simple computer program',
+                        textExample: 'To facilitate the meeting, Melissa used a simple computer program',
                         textExampleTranslate:
                             'Чтобы облегчить встречу, Мелисса использовала простую компьютерную программу',
                         id: 3187,
@@ -18402,8 +17886,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/10_3193_example.mp3',
                         textExample: 'He had the innate desire to please his teachers',
-                        textExampleTranslate:
-                            'У него было врожденное желание угодить своим учителям',
+                        textExampleTranslate: 'У него было врожденное желание угодить своим учителям',
                         id: 3193,
                         word: 'innate',
                         wordTranslate: 'врожденный',
@@ -18419,8 +17902,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/10_3195_example.mp3',
                         textExample: 'The mast held both sails of the ship upright',
-                        textExampleTranslate:
-                            'Мачта держала оба паруса корабля в вертикальном положении',
+                        textExampleTranslate: 'Мачта держала оба паруса корабля в вертикальном положении',
                         id: 3195,
                         word: 'mast',
                         wordTranslate: 'тучный',
@@ -18456,8 +17938,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/10_3200_example.mp3',
                         textExample: 'My phone is downloading a software update',
-                        textExampleTranslate:
-                            'Мой телефон загружает обновление программного обеспечения',
+                        textExampleTranslate: 'Мой телефон загружает обновление программного обеспечения',
                         id: 3200,
                         word: 'update',
                         wordTranslate: 'обновить',
@@ -18581,8 +18062,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/12_3234_example.mp3',
                         textExample: 'She liked to meditate for several hours each day',
-                        textExampleTranslate:
-                            'Ей нравилось медитировать по несколько часов каждый день',
+                        textExampleTranslate: 'Ей нравилось медитировать по несколько часов каждый день',
                         id: 3234,
                         word: 'meditate',
                         wordTranslate: 'медитировать',
@@ -18590,8 +18070,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/12_3236_example.mp3',
                         textExample: 'The older boy provoked Paul by calling him mean names',
-                        textExampleTranslate:
-                            'Старший мальчик спровоцировал Пола, назвав его подлыми именами',
+                        textExampleTranslate: 'Старший мальчик спровоцировал Пола, назвав его подлыми именами',
                         id: 3236,
                         word: 'provoke',
                         wordTranslate: 'спровоцировать',
@@ -18627,8 +18106,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/13_3241_example.mp3',
                         textExample: 'The dresses were noteworthy for their aesthetic design',
-                        textExampleTranslate:
-                            'Платья были примечательны своим эстетическим дизайном',
+                        textExampleTranslate: 'Платья были примечательны своим эстетическим дизайном',
                         id: 3241,
                         word: 'aesthetic',
                         wordTranslate: 'эстетический',
@@ -18684,8 +18162,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/14_3269_example.mp3',
                         textExample: 'Could you please buy a loaf of bread for sandwiches?',
-                        textExampleTranslate:
-                            'Не могли бы вы купить буханку хлеба для бутербродов?',
+                        textExampleTranslate: 'Не могли бы вы купить буханку хлеба для бутербродов?',
                         id: 3269,
                         word: 'loaf',
                         wordTranslate: 'буханка',
@@ -18721,8 +18198,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/14_3276_example.mp3',
                         textExample: 'Burglaries seem to recur over and over in our neighborhood',
-                        textExampleTranslate:
-                            'Кажется, что кражи со взломом повторяются в нашем районе',
+                        textExampleTranslate: 'Кажется, что кражи со взломом повторяются в нашем районе',
                         id: 3276,
                         word: 'recur',
                         wordTranslate: 'повторялись',
@@ -18738,8 +18214,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_3282_example.mp3',
                         textExample: 'The classroom had many arbitrary rules that confused me',
-                        textExampleTranslate:
-                            'В классе было много произвольных правил, которые смущали меня',
+                        textExampleTranslate: 'В классе было много произвольных правил, которые смущали меня',
                         id: 3282,
                         word: 'arbitrary',
                         wordTranslate: 'произвольное',
@@ -18763,8 +18238,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_3288_example.mp3',
                         textExample: 'Her mysterious past intrigued her new friend',
-                        textExampleTranslate:
-                            'Ее таинственное прошлое заинтриговало ее нового друга',
+                        textExampleTranslate: 'Ее таинственное прошлое заинтриговало ее нового друга',
                         id: 3288,
                         word: 'intrigue',
                         wordTranslate: 'интрига',
@@ -18780,8 +18254,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_3293_example.mp3',
                         textExample: 'Orangutans use their long arms to swing from trees',
-                        textExampleTranslate:
-                            'Орангутаны используют свои длинные руки, чтобы качаться с деревьев',
+                        textExampleTranslate: 'Орангутаны используют свои длинные руки, чтобы качаться с деревьев',
                         id: 3293,
                         word: 'orangutan',
                         wordTranslate: 'орангутанг',
@@ -18797,8 +18270,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/15_3297_example.mp3',
                         textExample: 'I was the recipient of four phone calls today',
-                        textExampleTranslate:
-                            'Я был получателем четырех телефонных звонков сегодня',
+                        textExampleTranslate: 'Я был получателем четырех телефонных звонков сегодня',
                         id: 3297,
                         word: 'recipient',
                         wordTranslate: 'получатель',
@@ -18826,8 +18298,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/16_3303_example.mp3',
                         textExample: 'We studied artifacts from an ancient Chinese settlement',
-                        textExampleTranslate:
-                            'Мы изучали артефакты из древнего китайского поселения',
+                        textExampleTranslate: 'Мы изучали артефакты из древнего китайского поселения',
                         id: 3303,
                         word: 'artifact',
                         wordTranslate: 'артефакт',
@@ -18835,16 +18306,14 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/16_3304_example.mp3',
                         textExample: 'We ate authentic Italian food on our vacation to Rome',
-                        textExampleTranslate:
-                            'Мы ели настоящую итальянскую еду во время нашего отпуска в Риме',
+                        textExampleTranslate: 'Мы ели настоящую итальянскую еду во время нашего отпуска в Риме',
                         id: 3304,
                         word: 'authentic',
                         wordTranslate: 'подлинный',
                     },
                     {
                         audioExample: 'files/16_3306_example.mp3',
-                        textExample:
-                            'The Spanish diplomat discussed trade issues with officials in Peru',
+                        textExample: 'The Spanish diplomat discussed trade issues with officials in Peru',
                         textExampleTranslate:
                             'Испанский дипломат обсудил вопросы торговли с официальными лицами в Перу',
                         id: 3306,
@@ -18854,8 +18323,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/16_3311_example.mp3',
                         textExample: 'I enjoy reading and creating my own lyric poetry',
-                        textExampleTranslate:
-                            'Мне нравится читать и создавать свои собственные лирические стихи',
+                        textExampleTranslate: 'Мне нравится читать и создавать свои собственные лирические стихи',
                         id: 3311,
                         word: 'lyric',
                         wordTranslate: 'лирические',
@@ -18863,8 +18331,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/16_3316_example.mp3',
                         textExample: 'We successfully recruited someone to be the new manager',
-                        textExampleTranslate:
-                            'Мы успешно завербовали кого-то, чтобы стать новым менеджером',
+                        textExampleTranslate: 'Мы успешно завербовали кого-то, чтобы стать новым менеджером',
                         id: 3316,
                         word: 'recruit',
                         wordTranslate: 'принять на работу',
@@ -18872,18 +18339,15 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/16_3319_example.mp3',
                         textExample: 'Michael is a singer of great renown in New Zealand',
-                        textExampleTranslate:
-                            'Майкл - певец с большой известностью в Новой Зеландии',
+                        textExampleTranslate: 'Майкл - певец с большой известностью в Новой Зеландии',
                         id: 3319,
                         word: 'renown',
                         wordTranslate: 'известность',
                     },
                     {
                         audioExample: 'files/17_3326_example.mp3',
-                        textExample:
-                            'The company’s new advertising endeavor ended in a horrible failure',
-                        textExampleTranslate:
-                            'Новые рекламные усилия компании закончились ужасным провалом',
+                        textExample: 'The company’s new advertising endeavor ended in a horrible failure',
+                        textExampleTranslate: 'Новые рекламные усилия компании закончились ужасным провалом',
                         id: 3326,
                         word: 'endeavor',
                         wordTranslate: 'стремиться',
@@ -18919,8 +18383,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/17_3333_example.mp3',
                         textExample: 'Everyone knew that the boy’s story was an outright lie',
-                        textExampleTranslate:
-                            'Все знали, что история мальчика была откровенной ложью',
+                        textExampleTranslate: 'Все знали, что история мальчика была откровенной ложью',
                         id: 3333,
                         word: 'outright',
                         wordTranslate: 'вчистую',
@@ -18968,8 +18431,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/18_3343_example.mp3',
                         textExample: 'Most of the important civic buildings are located downtown',
-                        textExampleTranslate:
-                            'Большинство важных гражданских зданий расположены в центре города',
+                        textExampleTranslate: 'Большинство важных гражданских зданий расположены в центре города',
                         id: 3343,
                         word: 'civic',
                         wordTranslate: 'гражданский',
@@ -18985,8 +18447,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/18_3350_example.mp3',
                         textExample: 'Mary forgot the key. Hence, we couldn’t open the door',
-                        textExampleTranslate:
-                            'Мэри забыла ключ. Следовательно, мы не могли открыть дверь',
+                        textExampleTranslate: 'Мэри забыла ключ. Следовательно, мы не могли открыть дверь',
                         id: 3350,
                         word: 'hence',
                         wordTranslate: 'следовательно',
@@ -19023,8 +18484,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/18_3355_example.mp3',
                         textExample: 'She was an outspoken critic about the new banking laws',
-                        textExampleTranslate:
-                            'Она была откровенным критиком о новых банковских законах',
+                        textExampleTranslate: 'Она была откровенным критиком о новых банковских законах',
                         id: 3355,
                         word: 'outspoken',
                         wordTranslate: 'откровенный',
@@ -19032,8 +18492,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/19_3362_example.mp3',
                         textExample: 'Before trains, most couriers used horses to travel',
-                        textExampleTranslate:
-                            'До поезда большинство курьеров использовали лошадей для путешествий',
+                        textExampleTranslate: 'До поезда большинство курьеров использовали лошадей для путешествий',
                         id: 3362,
                         word: 'courier',
                         wordTranslate: 'курьер',
@@ -19041,18 +18500,15 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/19_3364_example.mp3',
                         textExample: 'When in Asian countries, bowing is a form of etiquette',
-                        textExampleTranslate:
-                            'Когда в азиатских странах, кланяясь является формой этикета',
+                        textExampleTranslate: 'Когда в азиатских странах, кланяясь является формой этикета',
                         id: 3364,
                         word: 'etiquette',
                         wordTranslate: 'этикет',
                     },
                     {
                         audioExample: 'files/19_3366_example.mp3',
-                        textExample:
-                            'Trade ships only carried valuable freight like silk and spices',
-                        textExampleTranslate:
-                            'Торговые суда перевозили только ценные грузы, такие как шелк и специи',
+                        textExample: 'Trade ships only carried valuable freight like silk and spices',
+                        textExampleTranslate: 'Торговые суда перевозили только ценные грузы, такие как шелк и специи',
                         id: 3366,
                         word: 'freight',
                         wordTranslate: 'перевозка грузов',
@@ -19220,8 +18676,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/21_3410_example.mp3',
                         textExample: 'We discovered a major flaw in the metal chain',
-                        textExampleTranslate:
-                            'Мы обнаружили большой недостаток в металлической цепи',
+                        textExampleTranslate: 'Мы обнаружили большой недостаток в металлической цепи',
                         id: 3410,
                         word: 'flaw',
                         wordTranslate: 'недостаток',
@@ -19229,8 +18684,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/21_3411_example.mp3',
                         textExample: 'That joke makes me grin every time I hear it',
-                        textExampleTranslate:
-                            'Эта шутка заставляет меня улыбаться каждый раз, когда я ее слышу',
+                        textExampleTranslate: 'Эта шутка заставляет меня улыбаться каждый раз, когда я ее слышу',
                         id: 3411,
                         word: 'grin',
                         wordTranslate: 'оскал',
@@ -19254,8 +18708,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/21_3420_example.mp3',
                         textExample: 'The mechanic removed the dirt to clear the engine valve',
-                        textExampleTranslate:
-                            'Механик удалил грязь, чтобы очистить клапан двигателя',
+                        textExampleTranslate: 'Механик удалил грязь, чтобы очистить клапан двигателя',
                         id: 3420,
                         word: 'valve',
                         wordTranslate: 'клапан',
@@ -19263,8 +18716,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/22_3425_example.mp3',
                         textExample: 'At the camp, the boys’ cabin was lined with cots',
-                        textExampleTranslate:
-                            'В лагере в хижине для мальчиков стояли детские кроватки',
+                        textExampleTranslate: 'В лагере в хижине для мальчиков стояли детские кроватки',
                         id: 3425,
                         word: 'cot',
                         wordTranslate: 'раскладушка',
@@ -19272,8 +18724,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/22_3428_example.mp3',
                         textExample: 'Guerilla warfare involves a lot of hit-and-run fighting',
-                        textExampleTranslate:
-                            'Партизанская война включает в себя множество боев с налетами',
+                        textExampleTranslate: 'Партизанская война включает в себя множество боев с налетами',
                         id: 3428,
                         word: 'guerilla',
                         wordTranslate: 'партизанская',
@@ -19302,8 +18753,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/22_3432_example.mp3',
                         textExample: 'Kelly’s new outfit made her look so glamourous',
-                        textExampleTranslate:
-                            'Новый наряд Келли заставил ее выглядеть так гламурно',
+                        textExampleTranslate: 'Новый наряд Келли заставил ее выглядеть так гламурно',
                         id: 3432,
                         word: 'outfit',
                         wordTranslate: 'снаряжение',
@@ -19327,8 +18777,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/23_3443_example.mp3',
                         textExample: 'The sale of his inventions made the inventor a billionaire',
-                        textExampleTranslate:
-                            'Продажа его изобретений сделала изобретателя миллиардером',
+                        textExampleTranslate: 'Продажа его изобретений сделала изобретателя миллиардером',
                         id: 3443,
                         word: 'billionaire',
                         wordTranslate: 'миллиардер',
@@ -19343,8 +18792,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/23_3448_example.mp3',
-                        textExample:
-                            'During the flood, many families were evacuated to higher ground',
+                        textExample: 'During the flood, many families were evacuated to higher ground',
                         textExampleTranslate:
                             'Во время наводнения многие семьи были эвакуированы на более высокий уровень',
                         id: 3448,
@@ -19362,18 +18810,15 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/23_3454_example.mp3',
                         textExample: 'A scientist should always practice scrutiny with their work',
-                        textExampleTranslate:
-                            'Ученый должен всегда внимательно изучать свою работу',
+                        textExampleTranslate: 'Ученый должен всегда внимательно изучать свою работу',
                         id: 3454,
                         word: 'scrutiny',
                         wordTranslate: 'исследование',
                     },
                     {
                         audioExample: 'files/23_3457_example.mp3',
-                        textExample:
-                            'The judge listened while the victim testified about the robbery',
-                        textExampleTranslate:
-                            'Судья слушал, пока жертва давала показания о грабеже',
+                        textExample: 'The judge listened while the victim testified about the robbery',
+                        textExampleTranslate: 'Судья слушал, пока жертва давала показания о грабеже',
                         id: 3457,
                         word: 'testify',
                         wordTranslate: 'свидетельствуют',
@@ -19381,8 +18826,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_3461_example.mp3',
                         textExample: 'When he stepped on the gas pedal, the motorcycle accelerated',
-                        textExampleTranslate:
-                            'Когда он наступил на педаль газа, мотоцикл ускорился',
+                        textExampleTranslate: 'Когда он наступил на педаль газа, мотоцикл ускорился',
                         id: 3461,
                         word: 'accelerate',
                         wordTranslate: 'ускорить',
@@ -19426,8 +18870,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/24_3476_example.mp3',
                         textExample: 'They made persistent attempts to get him to eat',
-                        textExampleTranslate:
-                            'Они предпринимали настойчивые попытки заставить его есть',
+                        textExampleTranslate: 'Они предпринимали настойчивые попытки заставить его есть',
                         id: 3476,
                         word: 'persistent',
                         wordTranslate: 'стойкие',
@@ -19442,8 +18885,7 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/24_3480_example.mp3',
-                        textExample:
-                            'Doctors sometimes use electric shock to stimulate a patient’s heartbeat',
+                        textExample: 'Doctors sometimes use electric shock to stimulate a patient’s heartbeat',
                         textExampleTranslate:
                             'Врачи иногда используют удар током, чтобы стимулировать сердцебиение пациента',
                         id: 3480,
@@ -19460,10 +18902,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/25_3487_example.mp3',
-                        textExample:
-                            'The nation’s economy continued to deteriorate despite the politicians’ efforts',
-                        textExampleTranslate:
-                            'Экономика страны продолжала ухудшаться, несмотря на усилия политиков',
+                        textExample: 'The nation’s economy continued to deteriorate despite the politicians’ efforts',
+                        textExampleTranslate: 'Экономика страны продолжала ухудшаться, несмотря на усилия политиков',
                         id: 3487,
                         word: 'deteriorate',
                         wordTranslate: 'портится',
@@ -19471,8 +18911,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/25_3488_example.mp3',
                         textExample: 'The thermometer recorded a temperature of 38 degrees Celsius',
-                        textExampleTranslate:
-                            'Термометр зафиксировал температуру 38 градусов по Цельсию',
+                        textExampleTranslate: 'Термометр зафиксировал температуру 38 градусов по Цельсию',
                         id: 3488,
                         word: 'degree',
                         wordTranslate: 'степень',
@@ -19480,8 +18919,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/25_3491_example.mp3',
                         textExample: 'At dinner, my dad was very hospitable to my friends',
-                        textExampleTranslate:
-                            'За ужином мой папа был очень гостеприимен с моими друзьями',
+                        textExampleTranslate: 'За ужином мой папа был очень гостеприимен с моими друзьями',
                         id: 3491,
                         word: 'hospitable',
                         wordTranslate: 'гостеприимный',
@@ -19509,8 +18947,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/25_3493_example.mp3',
                         textExample: 'The manor had over forty rooms and beautiful gardens',
-                        textExampleTranslate:
-                            'В усадьбе было более сорока комнат и прекрасных садов',
+                        textExampleTranslate: 'В усадьбе было более сорока комнат и прекрасных садов',
                         id: 3493,
                         word: 'manor',
                         wordTranslate: 'усадьба',
@@ -19526,8 +18963,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/25_3499_example.mp3',
                         textExample: 'The winding river turned and looped around the hills',
-                        textExampleTranslate:
-                            'Извилистая река повернулась и обвилась вокруг холмов',
+                        textExampleTranslate: 'Извилистая река повернулась и обвилась вокруг холмов',
                         id: 3499,
                         word: 'winding',
                         wordTranslate: 'обмотка',
@@ -19550,18 +18986,15 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/26_3508_example.mp3',
-                        textExample:
-                            'The organization disseminates information about the dangers of smoking',
-                        textExampleTranslate:
-                            'Организация распространяет информацию о вреде курения',
+                        textExample: 'The organization disseminates information about the dangers of smoking',
+                        textExampleTranslate: 'Организация распространяет информацию о вреде курения',
                         id: 3508,
                         word: 'disseminate',
                         wordTranslate: 'распространять',
                     },
                     {
                         audioExample: 'files/26_3510_example.mp3',
-                        textExample:
-                            'That news channel is infamous for presenting biased information',
+                        textExample: 'That news channel is infamous for presenting biased information',
                         textExampleTranslate:
                             'Этот новостной канал печально известен представлением необъективной информации',
                         id: 3510,
@@ -19578,10 +19011,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/26_3518_example.mp3',
-                        textExample:
-                            'The secrecy of the big organization made the government nervous',
-                        textExampleTranslate:
-                            'Секретность большой организации заставила правительство нервничать',
+                        textExample: 'The secrecy of the big organization made the government nervous',
+                        textExampleTranslate: 'Секретность большой организации заставила правительство нервничать',
                         id: 3518,
                         word: 'secrecy',
                         wordTranslate: 'секретность',
@@ -19625,8 +19056,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/27_3526_example.mp3',
                         textExample: 'If you want firsthand knowledge, ask someone who saw it',
-                        textExampleTranslate:
-                            'Если вы хотите узнать из первых рук, спросите кого-то, кто его видел',
+                        textExampleTranslate: 'Если вы хотите узнать из первых рук, спросите кого-то, кто его видел',
                         id: 3526,
                         word: 'firsthand',
                         wordTranslate: 'из первых рук',
@@ -19634,8 +19064,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/27_3529_example.mp3',
                         textExample: 'A more inclusive event would have allowed children to attend',
-                        textExampleTranslate:
-                            'Более инклюзивное мероприятие позволило бы детям присутствовать',
+                        textExampleTranslate: 'Более инклюзивное мероприятие позволило бы детям присутствовать',
                         id: 3529,
                         word: 'inclusive',
                         wordTranslate: 'включено',
@@ -19643,16 +19072,14 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/27_3530_example.mp3',
                         textExample: 'The senator had served ten years in the national legislature',
-                        textExampleTranslate:
-                            'Сенатор прослужил десять лет в национальном законодательном органе',
+                        textExampleTranslate: 'Сенатор прослужил десять лет в национальном законодательном органе',
                         id: 3530,
                         word: 'legislature',
                         wordTranslate: 'законодательная власть',
                     },
                     {
                         audioExample: 'files/27_3532_example.mp3',
-                        textExample:
-                            'In today’s global economy, being monolingual limits your opportunities',
+                        textExample: 'In today’s global economy, being monolingual limits your opportunities',
                         textExampleTranslate:
                             'В сегодняшней мировой экономике монолингвальность ограничивает ваши возможности',
                         id: 3532,
@@ -19662,16 +19089,14 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/27_3534_example.mp3',
                         textExample: 'Every year, young patriots join their countries’ militaries',
-                        textExampleTranslate:
-                            'Каждый год молодые патриоты вступают в армию своих стран',
+                        textExampleTranslate: 'Каждый год молодые патриоты вступают в армию своих стран',
                         id: 3534,
                         word: 'patriot',
                         wordTranslate: 'патриот',
                     },
                     {
                         audioExample: 'files/27_3536_example.mp3',
-                        textExample:
-                            'The differences between racial groups are physical characteristics and culture',
+                        textExample: 'The differences between racial groups are physical characteristics and culture',
                         textExampleTranslate:
                             'Различия между расовыми группами - это физические характеристики и культура',
                         id: 3536,
@@ -19701,8 +19126,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/28_3544_example.mp3',
                         textExample: 'He shouted, “There it is!” and pointed with his forefinger',
-                        textExampleTranslate:
-                            "Он крикнул: 'Вот оно!' и указал указательным пальцем ",
+                        textExampleTranslate: "Он крикнул: 'Вот оно!' и указал указательным пальцем ",
                         id: 3544,
                         word: 'forefinger',
                         wordTranslate: 'указательный палец',
@@ -19710,8 +19134,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/28_3546_example.mp3',
                         textExample: 'Sweating is an inherent bodily function when exercising',
-                        textExampleTranslate:
-                            'Потение является неотъемлемой функцией организма при занятиях спортом',
+                        textExampleTranslate: 'Потение является неотъемлемой функцией организма при занятиях спортом',
                         id: 3546,
                         word: 'inherent',
                         wordTranslate: 'присущий',
@@ -19774,10 +19197,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/29_3569_example.mp3',
-                        textExample:
-                            'The pleasant music heightened their enjoyment of the wonderful dinner',
-                        textExampleTranslate:
-                            'Приятная музыка усилила их удовольствие от чудесного ужина',
+                        textExample: 'The pleasant music heightened their enjoyment of the wonderful dinner',
+                        textExampleTranslate: 'Приятная музыка усилила их удовольствие от чудесного ужина',
                         id: 3569,
                         word: 'heighten',
                         wordTranslate: 'пущего',
@@ -19797,8 +19218,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/29_3571_example.mp3',
                         textExample: 'The mansion had thirty bedrooms, two kitchens, and a pool',
-                        textExampleTranslate:
-                            'В особняке было тридцать спален, две кухни и бассейн',
+                        textExampleTranslate: 'В особняке было тридцать спален, две кухни и бассейн',
                         id: 3571,
                         word: 'mansion',
                         wordTranslate: 'особняк',
@@ -19813,10 +19233,8 @@ export const wordCollection: WordCollection[] = [
                     },
                     {
                         audioExample: 'files/29_3576_example.mp3',
-                        textExample:
-                            'The old fire station was renovated into an apartment building',
-                        textExampleTranslate:
-                            'Старая пожарная часть была реконструирована в жилой дом',
+                        textExample: 'The old fire station was renovated into an apartment building',
+                        textExampleTranslate: 'Старая пожарная часть была реконструирована в жилой дом',
                         id: 3576,
                         word: 'renovate',
                         wordTranslate: 'ремонт',
@@ -19832,28 +19250,23 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/30_3584_example.mp3',
                         textExample: 'Our school’s football team is mostly comprised with seniors',
-                        textExampleTranslate:
-                            'Футбольная команда нашей школы в основном состоит из пожилых людей',
+                        textExampleTranslate: 'Футбольная команда нашей школы в основном состоит из пожилых людей',
                         id: 3584,
                         word: 'comprise',
                         wordTranslate: 'включать',
                     },
                     {
                         audioExample: 'files/30_3585_example.mp3',
-                        textExample:
-                            'The statue’s face depicted the general’s determination and courage',
-                        textExampleTranslate:
-                            'Лицо статуи изображало решимость и смелость генерала',
+                        textExample: 'The statue’s face depicted the general’s determination and courage',
+                        textExampleTranslate: 'Лицо статуи изображало решимость и смелость генерала',
                         id: 3585,
                         word: 'depict',
                         wordTranslate: 'изображают',
                     },
                     {
                         audioExample: 'files/30_3587_example.mp3',
-                        textExample:
-                            'When the temperature dropped to 32° Fahrenheit, it started snowing',
-                        textExampleTranslate:
-                            'Когда температура упала до 32 ° по Фаренгейту, пошел снег',
+                        textExample: 'When the temperature dropped to 32° Fahrenheit, it started snowing',
+                        textExampleTranslate: 'Когда температура упала до 32 ° по Фаренгейту, пошел снег',
                         id: 3587,
                         word: 'Fahrenheit',
                         wordTranslate: 'фаренгейт',
@@ -19878,8 +19291,7 @@ export const wordCollection: WordCollection[] = [
                     {
                         audioExample: 'files/30_3596_example.mp3',
                         textExample: 'Our tarif on imported wool makes foreign wool more expensive',
-                        textExampleTranslate:
-                            'Наш тариф на импортную шерсть делает иностранную шерсть дороже',
+                        textExampleTranslate: 'Наш тариф на импортную шерсть делает иностранную шерсть дороже',
                         id: 3596,
                         word: 'tariff',
                         wordTranslate: 'тариф',

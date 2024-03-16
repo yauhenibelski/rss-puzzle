@@ -1,10 +1,12 @@
 import Component from '@utils/ui-component-template';
 import CustomSelector from '@utils/set-selector-name';
 import createElement from '@utils/create-element';
-import { canCheck, currentWord } from '@shared/observables';
+import { canCheck, canContinue, currentWord } from '@shared/observables';
 import { Round, Word } from '@interfaces/word-collection';
+import { getCurrentWordByIndex } from '@shared/utils/get-current-word';
 import style from './buttons-block.module.scss';
 import { setColorBackground } from '../utils/set-color-background';
+import { ButtonName } from './buttons-name.enum';
 
 @CustomSelector('Buttons-block')
 class ButtonsBlock extends Component {
@@ -17,34 +19,39 @@ class ButtonsBlock extends Component {
 
     createComponent(): void {
         this.appendElements();
-        const { checkBtn } = this.elements;
-        checkBtn.onclick = () => {
-            const {
-                word: { textExample },
-                wordIndex,
-            } = this.currentWord;
+        canContinue.publish(false);
+        canCheck.publish(false);
 
-            const currentResultLineElements = Array.from(
-                [...this.resultBlock.children][wordIndex].children,
-            ) as HTMLDivElement[];
-            const wordArr = textExample.split(' ');
-            const currentWordArr = currentResultLineElements.map(({ textContent }) => textContent);
+        const { wordIndex, word } = this.currentWord;
+        const { checkContinueBtn } = this.elements;
 
-            currentWordArr.forEach((word, i) => {
-                const truthWord = wordArr[i];
+        checkContinueBtn.onclick = () => {
+            if (canContinue.value) {
+                currentWord.publish(getCurrentWordByIndex(wordIndex + 1));
+            } else {
+                const currentResultLineElements = Array.from(
+                    [...this.resultBlock.children][wordIndex].children,
+                ) as HTMLDivElement[];
 
-                if (word === truthWord) {
-                    setColorBackground(currentResultLineElements[i], 'good');
-                } else {
-                    setColorBackground(currentResultLineElements[i], 'warn');
-                }
-            });
+                const wordArr = word.textExample.split(' ');
+                const currentWordArr = currentResultLineElements.map(({ textContent }) => textContent);
+
+                currentWordArr.forEach((word, i) => {
+                    const truthWord = wordArr[i];
+
+                    if (word === truthWord) {
+                        setColorBackground(currentResultLineElements[i], 'good');
+                    } else {
+                        setColorBackground(currentResultLineElements[i], 'warn');
+                    }
+                });
+            }
         };
     }
 
     childrenElements() {
         return {
-            checkBtn: createElement({ tag: 'button', text: 'Check' }),
+            checkContinueBtn: createElement({ tag: 'button', text: ButtonName.check }),
         };
     }
 
@@ -52,8 +59,18 @@ class ButtonsBlock extends Component {
         this.contentWrap.append(...Object.values(this.elements));
     }
 
+    continueGameSubscribe = (boolean: boolean): void => {
+        const { checkContinueBtn } = this.elements;
+
+        if (boolean && checkContinueBtn.innerHTML === ButtonName.check) {
+            checkContinueBtn.innerHTML = ButtonName.continue;
+            console.log('continue');
+        }
+    };
+
     checkSentenceSubscribe = (boolean: boolean): void => {
-        this.elements.checkBtn.disabled = !boolean;
+        const { checkContinueBtn } = this.elements;
+        checkContinueBtn.disabled = !boolean;
     };
 
     currentWordSubscribe = (word: { word: Word; wordIndex: number }): void => {
@@ -64,11 +81,13 @@ class ButtonsBlock extends Component {
     connectedCallback(): void {
         currentWord.subscribe(this.currentWordSubscribe);
         canCheck.subscribe(this.checkSentenceSubscribe);
+        canContinue.subscribe(this.continueGameSubscribe);
     }
 
     disconnectedCallback(): void {
         currentWord.unsubscribe(this.currentWordSubscribe);
         canCheck.unsubscribe(this.checkSentenceSubscribe);
+        canContinue.unsubscribe(this.continueGameSubscribe);
     }
 }
 

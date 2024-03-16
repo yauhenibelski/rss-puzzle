@@ -15,9 +15,7 @@ const setStyle = (elem: HTMLElement, style: string | string[]): void => {
     }
 };
 
-function createElement<T extends keyof HTMLElementTagNameMap>(
-    options: CreateElementProps<T>,
-): HTMLElementTagNameMap[T];
+function createElement<T extends keyof HTMLElementTagNameMap>(options: CreateElementProps<T>): HTMLElementTagNameMap[T];
 function createElement<T>(options: CreateElementProps<T>, needWrap: boolean): HTMLDivElement;
 
 function createElement<T extends keyof HTMLElementTagNameMap>(
