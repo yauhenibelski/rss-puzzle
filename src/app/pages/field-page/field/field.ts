@@ -44,7 +44,6 @@ class PlayField extends Component {
     }
 
     createSourceDataBlock() {
-        // console.log(this.currentWord.word.textExample)
         const { sourceDataBlock } = this.elements;
         const textExample = this.currentWord.word.textExample.split(' ');
         const currentResultLine = <HTMLDivElement>[...this.elements.resultBlock.childNodes][this.currentWord.wordIndex];

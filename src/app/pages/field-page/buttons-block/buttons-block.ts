@@ -19,9 +19,12 @@ class ButtonsBlock extends Component {
 
     createComponent(): void {
         this.appendElements();
+        this.addEventsToCheckContinueBtn();
         canContinue.publish(false);
         canCheck.publish(false);
+    }
 
+    addEventsToCheckContinueBtn(): void {
         const { wordIndex, word } = this.currentWord;
         const { checkContinueBtn } = this.elements;
 
@@ -49,22 +52,11 @@ class ButtonsBlock extends Component {
         };
     }
 
-    childrenElements() {
-        return {
-            checkContinueBtn: createElement({ tag: 'button', text: ButtonName.check }),
-        };
-    }
-
-    appendElements(): void {
-        this.contentWrap.append(...Object.values(this.elements));
-    }
-
     continueGameSubscribe = (boolean: boolean): void => {
         const { checkContinueBtn } = this.elements;
 
         if (boolean && checkContinueBtn.innerHTML === ButtonName.check) {
             checkContinueBtn.innerHTML = ButtonName.continue;
-            console.log('continue');
         }
     };
 
@@ -77,6 +69,16 @@ class ButtonsBlock extends Component {
         this.currentWord = word;
         this.render();
     };
+
+    childrenElements() {
+        return {
+            checkContinueBtn: createElement({ tag: 'button', text: ButtonName.check }),
+        };
+    }
+
+    appendElements(): void {
+        this.contentWrap.append(...Object.values(this.elements));
+    }
 
     connectedCallback(): void {
         currentWord.subscribe(this.currentWordSubscribe);
