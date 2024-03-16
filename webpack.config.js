@@ -3,6 +3,7 @@
  */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = ({ develop }) => ({
@@ -54,7 +55,7 @@ module.exports = ({ develop }) => ({
             },
             {
                 test: /\.s[ac]ss$/i,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
             },
         ],
     },
@@ -66,11 +67,24 @@ module.exports = ({ develop }) => ({
             '@style': path.resolve(__dirname, './src/style/'),
             '@interfaces': path.resolve(__dirname, './src/app/interfaces/'),      
             '@assets': path.resolve(__dirname, './src/assets/'),
+            '@shared': path.resolve(__dirname, './src/app/shared/'),
           },
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Rss puzzle'
+            title: 'Rss puzzle',
+            favicon: path.resolve(__dirname, './src/assets/img/start-page-background.svg'),
         }),
+        new MiniCssExtractPlugin({
+            filename: 'style.css',
+        })
+        // new CopyPlugin({
+        //     patterns: [
+        //         {
+        //             from: path.resolve(__dirname, 'src/assets/data'),
+        //             to: path.resolve(__dirname, 'build/assets/data')
+        //         }
+        //     ]
+        // })
     ],
 });

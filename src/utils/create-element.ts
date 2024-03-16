@@ -1,11 +1,12 @@
-interface CreateElementProps {
-    tag: keyof HTMLElementTagNameMap;
+/* eslint-disable no-redeclare */
+interface CreateElementProps<T> {
+    tag: T;
     style?: string | string[];
     text?: string;
     html?: string;
 }
 
-const setStyle = (elem: HTMLElement, style: string | string[]) => {
+const setStyle = (elem: HTMLElement, style: string | string[]): void => {
     if (style instanceof Array) {
         elem.classList.add(...style);
     }
@@ -13,10 +14,16 @@ const setStyle = (elem: HTMLElement, style: string | string[]) => {
         elem.classList.add(style);
     }
 };
-const createElement = (
-    { tag, style, text, html }: CreateElementProps,
+
+function createElement<T extends keyof HTMLElementTagNameMap>(
+    options: CreateElementProps<T>,
+): HTMLElementTagNameMap[T];
+function createElement<T>(options: CreateElementProps<T>, needWrap: boolean): HTMLDivElement;
+
+function createElement<T extends keyof HTMLElementTagNameMap>(
+    { tag, style, text, html }: CreateElementProps<T>,
     needWrap?: boolean,
-): HTMLElement => {
+) {
     const elem = document.createElement(tag);
     const elemWrap = document.createElement('div');
 
@@ -31,6 +38,6 @@ const createElement = (
     }
 
     return needWrap ? elemWrap : elem;
-};
+}
 
 export default createElement;

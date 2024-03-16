@@ -7,7 +7,7 @@ import localStorage from '../../shared/local-storage/local-storage';
 
 @CustomSelector('Start-page')
 class StartPage extends Component {
-    elements: { [key: string]: HTMLElement } = this.childrenElements();
+    elements = this.childrenElements();
 
     constructor() {
         super(style);
@@ -18,7 +18,7 @@ class StartPage extends Component {
         this.appendElements();
     }
 
-    childrenElements(): { [key: string]: HTMLElement } {
+    childrenElements() {
         return {
             headLine: createElement({ tag: 'h1', text: 'ENGLISH PUZZLE' }),
             instructionText: createElement({ tag: 'p', text: 'Click on words, collect phrases.' }),

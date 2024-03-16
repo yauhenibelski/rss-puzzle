@@ -6,7 +6,7 @@ import localStorage from '../../shared/local-storage/local-storage';
 
 @CustomSelector('Login-page')
 class LoginPage extends Component {
-    elements: { [key: string]: HTMLElement } = this.childrenElements();
+    elements = this.childrenElements();
 
     constructor() {
         super(style);
@@ -28,7 +28,7 @@ class LoginPage extends Component {
         this.addEvents();
     }
 
-    childrenElements(): { [key: string]: HTMLElement } {
+    childrenElements() {
         return {
             form: createElement({ tag: 'form' }),
             firstNameField: createElement({ tag: 'input', style: style['first-name'] }, true),
@@ -71,7 +71,7 @@ class LoginPage extends Component {
     addEvents(): void {
         const firstNameField = <HTMLInputElement>this.elements.firstNameField.firstChild;
         const secondNameField = <HTMLInputElement>this.elements.secondNameField.firstChild;
-        const form = <HTMLFormElement>this.elements.form;
+        const { form } = this.elements;
         const { loginBTN } = this.elements;
 
         firstNameField.oninput = () => firstNameField.setCustomValidity('');

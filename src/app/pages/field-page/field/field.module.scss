@@ -1,0 +1,51 @@
+.host {
+    display: block;
+    position: relative;
+}
+
+.content-wrap {
+    display: block;
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.result-block {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.result-line {
+    height: 40px;
+    width: 100%;
+    display: flex;
+}
+
+.source-data-block {
+    margin-top: 30px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.word,
+.word-clone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    background-color: aliceblue;
+    border: solid gray;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.word {
+    opacity: 1;
+}
+.word-clone {
+    opacity: 0;
+}
