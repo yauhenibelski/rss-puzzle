@@ -8,6 +8,6 @@ export const currentLevel = new Observable<CurrentLevelRound>({
     round: 0,
 });
 
-export const currentWord = new Observable<{ word: Word; wordIndex: number }>(
-    getCurrentWordByIndex(0),
-);
+export const currentWord = new Observable<{ word: Word; wordIndex: number }>(getCurrentWordByIndex(0));
+
+export const canCheck = new Observable<boolean>(false);

@@ -2,12 +2,14 @@ import CustomSelector from '@utils/set-selector-name';
 import Component from '@utils/ui-component-template';
 import { wordCollection } from '@shared/wordCollection';
 import createElement from '@utils/create-element';
-import { currentLevel, currentWord } from '@shared/observables';
+import { canCheck, currentLevel, currentWord } from '@shared/observables';
 import { CurrentLevelRound } from '@interfaces/current-level';
 import { Round, Word } from '@interfaces/word-collection';
 import { shiftElementsLeftByOpacity } from '../utils/shift-elements-left';
 import { showHideElements } from '../utils/show-hide-elements';
 import style from './field.module.scss';
+import ButtonsBlock from '../buttons-block/buttons-block';
+import { setColorBackground } from '../utils/set-color-background';
 
 @CustomSelector('play-field')
 class PlayField extends Component {
@@ -26,28 +28,26 @@ class PlayField extends Component {
 
     toggleViewWord({ target }: MouseEvent, elem: HTMLDivElement) {
         const { resultBlock, sourceDataBlock } = this.elements;
-        const currentResultLine = <HTMLDivElement>(
-            [...resultBlock.childNodes][this.currentWord.wordIndex]
-        );
+        const currentResultLine = <HTMLDivElement>[...resultBlock.childNodes][this.currentWord.wordIndex];
+        const targetElem = <HTMLDivElement>target;
 
-        showHideElements(<HTMLDivElement>target, elem, () => {
+        showHideElements(targetElem, elem, () => {
             shiftElementsLeftByOpacity(currentResultLine);
             shiftElementsLeftByOpacity(sourceDataBlock);
+            this.checkSentence();
         });
-        (<HTMLDivElement>target).onclick = null;
 
-        elem.onclick = event => this.toggleViewWord(event, <HTMLDivElement>target);
+        targetElem.onclick = null;
+        setColorBackground(targetElem, 'none');
 
-        this.checkSentence();
+        elem.onclick = event => this.toggleViewWord(event, targetElem);
     }
 
     createSourceDataBlock() {
         // console.log(this.currentWord.word.textExample)
         const { sourceDataBlock } = this.elements;
         const textExample = this.currentWord.word.textExample.split(' ');
-        const currentResultLine = <HTMLDivElement>(
-            [...this.elements.resultBlock.childNodes][this.currentWord.wordIndex]
-        );
+        const currentResultLine = <HTMLDivElement>[...this.elements.resultBlock.childNodes][this.currentWord.wordIndex];
         currentResultLine.innerHTML = '';
 
         textExample.sort(() => Math.random() - 0.5);
@@ -92,13 +92,6 @@ class PlayField extends Component {
         currentWord.unsubscribe(this.currentWordSubscribe);
     }
 
-    childrenElements() {
-        return {
-            resultBlock: createElement({ tag: 'div', style: style['result-block'] }),
-            sourceDataBlock: createElement({ tag: 'div', style: style['source-data-block'] }),
-        };
-    }
-
     addResultLines(): void {
         const { resultBlock } = this.elements;
         const resultLines = Array.from({ length: this.currentRound.words.length }, () => {
@@ -109,23 +102,20 @@ class PlayField extends Component {
     }
 
     checkSentence(): void {
-        const currentResultLine = <HTMLDivElement>(
-            [...this.elements.resultBlock.childNodes][this.currentWord.wordIndex]
-        );
+        const currentResultLine = <HTMLDivElement>[...this.elements.resultBlock.childNodes][this.currentWord.wordIndex];
         const resultLineItems = <Array<HTMLElement>>Array.from(currentResultLine.children);
         const { textExample } = this.currentWord.word;
 
-        const currentValue = resultLineItems
-            .reduce((acc: string[], elem) => {
-                if (Number(elem.style.opacity)) {
-                    acc.push(elem.innerHTML);
-                }
+        const checkedItems = resultLineItems.reduce((acc: string[], elem) => {
+            const isShow = elem.getAttribute('show') === 'true';
 
-                return acc;
-            }, [])
-            .join(' ');
+            if (isShow) acc.push(elem.innerHTML);
 
-        console.log(currentValue === textExample);
+            return acc;
+        }, []);
+        const currentValue = checkedItems.join(' ');
+
+        canCheck.publish(checkedItems.length === resultLineItems.length);
 
         if (currentValue === textExample) {
             resultLineItems.forEach(elem => {
@@ -134,9 +124,17 @@ class PlayField extends Component {
         }
     }
 
+    childrenElements() {
+        const resultBlock = createElement({ tag: 'div', style: style['result-block'] });
+        return {
+            resultBlock,
+            sourceDataBlock: createElement({ tag: 'div', style: style['source-data-block'] }),
+            buttonsBlock: new ButtonsBlock(resultBlock).getElement(),
+        };
+    }
+
     appendElements(): void {
-        const { resultBlock, sourceDataBlock } = this.elements;
-        this.contentWrap.append(resultBlock, sourceDataBlock);
+        this.contentWrap.append(...Object.values(this.elements));
         this.addResultLines();
     }
 }

@@ -1,0 +1,15 @@
+.host {
+    display: block;
+}
+
+.content-wrap {
+    background-color: rgba(0, 128, 0, 0.249);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    button {
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+}
