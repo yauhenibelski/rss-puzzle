@@ -4,6 +4,7 @@ import createElement from '@utils/create-element';
 import { canCheck, canContinue, currentWord } from '@shared/observables';
 import { Round, Word } from '@interfaces/word-collection';
 import { getCurrentWordByIndex } from '@shared/utils/get-current-word';
+import { soundService } from '@shared/sound-service/sound-service';
 import style from './buttons-block.module.scss';
 import { setColorBackground } from '../utils/set-color-background';
 import { ButtonName } from './buttons-name.enum';
@@ -24,9 +25,18 @@ class ButtonsBlock extends Component {
 
         this.addEventToCheckContinueBtn();
         this.addEventToAutoFillBtn();
+        this.addEventPronounceBtn();
 
         canContinue.publish(false);
         canCheck.publish(false);
+    }
+
+    addEventPronounceBtn() {
+        const { pronounceBtn } = this.elements;
+
+        pronounceBtn.onclick = () => {
+            soundService.currentWord();
+        };
     }
     addEventToAutoFillBtn(): void {
         const { wordIndex, word } = this.currentWord;
@@ -99,6 +109,7 @@ class ButtonsBlock extends Component {
         return {
             checkContinueBtn: createElement({ tag: 'button', text: ButtonName.check }),
             autofillBtn: createElement({ tag: 'button', text: ButtonName.autofill }),
+            pronounceBtn: createElement({ tag: 'button', text: ButtonName.pronounce }),
         };
     }
 
