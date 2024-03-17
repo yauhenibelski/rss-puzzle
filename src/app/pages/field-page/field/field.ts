@@ -2,14 +2,10 @@ import CustomSelector from '@utils/set-selector-name';
 import Component from '@utils/ui-component-template';
 import { wordCollection } from '@shared/wordCollection';
 import createElement from '@utils/create-element';
-import { canCheck, canContinue, currentLevel, currentWord } from '@shared/observables';
+import { currentLevel, currentWord, playField } from '@shared/observables';
 import { CurrentLevelRound } from '@interfaces/current-level';
 import { Round, Word } from '@interfaces/word-collection';
-import { shiftElementsLeftByOpacity } from '../utils/shift-elements-left';
-import { showHideElements } from '../utils/show-hide-elements';
 import style from './field.module.scss';
-import ButtonsBlock from '../buttons-block/buttons-block';
-import { setColorBackground } from '../utils/set-color-background';
 
 @CustomSelector('play-field')
 class PlayField extends Component {
@@ -23,9 +19,9 @@ class PlayField extends Component {
     }
 
     createComponent(): void {
-        // console.log(this.currentRound, 'currentRound');
-        const { translationHint } = this.elements;
+        const { translationHint, resultBlock } = this.elements;
         translationHint.onclick = () => this.showHideTranslationHint();
+        playField.publish(resultBlock);
 
         this.appendElements();
     }
@@ -42,55 +38,10 @@ class PlayField extends Component {
 
         if (!this.showHint) {
             firstElementChild!.innerHTML = textExampleTranslate;
-            // this.showHint = true;
             return;
         }
 
-        // this.showHint = false;
         firstElementChild!.innerHTML = 'Translation hint';
-    }
-
-    toggleViewWord({ target }: MouseEvent, elem: HTMLDivElement) {
-        const { resultBlock, sourceDataBlock } = this.elements;
-        const currentResultLine = <HTMLDivElement>[...resultBlock.childNodes][this.currentWord.wordIndex];
-        const targetElem = <HTMLDivElement>target;
-
-        showHideElements(targetElem, elem, () => {
-            shiftElementsLeftByOpacity(currentResultLine);
-            shiftElementsLeftByOpacity(sourceDataBlock);
-            this.checkSentence();
-        });
-
-        targetElem.onclick = null;
-        setColorBackground(targetElem, 'none');
-
-        elem.onclick = event => this.toggleViewWord(event, targetElem);
-    }
-
-    createSourceDataBlock() {
-        const { sourceDataBlock } = this.elements;
-        const textExample = this.currentWord.word.textExample.split(' ');
-        const currentResultLine = <HTMLDivElement>[...this.elements.resultBlock.childNodes][this.currentWord.wordIndex];
-        currentResultLine.innerHTML = '';
-
-        textExample.sort(() => Math.random() - 0.5);
-        textExample.forEach(wordText => {
-            const wordElem = createElement({ tag: 'div', style: style.word, text: wordText });
-            const wordElemClone = createElement({
-                tag: 'div',
-                style: style['word-clone'],
-                text: wordText,
-            });
-
-            wordElem.setAttribute('show', 'true');
-            wordElemClone.setAttribute('show', 'false');
-
-            wordElem.onclick = event => this.toggleViewWord(event, wordElemClone);
-            wordElemClone.onclick = event => this.toggleViewWord(event, wordElem);
-
-            currentResultLine.append(wordElemClone);
-            sourceDataBlock.append(wordElem);
-        });
     }
 
     currentRoundSubscribe = ({ level, round }: CurrentLevelRound): void => {
@@ -99,16 +50,20 @@ class PlayField extends Component {
     };
 
     currentWordSubscribe = (word: { word: Word; wordIndex: number }): void => {
-        const { sourceDataBlock } = this.elements;
-
         this.currentWord = word;
-        sourceDataBlock.innerHTML = '';
-
-        this.createSourceDataBlock();
 
         this.showHint = false;
         this.showHideTranslationHint();
     };
+
+    addResultLines(): void {
+        const { resultBlock } = this.elements;
+        const resultLines = Array.from({ length: this.currentRound.words.length }, () => {
+            return createElement({ tag: 'div', style: style['result-line'] });
+        });
+
+        resultBlock.append(...resultLines);
+    }
 
     connectedCallback(): void {
         currentLevel.subscribe(this.currentRoundSubscribe);
@@ -120,49 +75,10 @@ class PlayField extends Component {
         currentWord.unsubscribe(this.currentWordSubscribe);
     }
 
-    addResultLines(): void {
-        const { resultBlock } = this.elements;
-        const resultLines = Array.from({ length: this.currentRound.words.length }, () => {
-            return createElement({ tag: 'div', style: style['result-line'] });
-        });
-
-        resultBlock.append(...resultLines);
-    }
-
-    checkSentence(): void {
-        const currentResultLine = <HTMLDivElement>[...this.elements.resultBlock.childNodes][this.currentWord.wordIndex];
-        const resultLineItems = <Array<HTMLDivElement>>Array.from(currentResultLine.children);
-        const { textExample } = this.currentWord.word;
-
-        const checkedItems = resultLineItems.reduce((acc: string[], elem) => {
-            const isShow = elem.getAttribute('show') === 'true';
-
-            if (isShow) acc.push(elem.innerHTML);
-
-            return acc;
-        }, []);
-        const currentValue = checkedItems.join(' ');
-
-        if (checkedItems.length === resultLineItems.length) {
-            canCheck.publish(checkedItems.length === resultLineItems.length);
-        }
-
-        if (currentValue === textExample) {
-            resultLineItems.forEach(elem => {
-                elem.onclick = null;
-                setColorBackground(elem, 'good');
-            });
-            canContinue.publish(currentValue === textExample);
-        }
-    }
-
     childrenElements() {
-        const resultBlock = createElement({ tag: 'div', style: style['result-block'] });
         return {
-            resultBlock,
+            resultBlock: createElement({ tag: 'div', style: style['result-block'] }),
             translationHint: createElement({ tag: 'p', style: style['translation-hint'] }, true),
-            sourceDataBlock: createElement({ tag: 'div', style: style['source-data-block'] }),
-            buttonsBlock: new ButtonsBlock(resultBlock).getElement(),
         };
     }
 

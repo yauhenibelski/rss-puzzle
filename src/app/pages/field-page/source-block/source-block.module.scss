@@ -1,0 +1,39 @@
+.host {
+    display: block;
+}
+
+.content-wrap {
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.word,
+.word-clone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    background-color: aliceblue;
+    border: solid gray;
+    border-radius: 10px;
+    transition: 0.2s;
+    padding: 10px;
+    cursor: pointer;
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: rgb(243, 243, 243);
+        }
+    }
+}
+.word {
+    opacity: 1;
+}
+.word-clone {
+    opacity: 0;
+}

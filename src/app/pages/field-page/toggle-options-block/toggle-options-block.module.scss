@@ -1,0 +1,34 @@
+.host {
+    display: block;
+}
+.content-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+}
+
+.btns-container {
+    // background-color: rgba(0, 0, 255, 0.359);
+}
+
+.options-container {
+    background-color: rgba(0, 229, 255, 0.561);
+    width: 30px;
+}
+.mute-btn-on {
+    background-image: url(/assets/img/volume_up_black_24dp.svg);
+}
+
+.mute-btn-off {
+    background-image: url(/assets/img/volume_off_black_24dp.svg);
+}

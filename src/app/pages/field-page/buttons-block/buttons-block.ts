@@ -1,8 +1,8 @@
 import Component from '@utils/ui-component-template';
 import CustomSelector from '@utils/set-selector-name';
 import createElement from '@utils/create-element';
-import { canCheck, canContinue, currentWord } from '@shared/observables';
-import { Round, Word } from '@interfaces/word-collection';
+import { canCheck, canContinue, currentWord, playField, pronounceBtnHidden } from '@shared/observables';
+import { Word } from '@interfaces/word-collection';
 import { getCurrentWordByIndex } from '@shared/utils/get-current-word';
 import { soundService } from '@shared/sound-service/sound-service';
 import style from './buttons-block.module.scss';
@@ -14,9 +14,8 @@ class ButtonsBlock extends Component {
     protected elements = this.childrenElements();
 
     private currentWord!: { word: Word; wordIndex: number };
-    private currentRound!: Round;
 
-    constructor(private resultBlock: HTMLDivElement) {
+    constructor() {
         super(style);
     }
 
@@ -48,16 +47,20 @@ class ButtonsBlock extends Component {
         const wordArr = word.textExample.split(' ');
 
         autofillBtn.onclick = () => {
-            const currentResultLineElements = Array.from(
-                [...this.resultBlock.children][wordIndex].children,
-            ) as HTMLDivElement[];
+            const resultBlock = playField.value;
 
-            currentResultLineElements.forEach((elem, i) => {
-                setColorBackground(elem, 'miss');
-                elem.style.opacity = '1';
-                elem.innerText = wordArr[i];
-                elem.onclick = null;
-            });
+            if (resultBlock) {
+                const currentResultLineElements = Array.from(
+                    [...resultBlock.children][wordIndex].children,
+                ) as HTMLDivElement[];
+
+                currentResultLineElements.forEach((elem, i) => {
+                    setColorBackground(elem, 'miss');
+                    elem.style.opacity = '1';
+                    elem.innerText = wordArr[i];
+                    elem.onclick = null;
+                });
+            }
 
             currentWord.publish(getCurrentWordByIndex(wordIndex + 1));
         };
@@ -68,25 +71,29 @@ class ButtonsBlock extends Component {
         const { checkContinueBtn } = this.elements;
 
         checkContinueBtn.onclick = () => {
-            if (canContinue.value) {
-                currentWord.publish(getCurrentWordByIndex(wordIndex + 1));
-            } else {
-                const currentResultLineElements = Array.from(
-                    [...this.resultBlock.children][wordIndex].children,
-                ) as HTMLDivElement[];
+            const resultBlock = playField.value;
 
-                const wordArr = word.textExample.split(' ');
-                const currentWordArr = currentResultLineElements.map(({ textContent }) => textContent);
+            if (resultBlock) {
+                if (canContinue.value) {
+                    currentWord.publish(getCurrentWordByIndex(wordIndex + 1));
+                } else {
+                    const currentResultLineElements = Array.from(
+                        [...resultBlock.children][wordIndex].children,
+                    ) as HTMLDivElement[];
 
-                currentWordArr.forEach((word, i) => {
-                    const truthWord = wordArr[i];
+                    const wordArr = word.textExample.split(' ');
+                    const currentWordArr = currentResultLineElements.map(({ textContent }) => textContent);
 
-                    if (word === truthWord) {
-                        setColorBackground(currentResultLineElements[i], 'good');
-                    } else {
-                        setColorBackground(currentResultLineElements[i], 'warn');
-                    }
-                });
+                    currentWordArr.forEach((word, i) => {
+                        const truthWord = wordArr[i];
+
+                        if (word === truthWord) {
+                            setColorBackground(currentResultLineElements[i], 'good');
+                        } else {
+                            setColorBackground(currentResultLineElements[i], 'warn');
+                        }
+                    });
+                }
             }
         };
     }
@@ -111,11 +118,15 @@ class ButtonsBlock extends Component {
 
     childrenElements() {
         return {
-            checkContinueBtn: createElement({ tag: 'button', text: ButtonName.check }),
             autofillBtn: createElement({ tag: 'button', text: ButtonName.autofill }),
             pronounceBtn: createElement({ tag: 'button', text: ButtonName.pronounce }),
+            checkContinueBtn: createElement({ tag: 'button', text: ButtonName.check }),
         };
     }
+
+    pronounceBtnHideSubscribe = (boolean: boolean): void => {
+        this.elements.pronounceBtn.hidden = boolean;
+    };
 
     appendElements(): void {
         this.contentWrap.append(...Object.values(this.elements));
@@ -125,12 +136,14 @@ class ButtonsBlock extends Component {
         currentWord.subscribe(this.currentWordSubscribe);
         canCheck.subscribe(this.checkSentenceSubscribe);
         canContinue.subscribe(this.continueGameSubscribe);
+        pronounceBtnHidden.subscribe(this.pronounceBtnHideSubscribe);
     }
 
     disconnectedCallback(): void {
         currentWord.unsubscribe(this.currentWordSubscribe);
         canCheck.unsubscribe(this.checkSentenceSubscribe);
         canContinue.unsubscribe(this.continueGameSubscribe);
+        pronounceBtnHidden.unsubscribe(this.pronounceBtnHideSubscribe);
     }
 }
 

@@ -10,3 +10,5 @@ export const currentLevel = new Observable<CurrentLevelRound>({
 export const currentWord = new Observable<{ word: Word; wordIndex: number }>(getCurrentWordByIndex(0));
 export const canCheck = new Observable<boolean>(false);
 export const canContinue = new Observable<boolean>(false);
+export const playField = new Observable<HTMLDivElement | null>(null);
+export const pronounceBtnHidden = new Observable<boolean>(false);
