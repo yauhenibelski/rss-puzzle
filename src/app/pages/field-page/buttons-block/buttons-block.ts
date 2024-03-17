@@ -35,9 +35,13 @@ class ButtonsBlock extends Component {
         const { pronounceBtn } = this.elements;
 
         pronounceBtn.onclick = () => {
-            soundService.currentWord();
+            soundService.currentWord({
+                sideEffectStart: () => pronounceBtn.classList.add(style.active),
+                sideEffectEnd: () => pronounceBtn.classList.remove(style.active),
+            });
         };
     }
+
     addEventToAutoFillBtn(): void {
         const { wordIndex, word } = this.currentWord;
         const { autofillBtn } = this.elements;

@@ -10,5 +10,10 @@
     button {
         padding: 10px 20px;
         cursor: pointer;
+        border: none;
     }
+}
+
+.active {
+    background-color: #68b668;
 }
