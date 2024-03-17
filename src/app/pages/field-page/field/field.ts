@@ -24,7 +24,30 @@ class PlayField extends Component {
 
     createComponent(): void {
         // console.log(this.currentRound, 'currentRound');
+        const { translationHint } = this.elements;
+        translationHint.onclick = () => this.showHideTranslationHint();
+
         this.appendElements();
+    }
+
+    showHideTranslationHint(): void {
+        const {
+            translationHint: { firstElementChild },
+        } = this.elements;
+        const {
+            word: { textExampleTranslate },
+        } = this.currentWord;
+
+        this.showHint = !this.showHint;
+
+        if (!this.showHint) {
+            firstElementChild!.innerHTML = textExampleTranslate;
+            // this.showHint = true;
+            return;
+        }
+
+        // this.showHint = false;
+        firstElementChild!.innerHTML = 'Translation hint';
     }
 
     toggleViewWord({ target }: MouseEvent, elem: HTMLDivElement) {
@@ -82,6 +105,9 @@ class PlayField extends Component {
         sourceDataBlock.innerHTML = '';
 
         this.createSourceDataBlock();
+
+        this.showHint = false;
+        this.showHideTranslationHint();
     };
 
     connectedCallback(): void {
@@ -134,10 +160,7 @@ class PlayField extends Component {
         const resultBlock = createElement({ tag: 'div', style: style['result-block'] });
         return {
             resultBlock,
-            translationHint: createElement(
-                { tag: 'p', style: style['translation-hint'], text: 'Translation hint' },
-                true,
-            ),
+            translationHint: createElement({ tag: 'p', style: style['translation-hint'] }, true),
             sourceDataBlock: createElement({ tag: 'div', style: style['source-data-block'] }),
             buttonsBlock: new ButtonsBlock(resultBlock).getElement(),
         };
