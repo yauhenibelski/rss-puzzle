@@ -23,13 +23,26 @@
 }
 
 .source-data-block {
-    margin-top: 30px;
+    margin-top: 20px;
     height: 40px;
     width: 100%;
     display: flex;
     border-radius: 10px;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.translation-hint {
+    color: gray;
+    text-align: center;
+    word-wrap: break-word;
+    transition: 0.5s;
+    cursor: pointer;
+
+    p {
+        font-size: 12px;
+        // opacity: 0;
+    }
 }
 
 .word,

@@ -16,13 +16,14 @@ class PlayField extends Component {
     protected elements = this.childrenElements();
     private currentWord!: { word: Word; wordIndex: number };
     private currentRound!: Round;
+    private showHint = false;
 
     constructor() {
         super(style);
     }
 
     createComponent(): void {
-        console.log(this.currentRound, 'currentRound');
+        // console.log(this.currentRound, 'currentRound');
         this.appendElements();
     }
 
@@ -75,9 +76,11 @@ class PlayField extends Component {
     };
 
     currentWordSubscribe = (word: { word: Word; wordIndex: number }): void => {
-        this.currentWord = word;
         const { sourceDataBlock } = this.elements;
+
+        this.currentWord = word;
         sourceDataBlock.innerHTML = '';
+
         this.createSourceDataBlock();
     };
 
@@ -131,6 +134,10 @@ class PlayField extends Component {
         const resultBlock = createElement({ tag: 'div', style: style['result-block'] });
         return {
             resultBlock,
+            translationHint: createElement(
+                { tag: 'p', style: style['translation-hint'], text: 'Translation hint' },
+                true,
+            ),
             sourceDataBlock: createElement({ tag: 'div', style: style['source-data-block'] }),
             buttonsBlock: new ButtonsBlock(resultBlock).getElement(),
         };
