@@ -2,10 +2,11 @@ import CustomSelector from '@utils/set-selector-name';
 import Component from '@utils/ui-component-template';
 import { wordCollection } from '@shared/wordCollection';
 import createElement from '@utils/create-element';
-import { currentLevel, currentWord, playField } from '@shared/observables';
+import { currentLevel, currentWord, playField, fieldHintText as fieldHintText$ } from '@shared/observables';
 import { CurrentLevelRound } from '@interfaces/current-level';
 import { Round, Word } from '@interfaces/word-collection';
 import style from './field.module.scss';
+import { translationHintText } from './translation-hint-text';
 
 @CustomSelector('play-field')
 class PlayField extends Component {
@@ -29,20 +30,17 @@ class PlayField extends Component {
 
     showHideTranslationHint(): void {
         const {
-            translationHint: { firstElementChild },
-        } = this.elements;
-        const {
             word: { textExampleTranslate },
         } = this.currentWord;
 
         this.showHint = !this.showHint;
 
         if (!this.showHint) {
-            firstElementChild!.innerHTML = textExampleTranslate;
+            fieldHintText$.publish(textExampleTranslate);
             return;
         }
 
-        firstElementChild!.innerHTML = 'Translation hint';
+        fieldHintText$.publish(translationHintText);
     }
 
     currentRoundSubscribe = ({ level, round }: CurrentLevelRound): void => {
@@ -66,23 +64,29 @@ class PlayField extends Component {
         resultBlock.append(...resultLines);
     }
 
+    fieldHintTextSubscribe = (text: string) => {
+        const {
+            translationHint: { firstElementChild },
+        } = this.elements;
+        firstElementChild!.innerHTML = text;
+    };
+
     connectedCallback(): void {
         currentLevel.subscribe(this.currentRoundSubscribe);
         currentWord.subscribe(this.currentWordSubscribe);
+        fieldHintText$.subscribe(this.fieldHintTextSubscribe);
     }
 
     disconnectedCallback(): void {
         currentLevel.unsubscribe(this.currentRoundSubscribe);
         currentWord.unsubscribe(this.currentWordSubscribe);
+        fieldHintText$.unsubscribe(this.fieldHintTextSubscribe);
     }
 
     childrenElements() {
         return {
             resultBlock: createElement({ tag: 'div', style: style['result-block'] }),
-            translationHint: createElement(
-                { tag: 'p', style: style['translation-hint'], text: 'Translation hint' },
-                true,
-            ),
+            translationHint: createElement({ tag: 'p', style: style['translation-hint'] }, true),
         };
     }
 

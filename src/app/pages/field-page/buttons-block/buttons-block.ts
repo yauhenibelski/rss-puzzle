@@ -2,6 +2,7 @@ import Component from '@utils/ui-component-template';
 import CustomSelector from '@utils/set-selector-name';
 import createElement from '@utils/create-element';
 import {
+    autofillBtnDisabled,
     canCheck,
     canContinue,
     currentWord,
@@ -10,14 +11,16 @@ import {
     sourceBlockElements,
 } from '@shared/observables';
 import { Word } from '@interfaces/word-collection';
-import { getCurrentWordByIndex } from '@shared/utils/get-current-word';
 import { soundService } from '@shared/sound-service/sound-service';
+import { popup } from '@shared/popup/popup';
 import style from './buttons-block.module.scss';
 import { setColorBackground } from '../utils/set-color-background';
 import { ButtonName } from './buttons-name.enum';
 import { showHideElements } from '../utils/show-hide-elements';
-import { setNextLevelOrRound } from '../utils/set-next-level-or-round';
 import { hasNextWord } from '../utils/has-next-word';
+import WinMessage from '../win-message/win-message';
+import { continueGame } from '../utils/continue-game';
+import { setFieldBackground } from '../field/utils/set-field-background';
 
 @CustomSelector('Buttons-block')
 class ButtonsBlock extends Component {
@@ -48,10 +51,13 @@ class ButtonsBlock extends Component {
         const { pronounceBtn } = this.elements;
 
         pronounceBtn.onclick = () => {
-            soundService.currentWord({
-                sideEffectStart: () => pronounceBtn.classList.add(style.active),
-                sideEffectEnd: () => pronounceBtn.classList.remove(style.active),
-            });
+            console.log(autofillBtnDisabled.value);
+            if (!autofillBtnDisabled.value) {
+                soundService.currentWord({
+                    sideEffectStart: () => pronounceBtn.classList.add(style.active),
+                    sideEffectEnd: () => pronounceBtn.classList.remove(style.active),
+                });
+            }
         };
     }
 
@@ -74,6 +80,8 @@ class ButtonsBlock extends Component {
                     elem.innerText = wordArr[i];
                     elem.onclick = null;
                 });
+
+                setFieldBackground();
             }
 
             canCheck.publish(true);
@@ -83,6 +91,10 @@ class ButtonsBlock extends Component {
                 showHideElements(elem);
                 elem.onclick = null;
             });
+
+            if (!hasNextWord()) {
+                popup.run(new WinMessage().getElement());
+            }
         };
     }
 
@@ -90,15 +102,13 @@ class ButtonsBlock extends Component {
         const { wordIndex, word } = this.currentWord;
         const { checkContinueBtn } = this.elements;
 
-        // eslint-disable-next-line consistent-return
         checkContinueBtn.onclick = () => {
             const resultBlock = playField.value;
 
             if (resultBlock) {
                 if (canContinue.value) {
-                    return hasNextWord()
-                        ? currentWord.publish(getCurrentWordByIndex(wordIndex + 1))
-                        : setNextLevelOrRound(); //! need popup
+                    setFieldBackground();
+                    continueGame();
                 }
 
                 if (canCheck.value) {
@@ -158,11 +168,17 @@ class ButtonsBlock extends Component {
         this.contentWrap.append(...Object.values(this.elements));
     }
 
+    autofillBtnDisabledSubscribe = (boolean: boolean): void => {
+        const { autofillBtn } = this.elements;
+        autofillBtn.disabled = boolean;
+    };
+
     connectedCallback(): void {
         currentWord.subscribe(this.currentWordSubscribe);
         canCheck.subscribe(this.checkSentenceSubscribe);
         canContinue.subscribe(this.continueGameSubscribe);
         pronounceBtnHidden.subscribe(this.pronounceBtnHideSubscribe);
+        autofillBtnDisabled.subscribe(this.autofillBtnDisabledSubscribe);
     }
 
     disconnectedCallback(): void {
@@ -170,6 +186,7 @@ class ButtonsBlock extends Component {
         canCheck.unsubscribe(this.checkSentenceSubscribe);
         canContinue.unsubscribe(this.continueGameSubscribe);
         pronounceBtnHidden.unsubscribe(this.pronounceBtnHideSubscribe);
+        autofillBtnDisabled.unsubscribe(this.autofillBtnDisabledSubscribe);
     }
 }
 

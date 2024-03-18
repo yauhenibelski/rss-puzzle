@@ -12,8 +12,6 @@ export const setNextLevelOrRound = (): void => {
     const isNextRoundInLevelExist = rounds - 1 >= round + 1;
     const isLevelExist = level + 1 <= wordCollection.length - 1;
 
-    console.log(isNextRoundInLevelExist, isLevelExist);
-
     if (isNextRoundInLevelExist) {
         nextRound = round + 1;
         nextLevel = level;
@@ -21,7 +19,7 @@ export const setNextLevelOrRound = (): void => {
         nextLevel = isLevelExist ? level + 1 : 0;
         nextRound = 0;
     }
-    console.log(nextLevel, nextRound);
+
     currentLevel.publish({
         level: nextLevel,
         round: nextRound,

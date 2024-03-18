@@ -1,5 +1,8 @@
 import { canCheck, canContinue, playField as playField$, currentWord } from '@shared/observables';
+import { popup } from '@shared/popup/popup';
 import { setColorBackground } from './set-color-background';
+import { hasNextWord } from './has-next-word';
+import WinMessage from '../win-message/win-message';
 
 export const checkSentence = (): void => {
     const playField = playField$.value;
@@ -16,14 +19,20 @@ export const checkSentence = (): void => {
         return acc;
     }, []);
     const currentValue = checkedItems.join(' ');
+    const allWordsChecked: boolean = checkedItems.length === resultLineItems.length;
+    const rightSentence: boolean = currentValue === textExample;
 
-    canCheck.publish(checkedItems.length === resultLineItems.length);
+    canCheck.publish(allWordsChecked);
 
-    if (currentValue === textExample) {
+    if (rightSentence) {
         resultLineItems.forEach(elem => {
             elem.onclick = null;
             setColorBackground(elem, 'good');
         });
-        canContinue.publish(currentValue === textExample);
+        canContinue.publish(rightSentence);
+    }
+
+    if (rightSentence && allWordsChecked && !hasNextWord()) {
+        popup.run(new WinMessage().getElement());
     }
 };
