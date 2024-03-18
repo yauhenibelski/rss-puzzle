@@ -16,10 +16,11 @@ class ToggleOptionsBlock extends Component {
 
     createComponent(): void {
         const { muteBtn } = this.elements;
+        const completed = localStorage.getCompleted();
 
         this.appendElements();
-        this.createLevelOptions();
-        this.createRoundOptions();
+        this.createLevelOptions(completed);
+        this.createRoundOptions(completed);
 
         muteBtn.onclick = () => {
             if (pronounceBtnHidden.value) {
@@ -33,12 +34,13 @@ class ToggleOptionsBlock extends Component {
         };
     }
 
-    createLevelOptions(): void {
+    createLevelOptions(completed: Array<number[]>): void {
         const { levelOptions } = this.elements;
         const { level } = currentLevel.value;
+        const statusText = completed[level].length === wordCollection[level].roundsCount ? 'done' : 'x';
 
         wordCollection.forEach((_, i) => {
-            const option = createElement({ tag: 'option', text: `Level ${i + 1}` });
+            const option = createElement({ tag: 'option', text: `Level ${i + 1} -- ${statusText}` });
 
             if (level === i) {
                 option.selected = true;
@@ -56,12 +58,14 @@ class ToggleOptionsBlock extends Component {
         };
     }
 
-    createRoundOptions(): void {
+    createRoundOptions(completed: Array<number[]>): void {
         const { roundOptions } = this.elements;
         const { level, round } = currentLevel.value;
 
         wordCollection[level].rounds.forEach((_, i) => {
-            const option = createElement({ tag: 'option', text: `Round ${i + 1} ` });
+            const statusText = completed[level].includes(i) ? 'done' : 'x';
+
+            const option = createElement({ tag: 'option', text: `Round ${i + 1} -- ${statusText}` });
 
             if (round === i) {
                 option.selected = true;

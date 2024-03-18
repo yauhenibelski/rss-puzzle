@@ -11,6 +11,7 @@ export interface LocalStorageApp {
     user: LocalStorageUser;
     hintState: LocalStorageUserHintState;
     nextLevel: CurrentLevelRound;
+    completed: CurrentLevelRound[];
 }
 export interface LocalStorage {
     storage: Storage;
@@ -24,4 +25,5 @@ export interface LocalStorage {
     getHintState(): LocalStorageUserHintState;
     setNextRound(value: CurrentLevelRound): void;
     getNextRound(): CurrentLevelRound;
+    getCompleted(): Array<number[]>;
 }

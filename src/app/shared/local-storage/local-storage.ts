@@ -1,4 +1,6 @@
 import { CurrentLevelRound } from '@interfaces/current-level';
+import { wordCollection } from '@shared/wordCollection';
+import { currentLevel } from '@shared/observables';
 import { LocalStorage, LocalStorageUser, LocalStorageUserHintState } from './local-storage.interface';
 
 const localStorage: LocalStorage = {
@@ -16,6 +18,7 @@ const localStorage: LocalStorage = {
             level: 0,
             round: 0,
         },
+        completed: [],
     },
 
     checkStorage(): boolean {
@@ -36,7 +39,10 @@ const localStorage: LocalStorage = {
     },
 
     setNextRound(value: CurrentLevelRound): void {
+        this.app.completed.push(currentLevel.value);
+
         this.app.nextLevel = value;
+
         this.saveStorage();
     },
 
@@ -59,6 +65,16 @@ const localStorage: LocalStorage = {
     },
     saveStorage(): void {
         this.storage.setItem(this.keyName, JSON.stringify(this.app));
+    },
+    getCompleted(): Array<number[]> {
+        const { completed } = this.app;
+        const arr = Array.from({ length: wordCollection.length }, () => []) as Array<number[]>;
+
+        return completed.reduce((acc, { level, round }) => {
+            acc[level].push(round);
+
+            return acc;
+        }, arr);
     },
 };
 
