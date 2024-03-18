@@ -3,4 +3,5 @@ export enum ButtonName {
     check = 'Check',
     autofill = 'Autofill',
     pronounce = 'Hear pronunciation',
+    result = 'Result',
 }

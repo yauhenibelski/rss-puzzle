@@ -8,6 +8,7 @@ import {
     currentWord,
     playField,
     pronounceBtnHidden,
+    resultBtnDisabled,
     sourceBlockElements,
 } from '@shared/observables';
 import { Word } from '@interfaces/word-collection';
@@ -43,6 +44,7 @@ class ButtonsBlock extends Component {
 
         canContinue.publish(false);
         canCheck.publish(false);
+        resultBtnDisabled.publish(true);
 
         pronounceBtn.hidden = !pronounceBtnHidden.value;
     }
@@ -155,6 +157,7 @@ class ButtonsBlock extends Component {
         return {
             autofillBtn: createElement({ tag: 'button', text: ButtonName.autofill }),
             pronounceBtn: createElement({ tag: 'button', text: ButtonName.pronounce }),
+            result: createElement({ tag: 'button', text: ButtonName.result }),
             checkContinueBtn: createElement({ tag: 'button', text: ButtonName.check }),
         };
     }
@@ -172,12 +175,18 @@ class ButtonsBlock extends Component {
         autofillBtn.disabled = boolean;
     };
 
+    resultBtnDisabledSubscribe = (boolean: boolean): void => {
+        const { result } = this.elements;
+        result.disabled = boolean;
+    };
+
     connectedCallback(): void {
         currentWord.subscribe(this.currentWordSubscribe);
         canCheck.subscribe(this.checkSentenceSubscribe);
         canContinue.subscribe(this.continueGameSubscribe);
         pronounceBtnHidden.subscribe(this.pronounceBtnHideSubscribe);
         autofillBtnDisabled.subscribe(this.autofillBtnDisabledSubscribe);
+        resultBtnDisabled.subscribe(this.resultBtnDisabledSubscribe);
     }
 
     disconnectedCallback(): void {
@@ -186,6 +195,7 @@ class ButtonsBlock extends Component {
         canContinue.unsubscribe(this.continueGameSubscribe);
         pronounceBtnHidden.unsubscribe(this.pronounceBtnHideSubscribe);
         autofillBtnDisabled.unsubscribe(this.autofillBtnDisabledSubscribe);
+        resultBtnDisabled.unsubscribe(this.resultBtnDisabledSubscribe);
     }
 }
 

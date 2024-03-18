@@ -2,7 +2,7 @@ import Component from '@utils/ui-component-template';
 import createElement from '@utils/create-element';
 import CustomSelector from '@utils/set-selector-name';
 import { popup } from '@shared/popup/popup';
-import { autofillBtnDisabled, currentLevel, fieldHintText, playField } from '@shared/observables';
+import { autofillBtnDisabled, currentLevel, fieldHintText, playField, resultBtnDisabled } from '@shared/observables';
 import { wordCollection } from '@shared/wordCollection';
 import localStorage from '@shared/local-storage/local-storage';
 import { continueGame } from '../utils/continue-game';
@@ -49,6 +49,7 @@ class WinMessage extends Component {
         };
 
         localStorage.setNextRound(getNextLevelOrRound());
+        resultBtnDisabled.publish(false);
     }
 
     childrenElements() {
@@ -56,14 +57,15 @@ class WinMessage extends Component {
             btnWrap: createElement({ tag: 'div', style: style['btn-wrap'] }),
             winMessage: createElement({ tag: 'h2', text: 'Good !' }),
             openImgBtn: createElement({ tag: 'button', text: 'Show picture' }),
+            result: createElement({ tag: 'button', text: 'Result' }),
             continueBtn: createElement({ tag: 'button', text: 'Continue' }),
         };
     }
 
     appendElements(): void {
-        const { btnWrap, winMessage, openImgBtn, continueBtn } = this.elements;
+        const { btnWrap, winMessage, openImgBtn, continueBtn, result } = this.elements;
 
-        btnWrap.append(openImgBtn, continueBtn);
+        btnWrap.append(openImgBtn, result, continueBtn);
 
         this.contentWrap.append(winMessage, btnWrap);
     }

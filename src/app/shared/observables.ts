@@ -14,3 +14,4 @@ export const sourceBlockElements = new Observable<HTMLDivElement[] | null>(null)
 export const pronounceBtnHidden = new Observable<boolean>(localStorage.getHintState().mute);
 export const fieldHintText = new Observable<string>(translationHintText);
 export const autofillBtnDisabled = new Observable<boolean>(false);
+export const resultBtnDisabled = new Observable<boolean>(true);
