@@ -1,13 +1,13 @@
-export const showHideElements = (hideElem: HTMLDivElement, showElem: HTMLDivElement, sideEffect: () => void) => {
-    showElem.setAttribute('show', 'true');
+export const showHideElements = (hideElem: HTMLDivElement, showElem?: HTMLDivElement, sideEffect?: () => void) => {
+    showElem?.setAttribute('show', 'true');
     hideElem.setAttribute('show', 'false');
     setTimeout(() => {
         hideElem.style.opacity = '0';
     });
     setTimeout(() => {
-        sideEffect();
+        if (sideEffect) sideEffect();
     }, 200);
     setTimeout(() => {
-        showElem.style.opacity = '1';
+        if (showElem) showElem.style.opacity = '1';
     }, 300);
 };

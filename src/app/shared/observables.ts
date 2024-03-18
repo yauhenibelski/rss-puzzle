@@ -11,4 +11,5 @@ export const currentWord = new Observable<{ word: Word; wordIndex: number }>(get
 export const canCheck = new Observable<boolean>(false);
 export const canContinue = new Observable<boolean>(false);
 export const playField = new Observable<HTMLDivElement | null>(null);
+export const sourceBlockElements = new Observable<HTMLDivElement[] | null>(null);
 export const pronounceBtnHidden = new Observable<boolean>(false);

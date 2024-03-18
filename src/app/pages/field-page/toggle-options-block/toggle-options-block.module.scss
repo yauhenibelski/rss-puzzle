@@ -15,6 +15,12 @@
         cursor: pointer;
         transition: 0.2s;
     }
+
+    select {
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+    }
 }
 
 .btns-container {
@@ -22,8 +28,7 @@
 }
 
 .options-container {
-    background-color: rgba(0, 229, 255, 0.561);
-    width: 30px;
+    display: flex;
 }
 .mute-btn-on {
     background-image: url(/assets/img/volume_up_black_24dp.svg);

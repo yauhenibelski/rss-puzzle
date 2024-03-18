@@ -2,7 +2,7 @@ import Component from '@utils/ui-component-template';
 import CustomSelector from '@utils/set-selector-name';
 import { Word } from '@interfaces/word-collection';
 import createElement from '@utils/create-element';
-import { currentWord, playField } from '@shared/observables';
+import { currentLevel, currentWord, playField, sourceBlockElements as sourceBlockElements$ } from '@shared/observables';
 import style from './source-block.module.scss';
 import { showHideElements } from '../utils/show-hide-elements';
 import { shiftElementsLeftByOpacity } from '../utils/shift-elements-left';
@@ -16,13 +16,15 @@ class SourceBlock extends Component {
         super(style);
     }
 
-    createComponent() {
+    createComponent(): void {
         const resultBlock = playField.value;
 
         if (resultBlock) {
             const textExample = this.currentWord.word.textExample.split(' ');
             const currentResultLine = <HTMLDivElement>[...resultBlock.children][this.currentWord.wordIndex];
             currentResultLine.innerHTML = '';
+
+            const sourceElements: HTMLDivElement[] = [];
 
             textExample.sort(() => Math.random() - 0.5);
             textExample.forEach(wordText => {
@@ -40,12 +42,15 @@ class SourceBlock extends Component {
                 wordElemClone.onclick = event => this.toggleViewWord(event, wordElem);
 
                 currentResultLine.append(wordElemClone);
-                this.contentWrap.append(wordElem);
+                sourceElements.push(wordElem);
             });
+
+            this.contentWrap.append(...sourceElements);
+            sourceBlockElements$.publish(sourceElements);
         }
     }
 
-    toggleViewWord({ target }: MouseEvent, elem: HTMLDivElement) {
+    toggleViewWord({ target }: MouseEvent, elem: HTMLDivElement): void {
         const resultBlock = playField.value;
 
         if (resultBlock) {
@@ -67,17 +72,22 @@ class SourceBlock extends Component {
 
     currentWordSubscribe = (word: { word: Word; wordIndex: number }): void => {
         this.currentWord = word;
-        this.contentWrap.innerHTML = '';
+        this.render();
+    };
 
-        this.createComponent();
+    currentLevelSubscribe = () => {
+        this.currentWord = currentWord.value;
+        this.render();
     };
 
     connectedCallback(): void {
         currentWord.subscribe(this.currentWordSubscribe);
+        currentLevel.subscribe(this.currentLevelSubscribe);
     }
 
     disconnectedCallback(): void {
         currentWord.unsubscribe(this.currentWordSubscribe);
+        currentLevel.unsubscribe(this.currentLevelSubscribe);
     }
 }
 

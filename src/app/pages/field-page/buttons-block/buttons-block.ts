@@ -1,13 +1,23 @@
 import Component from '@utils/ui-component-template';
 import CustomSelector from '@utils/set-selector-name';
 import createElement from '@utils/create-element';
-import { canCheck, canContinue, currentWord, playField, pronounceBtnHidden } from '@shared/observables';
+import {
+    canCheck,
+    canContinue,
+    currentWord,
+    playField,
+    pronounceBtnHidden,
+    sourceBlockElements,
+} from '@shared/observables';
 import { Word } from '@interfaces/word-collection';
 import { getCurrentWordByIndex } from '@shared/utils/get-current-word';
 import { soundService } from '@shared/sound-service/sound-service';
 import style from './buttons-block.module.scss';
 import { setColorBackground } from '../utils/set-color-background';
 import { ButtonName } from './buttons-name.enum';
+import { showHideElements } from '../utils/show-hide-elements';
+import { setNextLevelOrRound } from '../utils/set-next-level-or-round';
+import { hasNextWord } from '../utils/has-next-word';
 
 @CustomSelector('Buttons-block')
 class ButtonsBlock extends Component {
@@ -20,6 +30,8 @@ class ButtonsBlock extends Component {
     }
 
     createComponent(): void {
+        const { pronounceBtn } = this.elements;
+
         this.appendElements();
 
         this.addEventToCheckContinueBtn();
@@ -28,9 +40,11 @@ class ButtonsBlock extends Component {
 
         canContinue.publish(false);
         canCheck.publish(false);
+
+        pronounceBtn.hidden = pronounceBtnHidden.value;
     }
 
-    addEventPronounceBtn() {
+    addEventPronounceBtn(): void {
         const { pronounceBtn } = this.elements;
 
         pronounceBtn.onclick = () => {
@@ -62,7 +76,13 @@ class ButtonsBlock extends Component {
                 });
             }
 
-            currentWord.publish(getCurrentWordByIndex(wordIndex + 1));
+            canCheck.publish(true);
+            canContinue.publish(true);
+
+            sourceBlockElements.value?.forEach(elem => {
+                showHideElements(elem);
+                elem.onclick = null;
+            });
         };
     }
 
@@ -70,13 +90,18 @@ class ButtonsBlock extends Component {
         const { wordIndex, word } = this.currentWord;
         const { checkContinueBtn } = this.elements;
 
+        // eslint-disable-next-line consistent-return
         checkContinueBtn.onclick = () => {
             const resultBlock = playField.value;
 
             if (resultBlock) {
                 if (canContinue.value) {
-                    currentWord.publish(getCurrentWordByIndex(wordIndex + 1));
-                } else {
+                    return hasNextWord()
+                        ? currentWord.publish(getCurrentWordByIndex(wordIndex + 1))
+                        : setNextLevelOrRound(); //! need popup
+                }
+
+                if (canCheck.value) {
                     const currentResultLineElements = Array.from(
                         [...resultBlock.children][wordIndex].children,
                     ) as HTMLDivElement[];
@@ -103,6 +128,7 @@ class ButtonsBlock extends Component {
 
         if (boolean && checkContinueBtn.innerHTML === ButtonName.check) {
             checkContinueBtn.innerHTML = ButtonName.continue;
+            checkContinueBtn.disabled = false;
         }
     };
 

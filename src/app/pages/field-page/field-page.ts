@@ -1,5 +1,6 @@
 import Component from '@utils/ui-component-template';
 import CustomSelector from '@utils/set-selector-name';
+import { currentLevel } from '@shared/observables';
 import style from './field-page.module.scss';
 import PlayField from './field/field';
 import SourceBlock from './source-block/source-block';
@@ -26,6 +27,18 @@ class FieldPage extends Component {
             sourceBlock: new SourceBlock().getElement(),
             buttonBlock: new ButtonsBlock().getElement(),
         };
+    }
+
+    currentLevelSubscribe = () => {
+        this.render();
+    };
+
+    connectedCallback(): void {
+        currentLevel.subscribe(this.currentLevelSubscribe);
+    }
+
+    disconnectedCallback(): void {
+        currentLevel.unsubscribe(this.currentLevelSubscribe);
     }
 
     appendElements(): void {

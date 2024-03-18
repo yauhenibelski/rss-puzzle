@@ -17,9 +17,7 @@ export const checkSentence = (): void => {
     }, []);
     const currentValue = checkedItems.join(' ');
 
-    if (checkedItems.length === resultLineItems.length) {
-        canCheck.publish(checkedItems.length === resultLineItems.length);
-    }
+    canCheck.publish(checkedItems.length === resultLineItems.length);
 
     if (currentValue === textExample) {
         resultLineItems.forEach(elem => {

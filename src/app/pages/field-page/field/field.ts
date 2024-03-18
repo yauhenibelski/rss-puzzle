@@ -21,6 +21,7 @@ class PlayField extends Component {
     createComponent(): void {
         const { translationHint, resultBlock } = this.elements;
         translationHint.onclick = () => this.showHideTranslationHint();
+
         playField.publish(resultBlock);
 
         this.appendElements();
@@ -78,7 +79,10 @@ class PlayField extends Component {
     childrenElements() {
         return {
             resultBlock: createElement({ tag: 'div', style: style['result-block'] }),
-            translationHint: createElement({ tag: 'p', style: style['translation-hint'] }, true),
+            translationHint: createElement(
+                { tag: 'p', style: style['translation-hint'], text: 'Translation hint' },
+                true,
+            ),
         };
     }
 
