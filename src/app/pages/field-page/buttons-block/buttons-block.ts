@@ -44,14 +44,13 @@ class ButtonsBlock extends Component {
         canContinue.publish(false);
         canCheck.publish(false);
 
-        pronounceBtn.hidden = pronounceBtnHidden.value;
+        pronounceBtn.hidden = !pronounceBtnHidden.value;
     }
 
     addEventPronounceBtn(): void {
         const { pronounceBtn } = this.elements;
 
         pronounceBtn.onclick = () => {
-            console.log(autofillBtnDisabled.value);
             if (!autofillBtnDisabled.value) {
                 soundService.currentWord({
                     sideEffectStart: () => pronounceBtn.classList.add(style.active),
@@ -161,7 +160,7 @@ class ButtonsBlock extends Component {
     }
 
     pronounceBtnHideSubscribe = (boolean: boolean): void => {
-        this.elements.pronounceBtn.hidden = boolean;
+        this.elements.pronounceBtn.hidden = !boolean;
     };
 
     appendElements(): void {

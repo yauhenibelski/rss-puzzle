@@ -3,6 +3,7 @@ import CustomSelector from '@utils/set-selector-name';
 import createElement from '@utils/create-element';
 import { currentLevel, pronounceBtnHidden } from '@shared/observables';
 import { wordCollection } from '@shared/wordCollection';
+import localStorage from '@shared/local-storage/local-storage';
 import style from './toggle-options-block.module.scss';
 import { setRoundOrLevel } from '../utils/change-round-or-level';
 
@@ -21,7 +22,13 @@ class ToggleOptionsBlock extends Component {
         this.createRoundOptions();
 
         muteBtn.onclick = () => {
-            muteBtn.classList.toggle(style['mute-btn-off']);
+            if (pronounceBtnHidden.value) {
+                muteBtn.className = style['mute-btn-off'];
+            } else {
+                muteBtn.className = style['mute-btn-on'];
+            }
+
+            localStorage.saveHintState({ mute: !pronounceBtnHidden.value });
             pronounceBtnHidden.publish(!pronounceBtnHidden.value);
         };
     }
@@ -90,7 +97,10 @@ class ToggleOptionsBlock extends Component {
         return {
             btnsContainer: createElement({ tag: 'div', style: style['btns-container'] }),
             optionsContainer: createElement({ tag: 'form', style: style['options-container'] }),
-            muteBtn: createElement({ tag: 'button', style: style['mute-btn-on'] }),
+            muteBtn: createElement({
+                tag: 'button',
+                style: pronounceBtnHidden.value ? style['mute-btn-on'] : style['mute-btn-off'],
+            }),
             levelOptions: createElement({ tag: 'select' }),
             roundOptions: createElement({ tag: 'select' }),
         };

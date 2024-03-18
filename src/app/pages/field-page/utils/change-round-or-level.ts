@@ -1,5 +1,5 @@
 import { CurrentLevelRound } from '@interfaces/current-level';
-import { currentLevel as currentLevel$, currentWord } from '@shared/observables';
+import { autofillBtnDisabled, currentLevel as currentLevel$, currentWord } from '@shared/observables';
 import { getCurrentWordByIndex } from '@shared/utils/get-current-word';
 import { wordCollection } from '@shared/wordCollection';
 
@@ -9,4 +9,8 @@ export const setRoundOrLevel = ({ level, round }: CurrentLevelRound): void => {
 
     currentLevel$.publish({ level, round });
     currentWord.publish(getCurrentWordByIndex(0));
+
+    if (autofillBtnDisabled.value) {
+        autofillBtnDisabled.publish(false);
+    }
 };

@@ -1,4 +1,4 @@
-import { LocalStorage, LocalStorageUser } from './local-storage.interface';
+import { LocalStorage, LocalStorageUser, LocalStorageUserHintState } from './local-storage.interface';
 
 const localStorage: LocalStorage = {
     storage: window.localStorage,
@@ -7,6 +7,9 @@ const localStorage: LocalStorage = {
         user: {
             firstName: null,
             surname: null,
+        },
+        hintState: {
+            mute: true,
         },
     },
 
@@ -19,6 +22,17 @@ const localStorage: LocalStorage = {
     getUserName(): LocalStorageUser {
         this.checkStorage();
         return this.app.user;
+    },
+
+    saveHintState(options: LocalStorageUserHintState): void {
+        this.app.hintState = options;
+
+        this.storage.setItem(this.keyName, JSON.stringify(this.app));
+    },
+
+    getHintState(): LocalStorageUserHintState {
+        this.checkStorage();
+        return this.app.hintState;
     },
 
     saveUserName({ firstName, surname }: LocalStorageUser): void {
