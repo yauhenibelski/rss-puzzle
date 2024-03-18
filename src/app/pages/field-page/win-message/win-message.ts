@@ -4,10 +4,12 @@ import CustomSelector from '@utils/set-selector-name';
 import { popup } from '@shared/popup/popup';
 import { autofillBtnDisabled, currentLevel, fieldHintText, playField } from '@shared/observables';
 import { wordCollection } from '@shared/wordCollection';
+import localStorage from '@shared/local-storage/local-storage';
 import { continueGame } from '../utils/continue-game';
 import { showHideElements } from '../utils/show-hide-elements';
 import { setFieldBackground } from '../field/utils/set-field-background';
 import style from './win-message.module.scss';
+import { getNextLevelOrRound } from '../utils/get-next-level-or-round';
 
 @CustomSelector('Win-message')
 class WinMessage extends Component {
@@ -45,6 +47,8 @@ class WinMessage extends Component {
             continueGame();
             popup.remove();
         };
+
+        localStorage.setNextRound(getNextLevelOrRound());
     }
 
     childrenElements() {

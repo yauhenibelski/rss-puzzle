@@ -1,3 +1,5 @@
+import { CurrentLevelRound } from '@interfaces/current-level';
+
 export interface LocalStorageUserHintState {
     mute: boolean;
 }
@@ -8,6 +10,7 @@ export interface LocalStorageUser {
 export interface LocalStorageApp {
     user: LocalStorageUser;
     hintState: LocalStorageUserHintState;
+    nextLevel: CurrentLevelRound;
 }
 export interface LocalStorage {
     storage: Storage;
@@ -19,4 +22,6 @@ export interface LocalStorage {
     saveStorage(): void;
     saveHintState(options: LocalStorageUserHintState): void;
     getHintState(): LocalStorageUserHintState;
+    setNextRound(value: CurrentLevelRound): void;
+    getNextRound(): CurrentLevelRound;
 }
