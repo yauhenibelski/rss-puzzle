@@ -1,4 +1,4 @@
-import { CurrentLevelRound } from '@interfaces/current-level';
+import { CurrentLevelRound } from '@interfaces/current-level.interface';
 import { wordCollection } from '@shared/wordCollection';
 import { currentLevel } from '@shared/observables';
 import { LocalStorage, LocalStorageUser, LocalStorageUserHintState } from './local-storage.interface';

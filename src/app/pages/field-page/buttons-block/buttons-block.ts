@@ -5,13 +5,14 @@ import {
     autofillBtnDisabled,
     canCheck,
     canContinue,
+    correctIncorrectSentence,
     currentWord,
     playField,
     pronounceBtnHidden,
     resultBtnDisabled,
     sourceBlockElements,
 } from '@shared/observables';
-import { Word } from '@interfaces/word-collection';
+import { Word } from '@interfaces/word-collection.interface';
 import { soundService } from '@shared/sound-service/sound-service';
 import { popup } from '@shared/popup/popup';
 import style from './buttons-block.module.scss';
@@ -83,6 +84,13 @@ class ButtonsBlock extends Component {
                 });
 
                 setFieldBackground();
+
+                const incorrectSentence = Array.from(new Set([...correctIncorrectSentence.value.incorrect, word]));
+
+                correctIncorrectSentence.publish({
+                    correct: correctIncorrectSentence.value.correct,
+                    incorrect: incorrectSentence,
+                });
             }
 
             canCheck.publish(true);

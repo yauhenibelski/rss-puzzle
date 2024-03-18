@@ -1,6 +1,6 @@
 import Component from '@utils/ui-component-template';
 import CustomSelector from '@utils/set-selector-name';
-import { Word } from '@interfaces/word-collection';
+import { Word } from '@interfaces/word-collection.interface';
 import createElement from '@utils/create-element';
 import { currentLevel, currentWord, playField, sourceBlockElements as sourceBlockElements$ } from '@shared/observables';
 import style from './source-block.module.scss';

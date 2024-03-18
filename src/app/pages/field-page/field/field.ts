@@ -3,8 +3,8 @@ import Component from '@utils/ui-component-template';
 import { wordCollection } from '@shared/wordCollection';
 import createElement from '@utils/create-element';
 import { currentLevel, currentWord, playField, fieldHintText as fieldHintText$ } from '@shared/observables';
-import { CurrentLevelRound } from '@interfaces/current-level';
-import { Round, Word } from '@interfaces/word-collection';
+import { CurrentLevelRound } from '@interfaces/current-level.interface';
+import { Round, Word } from '@interfaces/word-collection.interface';
 import style from './field.module.scss';
 import { translationHintText } from './translation-hint-text';
 

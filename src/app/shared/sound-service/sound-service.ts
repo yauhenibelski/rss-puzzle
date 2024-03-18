@@ -26,4 +26,8 @@ export const soundService = {
             }
         };
     },
+    play(audioExample: string) {
+        this.audioElem.src = PATH + audioExample;
+        this.audioElem.play();
+    },
 };

@@ -1,4 +1,4 @@
-import { CurrentLevelRound } from '@interfaces/current-level';
+import { CurrentLevelRound } from '@interfaces/current-level.interface';
 
 export interface LocalStorageUserHintState {
     mute: boolean;

@@ -1,4 +1,4 @@
-import { CurrentLevelRound } from '@interfaces/current-level';
+import { CurrentLevelRound } from '@interfaces/current-level.interface';
 import { autofillBtnDisabled, currentLevel as currentLevel$, currentWord } from '@shared/observables';
 import { getCurrentWordByIndex } from '@shared/utils/get-current-word';
 import { wordCollection } from '@shared/wordCollection';

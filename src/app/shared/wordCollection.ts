@@ -1,4 +1,4 @@
-import { WordCollection } from '@interfaces/word-collection';
+import { WordCollection } from '@interfaces/word-collection.interface';
 
 export const wordCollection: WordCollection[] = [
     {

@@ -1,4 +1,4 @@
-import { CurrentLevelRound } from '@interfaces/current-level';
+import { CurrentLevelRound } from '@interfaces/current-level.interface';
 import { currentLevel } from '@shared/observables';
 import { wordCollection } from '@shared/wordCollection';
 

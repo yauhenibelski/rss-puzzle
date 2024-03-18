@@ -1,4 +1,10 @@
-import { canCheck, canContinue, playField as playField$, currentWord } from '@shared/observables';
+import {
+    canCheck,
+    canContinue,
+    playField as playField$,
+    currentWord,
+    correctIncorrectSentence,
+} from '@shared/observables';
 import { popup } from '@shared/popup/popup';
 import { setColorBackground } from './set-color-background';
 import { hasNextWord } from './has-next-word';
@@ -9,7 +15,8 @@ export const checkSentence = (): void => {
 
     const currentResultLine = <HTMLDivElement>[...playField!.childNodes][currentWord.value.wordIndex];
     const resultLineItems = <Array<HTMLDivElement>>Array.from(currentResultLine.children);
-    const { textExample } = currentWord.value.word;
+    const { word } = currentWord.value;
+    const { textExample } = word;
 
     const checkedItems = resultLineItems.reduce((acc: string[], elem) => {
         const isShow = elem.getAttribute('show') === 'true';
@@ -29,6 +36,14 @@ export const checkSentence = (): void => {
             elem.onclick = null;
             setColorBackground(elem, 'good');
         });
+
+        const correctSentence = Array.from(new Set([...correctIncorrectSentence.value.correct, word]));
+
+        correctIncorrectSentence.publish({
+            correct: correctSentence,
+            incorrect: correctIncorrectSentence.value.incorrect,
+        });
+
         canContinue.publish(rightSentence);
     }
 
