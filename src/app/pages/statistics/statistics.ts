@@ -6,14 +6,15 @@ import { soundService } from '@shared/sound-service/sound-service';
 import { wordCollection } from '@shared/wordCollection';
 import { PATH } from '@shared/path';
 import { setNextLevelOrRound } from '@pages/field-page/utils/set-next-level-or-round';
-import style from './result.module.scss';
+import style from './statistics.module.scss';
+import { Routes } from '../../../router/routes.enum';
+import { redirectTo } from '../../../router/utils/redirect';
 
-@CustomSelector('Result-page')
-class ResultPage extends Component {
+@CustomSelector('Statistics-page')
+class StatisticsPage extends Component {
     protected elements = this.childrenElements();
     constructor() {
         super(style);
-        this.createComponent();
     }
 
     createComponent(): void {
@@ -35,9 +36,14 @@ class ResultPage extends Component {
 
         continueBtn.onclick = () => {
             setNextLevelOrRound();
+            redirectTo(Routes.field);
         };
 
         this.appendElements();
+    }
+
+    connectedCallback(): void {
+        this.render();
     }
 
     createCorrectSentence() {
@@ -94,4 +100,4 @@ class ResultPage extends Component {
     }
 }
 
-export default ResultPage;
+export default StatisticsPage;

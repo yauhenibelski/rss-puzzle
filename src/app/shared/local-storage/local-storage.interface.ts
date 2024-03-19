@@ -26,4 +26,5 @@ export interface LocalStorage {
     setNextRound(value: CurrentLevelRound): void;
     getNextRound(): CurrentLevelRound;
     getCompleted(): Array<number[]>;
+    userLogged(): boolean;
 }

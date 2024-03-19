@@ -3,6 +3,8 @@ import CustomSelector from '@utils/set-selector-name';
 import createElement from '@utils/create-element';
 import style from './login-page.module.scss';
 import localStorage from '../../shared/local-storage/local-storage';
+import { Routes } from '../../../router/routes.enum';
+import { redirectTo } from '../../../router/utils/redirect';
 
 @CustomSelector('Login-page')
 class LoginPage extends Component {
@@ -10,10 +12,15 @@ class LoginPage extends Component {
 
     constructor() {
         super(style);
-        this.createComponent();
+    }
+
+    connectedCallback(): void {
+        this.render();
     }
 
     createComponent(): void {
+        const { loginBTN } = this.elements;
+
         this.appendElements();
 
         const firstNameField = <HTMLInputElement>this.elements.firstNameField.firstChild;
@@ -24,6 +31,10 @@ class LoginPage extends Component {
 
         secondNameField.required = true;
         secondNameField.placeholder = 'example: Smith';
+
+        if (localStorage.userLogged()) {
+            loginBTN.innerText = 'Logout';
+        }
 
         this.addEvents();
     }
@@ -78,6 +89,12 @@ class LoginPage extends Component {
         secondNameField.oninput = () => secondNameField.setCustomValidity('');
 
         loginBTN.onclick = () => {
+            if (localStorage.userLogged()) {
+                localStorage.storage.clear();
+                // eslint-disable-next-line no-restricted-globals
+                location.reload();
+            }
+
             const validFirstNameField = this.matchInputValue(firstNameField, 3);
             const validSecondNameField = this.matchInputValue(secondNameField, 4);
             const canSubmit = validFirstNameField && validSecondNameField;
@@ -90,6 +107,7 @@ class LoginPage extends Component {
                     firstName: firstNameField.value,
                     surname: secondNameField.value,
                 });
+                redirectTo(Routes.startScreen);
             }
         };
         form.onsubmit = (event: Event) => event.preventDefault();

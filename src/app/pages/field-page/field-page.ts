@@ -15,7 +15,10 @@ class FieldPage extends Component {
     constructor() {
         super(style);
         this.createComponent();
-        currentLevel.publish(localStorage.getNextRound());
+
+        if (localStorage.checkStorage()) {
+            currentLevel.publish(localStorage.getNextRound());
+        }
         pronounceBtnHidden.publish(localStorage.getHintState().mute);
     }
 

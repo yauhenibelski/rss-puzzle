@@ -23,6 +23,8 @@ import { hasNextWord } from '../utils/has-next-word';
 import WinMessage from '../win-message/win-message';
 import { continueGame } from '../utils/continue-game';
 import { setFieldBackground } from '../field/utils/set-field-background';
+import { redirectTo } from '../../../../router/utils/redirect';
+import { Routes } from '../../../../router/routes.enum';
 
 @CustomSelector('Buttons-block')
 class ButtonsBlock extends Component {
@@ -35,7 +37,7 @@ class ButtonsBlock extends Component {
     }
 
     createComponent(): void {
-        const { pronounceBtn } = this.elements;
+        const { pronounceBtn, result } = this.elements;
 
         this.appendElements();
 
@@ -46,6 +48,8 @@ class ButtonsBlock extends Component {
         canContinue.publish(false);
         canCheck.publish(false);
         resultBtnDisabled.publish(true);
+
+        result.onclick = () => redirectTo(Routes.statistics);
 
         pronounceBtn.hidden = !pronounceBtnHidden.value;
     }

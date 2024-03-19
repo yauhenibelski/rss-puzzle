@@ -27,6 +27,11 @@ const localStorage: LocalStorage = {
         return Boolean(app);
     },
 
+    userLogged(): boolean {
+        this.checkStorage();
+        return Object.values(this.app.user).every(name => name);
+    },
+
     getUserName(): LocalStorageUser {
         this.checkStorage();
         return this.app.user;

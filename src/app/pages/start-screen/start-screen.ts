@@ -4,6 +4,8 @@ import createElement from '@utils/create-element';
 import style from './start-screen.module.scss';
 import Notification from '../../shared/notification/notification';
 import localStorage from '../../shared/local-storage/local-storage';
+import { redirectTo } from '../../../router/utils/redirect';
+import { Routes } from '../../../router/routes.enum';
 
 @CustomSelector('Start-page')
 class StartPage extends Component {
@@ -11,11 +13,17 @@ class StartPage extends Component {
 
     constructor() {
         super(style);
-        this.createComponent();
     }
 
     createComponent(): void {
+        const { startBtn } = this.elements;
         this.appendElements();
+
+        startBtn.onclick = () => redirectTo(Routes.field);
+    }
+
+    connectedCallback(): void {
+        this.render();
     }
 
     childrenElements() {

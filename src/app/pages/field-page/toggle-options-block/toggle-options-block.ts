@@ -15,7 +15,7 @@ class ToggleOptionsBlock extends Component {
     }
 
     createComponent(): void {
-        const { muteBtn } = this.elements;
+        const { muteBtn, logOutBtn } = this.elements;
         const completed = localStorage.getCompleted();
 
         this.appendElements();
@@ -31,6 +31,12 @@ class ToggleOptionsBlock extends Component {
 
             localStorage.saveHintState({ mute: !pronounceBtnHidden.value });
             pronounceBtnHidden.publish(!pronounceBtnHidden.value);
+        };
+
+        logOutBtn.onclick = () => {
+            localStorage.storage.clear();
+            // eslint-disable-next-line no-restricted-globals
+            location.reload();
         };
     }
 
@@ -107,13 +113,14 @@ class ToggleOptionsBlock extends Component {
             }),
             levelOptions: createElement({ tag: 'select' }),
             roundOptions: createElement({ tag: 'select' }),
+            logOutBtn: createElement({ tag: 'button', style: style['log-out-btn'] }),
         };
     }
 
     appendElements(): void {
-        const { btnsContainer, optionsContainer, muteBtn, levelOptions, roundOptions } = this.elements;
+        const { btnsContainer, optionsContainer, muteBtn, levelOptions, roundOptions, logOutBtn } = this.elements;
 
-        btnsContainer.append(muteBtn);
+        btnsContainer.append(muteBtn, logOutBtn);
         optionsContainer.append(levelOptions, roundOptions);
 
         this.contentWrap.append(optionsContainer, btnsContainer);

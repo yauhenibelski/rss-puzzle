@@ -10,6 +10,8 @@ import { showHideElements } from '../utils/show-hide-elements';
 import { setFieldBackground } from '../field/utils/set-field-background';
 import style from './win-message.module.scss';
 import { getNextLevelOrRound } from '../utils/get-next-level-or-round';
+import { redirectTo } from '../../../../router/utils/redirect';
+import { Routes } from '../../../../router/routes.enum';
 
 @CustomSelector('Win-message')
 class WinMessage extends Component {
@@ -20,7 +22,7 @@ class WinMessage extends Component {
     }
 
     createComponent(): void {
-        const { continueBtn, openImgBtn } = this.elements;
+        const { continueBtn, openImgBtn, result } = this.elements;
         const { level, round } = currentLevel.value;
         const roadProps = wordCollection[level].rounds[round].levelData;
         const { imageSrc, name, year, author } = roadProps;
@@ -46,6 +48,11 @@ class WinMessage extends Component {
         continueBtn.onclick = () => {
             continueGame();
             popup.remove();
+        };
+
+        result.onclick = () => {
+            popup.remove();
+            redirectTo(Routes.statistics);
         };
 
         localStorage.setNextRound(getNextLevelOrRound());
