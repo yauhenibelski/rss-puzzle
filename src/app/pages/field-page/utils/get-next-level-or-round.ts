@@ -1,9 +1,9 @@
 import { CurrentLevelRound } from '@interfaces/current-level.interface';
-import { currentLevel } from '@shared/observables';
+import { currentLevel$ } from '@shared/observables';
 import { wordCollection } from '@shared/wordCollection';
 
 export const getNextLevelOrRound = (): CurrentLevelRound => {
-    const { level, round } = currentLevel.value;
+    const { level, round } = currentLevel$.value;
     const rounds = wordCollection[level].roundsCount;
 
     let nextRound: number;

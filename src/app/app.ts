@@ -5,10 +5,10 @@ import { router } from '../router/router';
 class App {
     root = document.body;
 
-    run() {
+    run(): void {
         const routOutput = createElement({ tag: 'div', style: 'router' });
 
-        document.body.append(routOutput, soundService.audioElem);
+        this.root.append(routOutput, soundService.audioElem);
         router();
     }
 }

@@ -1,4 +1,4 @@
-import { currentWord } from '@shared/observables';
+import { currentWord$ } from '@shared/observables';
 import { PATH } from '@shared/path';
 
 interface Params {
@@ -8,10 +8,10 @@ interface Params {
 
 export const soundService = {
     audioElem: new Audio(),
-    currentWord(params?: Params) {
+    currentWord(params?: Params): void {
         const {
             word: { audioExample },
-        } = currentWord.value;
+        } = currentWord$.value;
         this.audioElem.src = PATH + audioExample;
 
         this.audioElem.play();
@@ -26,7 +26,7 @@ export const soundService = {
             }
         };
     },
-    play(audioExample: string) {
+    play(audioExample: string): void {
         this.audioElem.src = PATH + audioExample;
         this.audioElem.play();
     },

@@ -1,6 +1,6 @@
 import createElement from '@utils/create-element';
 
-class Component extends HTMLElement {
+abstract class Component extends HTMLElement {
     protected contentWrap: HTMLElement;
     protected customTagName: string | unknown;
     protected elements: { [key: string]: HTMLElement } = {};

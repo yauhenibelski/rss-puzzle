@@ -1,7 +1,7 @@
-import { correctIncorrectSentence } from '@shared/observables';
+import { correctIncorrectSentence$ } from '@shared/observables';
 
 export const clearCorrectIncorrectSentence = (): void => {
-    correctIncorrectSentence.publish({
+    correctIncorrectSentence$.publish({
         correct: [],
         incorrect: [],
     });

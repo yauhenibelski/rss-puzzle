@@ -1,7 +1,7 @@
 import Component from '@utils/ui-component-template';
 import CustomSelector from '@utils/set-selector-name';
 import createElement from '@utils/create-element';
-import { correctIncorrectSentence, currentLevel } from '@shared/observables';
+import { correctIncorrectSentence$, currentLevel$ } from '@shared/observables';
 import { soundService } from '@shared/sound-service/sound-service';
 import { wordCollection } from '@shared/wordCollection';
 import { PATH } from '@shared/path';
@@ -19,7 +19,7 @@ class StatisticsPage extends Component {
 
     createComponent(): void {
         const { imgContainer, continueBtn } = this.elements;
-        const { level, round } = currentLevel.value;
+        const { level, round } = currentLevel$.value;
         const { levelData } = wordCollection[level].rounds[round];
         const img = imgContainer.firstElementChild as HTMLImageElement;
 
@@ -46,9 +46,9 @@ class StatisticsPage extends Component {
         this.render();
     }
 
-    createCorrectSentence() {
+    createCorrectSentence(): void {
         const { correctSentence } = this.elements;
-        const { correct } = correctIncorrectSentence.value;
+        const { correct } = correctIncorrectSentence$.value;
 
         correct.forEach(({ audioExample, textExample }) => {
             const wordElem = createElement({ tag: 'p', style: style.sentence }, true);
@@ -66,9 +66,9 @@ class StatisticsPage extends Component {
         });
     }
 
-    createInCorrectSentence() {
+    createInCorrectSentence(): void {
         const { incorrectSentence } = this.elements;
-        const { incorrect } = correctIncorrectSentence.value;
+        const { incorrect } = correctIncorrectSentence$.value;
 
         incorrect.forEach(({ audioExample, textExample }) => {
             const wordElem = createElement({ tag: 'p', style: style.sentence }, true);

@@ -2,7 +2,13 @@ import Component from '@utils/ui-component-template';
 import createElement from '@utils/create-element';
 import CustomSelector from '@utils/set-selector-name';
 import { popup } from '@shared/popup/popup';
-import { autofillBtnDisabled, currentLevel, fieldHintText, playField, resultBtnDisabled } from '@shared/observables';
+import {
+    autofillBtnDisabled$,
+    currentLevel$,
+    fieldHintText$,
+    playField$,
+    resultBtnDisabled$,
+} from '@shared/observables';
 import { wordCollection } from '@shared/wordCollection';
 import localStorage from '@shared/local-storage/local-storage';
 import { continueGame } from '../utils/continue-game';
@@ -23,14 +29,14 @@ class WinMessage extends Component {
 
     createComponent(): void {
         const { continueBtn, openImgBtn, result } = this.elements;
-        const { level, round } = currentLevel.value;
+        const { level, round } = currentLevel$.value;
         const roadProps = wordCollection[level].rounds[round].levelData;
         const { imageSrc, name, year, author } = roadProps;
 
         this.appendElements();
 
         openImgBtn.onclick = () => {
-            const allFieldItems = [...playField.value!.children].flatMap(fieldLine => {
+            const allFieldItems = [...playField$.value!.children].flatMap(fieldLine => {
                 return [...fieldLine.children] as HTMLDivElement[];
             });
 
@@ -38,8 +44,8 @@ class WinMessage extends Component {
                 showHideElements(elem);
             });
 
-            fieldHintText.publish(`${name} ${author}, ${year}`);
-            autofillBtnDisabled.publish(true);
+            fieldHintText$.publish(`${name} ${author}, ${year}`);
+            autofillBtnDisabled$.publish(true);
 
             setFieldBackground(imageSrc);
             popup.remove();
@@ -56,7 +62,7 @@ class WinMessage extends Component {
         };
 
         localStorage.setNextRound(getNextLevelOrRound());
-        resultBtnDisabled.publish(false);
+        resultBtnDisabled$.publish(false);
     }
 
     childrenElements() {

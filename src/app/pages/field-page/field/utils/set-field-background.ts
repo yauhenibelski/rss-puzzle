@@ -1,4 +1,4 @@
-import { playField as playField$ } from '@shared/observables';
+import { playField$ } from '@shared/observables';
 import { PATH } from '@shared/path';
 
 export const setFieldBackground = (imgPath?: string): void => {

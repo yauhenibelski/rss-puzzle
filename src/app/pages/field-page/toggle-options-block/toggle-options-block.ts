@@ -1,7 +1,7 @@
 import Component from '@utils/ui-component-template';
 import CustomSelector from '@utils/set-selector-name';
 import createElement from '@utils/create-element';
-import { currentLevel, pronounceBtnHidden } from '@shared/observables';
+import { currentLevel$, pronounceBtnHidden$ } from '@shared/observables';
 import { wordCollection } from '@shared/wordCollection';
 import localStorage from '@shared/local-storage/local-storage';
 import style from './toggle-options-block.module.scss';
@@ -23,14 +23,14 @@ class ToggleOptionsBlock extends Component {
         this.createRoundOptions(completed);
 
         muteBtn.onclick = () => {
-            if (pronounceBtnHidden.value) {
+            if (pronounceBtnHidden$.value) {
                 muteBtn.className = style['mute-btn-off'];
             } else {
                 muteBtn.className = style['mute-btn-on'];
             }
 
-            localStorage.saveHintState({ mute: !pronounceBtnHidden.value });
-            pronounceBtnHidden.publish(!pronounceBtnHidden.value);
+            localStorage.saveHintState({ mute: !pronounceBtnHidden$.value });
+            pronounceBtnHidden$.publish(!pronounceBtnHidden$.value);
         };
 
         logOutBtn.onclick = () => {
@@ -42,7 +42,7 @@ class ToggleOptionsBlock extends Component {
 
     createLevelOptions(completed: Array<number[]>): void {
         const { levelOptions } = this.elements;
-        const { level } = currentLevel.value;
+        const { level } = currentLevel$.value;
         const statusText = completed[level].length === wordCollection[level].roundsCount ? 'done' : 'x';
 
         wordCollection.forEach((_, i) => {
@@ -66,7 +66,7 @@ class ToggleOptionsBlock extends Component {
 
     createRoundOptions(completed: Array<number[]>): void {
         const { roundOptions } = this.elements;
-        const { level, round } = currentLevel.value;
+        const { level, round } = currentLevel$.value;
 
         wordCollection[level].rounds.forEach((_, i) => {
             const statusText = completed[level].includes(i) ? 'done' : 'x';
@@ -82,7 +82,7 @@ class ToggleOptionsBlock extends Component {
 
         roundOptions.onchange = (event): void => {
             const { selectedIndex } = event.target as HTMLSelectElement;
-            const { level } = currentLevel.value;
+            const { level } = currentLevel$.value;
 
             setRoundOrLevel({
                 level,
@@ -96,20 +96,20 @@ class ToggleOptionsBlock extends Component {
     };
 
     connectedCallback(): void {
-        currentLevel.subscribe(this.currentLevelSubscribe);
+        currentLevel$.subscribe(this.currentLevelSubscribe);
     }
 
     disconnectedCallback(): void {
-        currentLevel.unsubscribe(this.currentLevelSubscribe);
+        currentLevel$.unsubscribe(this.currentLevelSubscribe);
     }
 
     childrenElements() {
         return {
-            btnsContainer: createElement({ tag: 'div', style: style['btns-container'] }),
+            btnsContainer: createElement({ tag: 'div' }),
             optionsContainer: createElement({ tag: 'form', style: style['options-container'] }),
             muteBtn: createElement({
                 tag: 'button',
-                style: pronounceBtnHidden.value ? style['mute-btn-on'] : style['mute-btn-off'],
+                style: pronounceBtnHidden$.value ? style['mute-btn-on'] : style['mute-btn-off'],
             }),
             levelOptions: createElement({ tag: 'select' }),
             roundOptions: createElement({ tag: 'select' }),

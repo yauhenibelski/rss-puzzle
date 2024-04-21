@@ -4,12 +4,12 @@ import style from './popup.module.scss';
 export const popup = {
     container: createElement({ tag: 'div', style: style.popup }),
 
-    run(content: HTMLElement | string) {
+    run(content: HTMLElement | string): void {
         this.createPopup(content);
         document.body.append(this.container);
     },
 
-    remove() {
+    remove(): void {
         this.container.style.opacity = '0';
         this.container.innerHTML = '';
 
@@ -20,7 +20,7 @@ export const popup = {
         }, 200);
     },
 
-    createPopup(value: HTMLElement | string) {
+    createPopup(value: HTMLElement | string): void {
         this.container.style.opacity = '0';
         document.body.style.overflow = 'hidden';
 

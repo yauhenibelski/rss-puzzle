@@ -1,7 +1,8 @@
 import Component from '@utils/ui-component-template';
 import CustomSelector from '@utils/set-selector-name';
-import { currentLevel, pronounceBtnHidden } from '@shared/observables';
+import { currentLevel$, currentWord$, pronounceBtnHidden$ } from '@shared/observables';
 import localStorage from '@shared/local-storage/local-storage';
+import { getCurrentWordByIndex } from '@shared/utils/get-current-word';
 import style from './field-page.module.scss';
 import PlayField from './field/field';
 import SourceBlock from './source-block/source-block';
@@ -17,9 +18,10 @@ class FieldPage extends Component {
         this.createComponent();
 
         if (localStorage.checkStorage()) {
-            currentLevel.publish(localStorage.getNextRound());
+            currentLevel$.publish(localStorage.getNextRound());
+            currentWord$.publish(getCurrentWordByIndex(0));
         }
-        pronounceBtnHidden.publish(localStorage.getHintState().mute);
+        pronounceBtnHidden$.publish(localStorage.getHintState().mute);
     }
 
     createComponent(): void {
@@ -35,16 +37,14 @@ class FieldPage extends Component {
         };
     }
 
-    currentLevelSubscribe = () => {
-        this.render();
-    };
+    currentLevelSubscribe = (): void => this.render();
 
     connectedCallback(): void {
-        currentLevel.subscribe(this.currentLevelSubscribe);
+        currentLevel$.subscribe(this.currentLevelSubscribe);
     }
 
     disconnectedCallback(): void {
-        currentLevel.unsubscribe(this.currentLevelSubscribe);
+        currentLevel$.unsubscribe(this.currentLevelSubscribe);
     }
 
     appendElements(): void {

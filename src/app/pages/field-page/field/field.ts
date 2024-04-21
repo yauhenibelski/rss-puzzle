@@ -2,16 +2,17 @@ import CustomSelector from '@utils/set-selector-name';
 import Component from '@utils/ui-component-template';
 import { wordCollection } from '@shared/wordCollection';
 import createElement from '@utils/create-element';
-import { currentLevel, currentWord, playField, fieldHintText as fieldHintText$ } from '@shared/observables';
+import { currentLevel$, currentWord$, playField$, fieldHintText$ } from '@shared/observables';
 import { CurrentLevelRound } from '@interfaces/current-level.interface';
-import { Round, Word } from '@interfaces/word-collection.interface';
+import { Round } from '@interfaces/word-collection.interface';
+import { CurrentLevelWord } from '@interfaces/current-word.interface';
 import style from './field.module.scss';
 import { translationHintText } from './translation-hint-text';
 
 @CustomSelector('play-field')
 class PlayField extends Component {
     protected elements = this.childrenElements();
-    private currentWord!: { word: Word; wordIndex: number };
+    private currentWord!: CurrentLevelWord;
     private currentRound!: Round;
     private showHint = false;
 
@@ -23,7 +24,7 @@ class PlayField extends Component {
         const { translationHint, resultBlock } = this.elements;
         translationHint.onclick = () => this.showHideTranslationHint();
 
-        playField.publish(resultBlock);
+        playField$.publish(resultBlock);
 
         this.appendElements();
     }
@@ -48,7 +49,7 @@ class PlayField extends Component {
         this.render();
     };
 
-    currentWordSubscribe = (word: { word: Word; wordIndex: number }): void => {
+    currentWordSubscribe = (word: CurrentLevelWord): void => {
         this.currentWord = word;
 
         this.showHint = false;
@@ -64,7 +65,7 @@ class PlayField extends Component {
         resultBlock.append(...resultLines);
     }
 
-    fieldHintTextSubscribe = (text: string) => {
+    fieldHintTextSubscribe = (text: string): void => {
         const {
             translationHint: { firstElementChild },
         } = this.elements;
@@ -72,14 +73,14 @@ class PlayField extends Component {
     };
 
     connectedCallback(): void {
-        currentLevel.subscribe(this.currentRoundSubscribe);
-        currentWord.subscribe(this.currentWordSubscribe);
+        currentLevel$.subscribe(this.currentRoundSubscribe);
+        currentWord$.subscribe(this.currentWordSubscribe);
         fieldHintText$.subscribe(this.fieldHintTextSubscribe);
     }
 
     disconnectedCallback(): void {
-        currentLevel.unsubscribe(this.currentRoundSubscribe);
-        currentWord.unsubscribe(this.currentWordSubscribe);
+        currentLevel$.unsubscribe(this.currentRoundSubscribe);
+        currentWord$.unsubscribe(this.currentWordSubscribe);
         fieldHintText$.unsubscribe(this.fieldHintTextSubscribe);
     }
 

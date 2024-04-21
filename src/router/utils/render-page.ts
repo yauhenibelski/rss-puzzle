@@ -11,7 +11,7 @@ const pages = {
     field: new FieldPage().getElement(),
 };
 
-export const renderPage = (path: Routes) => {
+export const renderPage = (path: Routes): void => {
     const routOutput = <HTMLElement>document.querySelector('.router');
     // const currentPage = <HTMLElement>routOutput.firstElementChild;
     let nextPage: HTMLElement | null = null;

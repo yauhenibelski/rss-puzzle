@@ -1,6 +1,6 @@
 import { CurrentLevelRound } from '@interfaces/current-level.interface';
 import { wordCollection } from '@shared/wordCollection';
-import { currentLevel } from '@shared/observables';
+import { currentLevel$ } from '@shared/observables';
 import { LocalStorage, LocalStorageUser, LocalStorageUserHintState } from './local-storage.interface';
 
 const localStorage: LocalStorage = {
@@ -44,7 +44,7 @@ const localStorage: LocalStorage = {
     },
 
     setNextRound(value: CurrentLevelRound): void {
-        this.app.completed.push(currentLevel.value);
+        this.app.completed.push(currentLevel$.value);
 
         this.app.nextLevel = value;
 

@@ -2,19 +2,18 @@ import Component from '@utils/ui-component-template';
 import CustomSelector from '@utils/set-selector-name';
 import createElement from '@utils/create-element';
 import {
-    autofillBtnDisabled,
-    canCheck,
-    canContinue,
-    correctIncorrectSentence,
-    currentWord,
-    playField,
-    pronounceBtnHidden,
-    resultBtnDisabled,
-    sourceBlockElements,
+    autofillBtnDisabled$,
+    canCheck$,
+    canContinue$,
+    correctIncorrectSentence$,
+    currentWord$,
+    pronounceBtnHidden$,
+    resultBtnDisabled$,
+    sourceBlockElements$,
 } from '@shared/observables';
-import { Word } from '@interfaces/word-collection.interface';
 import { soundService } from '@shared/sound-service/sound-service';
 import { popup } from '@shared/popup/popup';
+import { CurrentLevelWord } from '@interfaces/current-word.interface';
 import style from './buttons-block.module.scss';
 import { setColorBackground } from '../utils/set-color-background';
 import { ButtonName } from './buttons-name.enum';
@@ -25,12 +24,13 @@ import { continueGame } from '../utils/continue-game';
 import { setFieldBackground } from '../field/utils/set-field-background';
 import { redirectTo } from '../../../../router/utils/redirect';
 import { Routes } from '../../../../router/routes.enum';
+import { getResultLineElements } from '../utils/get-result-line-elems';
 
 @CustomSelector('Buttons-block')
 class ButtonsBlock extends Component {
     protected elements = this.childrenElements();
 
-    private currentWord!: { word: Word; wordIndex: number };
+    private currentWord!: CurrentLevelWord;
 
     constructor() {
         super(style);
@@ -45,62 +45,55 @@ class ButtonsBlock extends Component {
         this.addEventToAutoFillBtn();
         this.addEventPronounceBtn();
 
-        canContinue.publish(false);
-        canCheck.publish(false);
-        resultBtnDisabled.publish(true);
+        canContinue$.publish(false);
+        canCheck$.publish(false);
+        resultBtnDisabled$.publish(true);
 
         result.onclick = () => redirectTo(Routes.statistics);
 
-        pronounceBtn.hidden = !pronounceBtnHidden.value;
+        pronounceBtn.hidden = !pronounceBtnHidden$.value;
     }
 
     addEventPronounceBtn(): void {
         const { pronounceBtn } = this.elements;
 
         pronounceBtn.onclick = () => {
-            if (!autofillBtnDisabled.value) {
-                soundService.currentWord({
-                    sideEffectStart: () => pronounceBtn.classList.add(style.active),
-                    sideEffectEnd: () => pronounceBtn.classList.remove(style.active),
-                });
-            }
+            if (!autofillBtnDisabled$.value) return;
+
+            soundService.currentWord({
+                sideEffectStart: () => pronounceBtn.classList.add(style.active),
+                sideEffectEnd: () => pronounceBtn.classList.remove(style.active),
+            });
         };
     }
 
     addEventToAutoFillBtn(): void {
-        const { wordIndex, word } = this.currentWord;
+        const { word } = this.currentWord;
         const { autofillBtn } = this.elements;
         const wordArr = word.textExample.split(' ');
 
         autofillBtn.onclick = () => {
-            const resultBlock = playField.value;
+            const currentResultLineElements = getResultLineElements();
 
-            if (resultBlock) {
-                const currentResultLineElements = Array.from(
-                    [...resultBlock.children][wordIndex].children,
-                ) as HTMLDivElement[];
-
+            if (currentResultLineElements) {
                 currentResultLineElements.forEach((elem, i) => {
-                    setColorBackground(elem, 'miss');
-                    elem.style.opacity = '1';
-                    elem.innerText = wordArr[i];
-                    elem.onclick = null;
+                    this.setWordMissStatus(elem, wordArr[i]);
                 });
 
                 setFieldBackground();
 
-                const incorrectSentence = Array.from(new Set([...correctIncorrectSentence.value.incorrect, word]));
+                const incorrectSentence = Array.from(new Set([...correctIncorrectSentence$.value.incorrect, word]));
 
-                correctIncorrectSentence.publish({
-                    correct: correctIncorrectSentence.value.correct,
+                correctIncorrectSentence$.publish({
+                    correct: correctIncorrectSentence$.value.correct,
                     incorrect: incorrectSentence,
                 });
             }
 
-            canCheck.publish(true);
-            canContinue.publish(true);
+            canCheck$.publish(true);
+            canContinue$.publish(true);
 
-            sourceBlockElements.value?.forEach(elem => {
+            sourceBlockElements$.value?.forEach(elem => {
                 showHideElements(elem);
                 elem.onclick = null;
             });
@@ -111,37 +104,39 @@ class ButtonsBlock extends Component {
         };
     }
 
+    setWordMissStatus(elem: HTMLDivElement, wordText: string): void {
+        setColorBackground(elem, 'miss');
+        elem.style.opacity = '1';
+        elem.innerText = wordText;
+        elem.onclick = null;
+    }
+
     addEventToCheckContinueBtn(): void {
-        const { wordIndex, word } = this.currentWord;
+        const { word } = this.currentWord;
         const { checkContinueBtn } = this.elements;
 
         checkContinueBtn.onclick = () => {
-            const resultBlock = playField.value;
+            const currentResultLineElements = getResultLineElements();
+            if (!currentResultLineElements) return;
 
-            if (resultBlock) {
-                if (canContinue.value) {
-                    setFieldBackground();
-                    continueGame();
-                }
+            if (canContinue$.value) {
+                setFieldBackground();
+                continueGame();
+            }
 
-                if (canCheck.value) {
-                    const currentResultLineElements = Array.from(
-                        [...resultBlock.children][wordIndex].children,
-                    ) as HTMLDivElement[];
+            if (canCheck$.value) {
+                const wordArr = word.textExample.split(' ');
+                const currentWordArr = currentResultLineElements.map(({ textContent }) => textContent);
 
-                    const wordArr = word.textExample.split(' ');
-                    const currentWordArr = currentResultLineElements.map(({ textContent }) => textContent);
+                currentWordArr.forEach((word, i) => {
+                    const truthWord = wordArr[i];
 
-                    currentWordArr.forEach((word, i) => {
-                        const truthWord = wordArr[i];
-
-                        if (word === truthWord) {
-                            setColorBackground(currentResultLineElements[i], 'good');
-                        } else {
-                            setColorBackground(currentResultLineElements[i], 'warn');
-                        }
-                    });
-                }
+                    if (word === truthWord) {
+                        setColorBackground(currentResultLineElements[i], 'good');
+                    } else {
+                        setColorBackground(currentResultLineElements[i], 'warn');
+                    }
+                });
             }
         };
     }
@@ -160,7 +155,7 @@ class ButtonsBlock extends Component {
         checkContinueBtn.disabled = !boolean;
     };
 
-    currentWordSubscribe = (word: { word: Word; wordIndex: number }): void => {
+    currentWordSubscribe = (word: CurrentLevelWord): void => {
         this.currentWord = word;
         this.render();
     };
@@ -193,21 +188,21 @@ class ButtonsBlock extends Component {
     };
 
     connectedCallback(): void {
-        currentWord.subscribe(this.currentWordSubscribe);
-        canCheck.subscribe(this.checkSentenceSubscribe);
-        canContinue.subscribe(this.continueGameSubscribe);
-        pronounceBtnHidden.subscribe(this.pronounceBtnHideSubscribe);
-        autofillBtnDisabled.subscribe(this.autofillBtnDisabledSubscribe);
-        resultBtnDisabled.subscribe(this.resultBtnDisabledSubscribe);
+        currentWord$.subscribe(this.currentWordSubscribe);
+        canCheck$.subscribe(this.checkSentenceSubscribe);
+        canContinue$.subscribe(this.continueGameSubscribe);
+        pronounceBtnHidden$.subscribe(this.pronounceBtnHideSubscribe);
+        autofillBtnDisabled$.subscribe(this.autofillBtnDisabledSubscribe);
+        resultBtnDisabled$.subscribe(this.resultBtnDisabledSubscribe);
     }
 
     disconnectedCallback(): void {
-        currentWord.unsubscribe(this.currentWordSubscribe);
-        canCheck.unsubscribe(this.checkSentenceSubscribe);
-        canContinue.unsubscribe(this.continueGameSubscribe);
-        pronounceBtnHidden.unsubscribe(this.pronounceBtnHideSubscribe);
-        autofillBtnDisabled.unsubscribe(this.autofillBtnDisabledSubscribe);
-        resultBtnDisabled.unsubscribe(this.resultBtnDisabledSubscribe);
+        currentWord$.unsubscribe(this.currentWordSubscribe);
+        canCheck$.unsubscribe(this.checkSentenceSubscribe);
+        canContinue$.unsubscribe(this.continueGameSubscribe);
+        pronounceBtnHidden$.unsubscribe(this.pronounceBtnHideSubscribe);
+        autofillBtnDisabled$.unsubscribe(this.autofillBtnDisabledSubscribe);
+        resultBtnDisabled$.unsubscribe(this.resultBtnDisabledSubscribe);
     }
 }
 

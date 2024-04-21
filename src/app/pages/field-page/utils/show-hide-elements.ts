@@ -1,4 +1,8 @@
-export const showHideElements = (hideElem: HTMLDivElement, showElem?: HTMLDivElement, sideEffect?: () => void) => {
+export const showHideElements = (
+    hideElem: HTMLDivElement,
+    showElem?: HTMLDivElement,
+    sideEffect?: () => void,
+): void => {
     showElem?.setAttribute('show', 'true');
     hideElem.setAttribute('show', 'false');
     setTimeout(() => {
