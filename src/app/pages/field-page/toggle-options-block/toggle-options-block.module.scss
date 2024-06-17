@@ -1,0 +1,40 @@
+.host {
+    display: block;
+}
+.content-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s;
+        margin: 5px;
+    }
+
+    select {
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+    }
+}
+
+.options-container {
+    display: flex;
+}
+.mute-btn-on {
+    background-image: url(/assets/img/volume_up_black_24dp.svg);
+}
+
+.mute-btn-off {
+    background-image: url(/assets/img/volume_off_black_24dp.svg);
+}
+
+.log-out-btn {
+    background-image: url(/assets/img/logout_black_24dp.svg);
+}

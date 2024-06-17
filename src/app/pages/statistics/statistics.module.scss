@@ -1,0 +1,72 @@
+.host {
+    display: block;
+}
+.content-wrap {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 500px;
+    background-color: rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sentence {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
+    p {
+        flex-grow: 1;
+    }
+
+    button {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        background-size: contain;
+
+        background-image: url(/assets/img/volume_up_black_24dp.svg);
+    }
+}
+
+.correct-sentence-wrap,
+.incorrect-sentence-wrap {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.correct-sentence-wrap {
+    background-color: rgb(0 128 0 / 20%);
+
+    &::before {
+        content: 'Correct';
+    }
+}
+
+.incorrect-sentence-wrap {
+    background-color: rgba(128, 0, 0, 0.2);
+
+    &::before {
+        content: 'Incorrect';
+    }
+}
+
+.img-wrap {
+    position: relative;
+    text-align: center;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.continue-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+}

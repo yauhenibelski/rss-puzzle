@@ -1,0 +1,37 @@
+.host {
+    display: block;
+    position: relative;
+}
+
+.content-wrap {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.result-block {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-size: 100% 100%;
+}
+
+.result-line {
+    height: 40px;
+    width: 100%;
+    display: flex;
+}
+
+.translation-hint {
+    color: gray;
+    text-align: center;
+    word-wrap: break-word;
+    transition: 0.5s;
+    cursor: pointer;
+
+    p {
+        font-size: 12px;
+        // opacity: 0;
+    }
+}
